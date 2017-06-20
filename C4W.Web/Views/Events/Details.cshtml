@@ -1,0 +1,74 @@
+﻿@model C4W.Web.Models.Event
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Event</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Month)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Month)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Days)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Days)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Location)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Location)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FlagUrl)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FlagUrl)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ShortDesc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ShortDesc)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LongDesc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LongDesc)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }, new { @class = "btn btn-primary" })
+    @Html.ActionLink("Back to List", "Index", null, new { @class = "btn btn-default" })
+</p>

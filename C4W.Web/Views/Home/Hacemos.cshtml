@@ -1,0 +1,349 @@
+﻿
+@{
+    ViewBag.Title = "Hacemos";
+}
+
+@if (ViewBag.Section == null)
+{
+    <div class="row">
+        <div class="col-xs-12  widget-container">
+            @GUI.Carousel(new string[] { "HACEMOS 1.jpg", "HACEMOS 2.jpg", "HACEMOS 3.jpg", "HACEMOS 4.jpg" })
+        </div>
+    </div>
+
+    <div class="row">
+        @GUI.BigBtn("Certificaciones <br/> internacionales", "~/Home/Hacemos?section=certificaciones", "bgreen", "col-xs-6")
+        @GUI.BigBtn("Team  <br/> development", "~/Home/Hacemos?section=team", "bcuruba", "col-xs-6")
+        @GUI.BigBtn("<br/>Cursos <br/> Cortos", "~/Home/Hacemos?section=cortos", "bpink", "col-md-3 col-xs-6")
+        @GUI.BigBtn("<br/>Serious <br/> Play", "~/Home/Hacemos?section=play", "byellow", "col-md-3 col-xs-6")
+        @GUI.BigBtn("Seminarios<br/> talleres <br/>  conferencias", "~/Home/Hacemos?section=seminarios", "borange", "col-md-3 col-xs-6")
+        @GUI.BigBtn("<br/>Servicios de <br/> coaching ", "~/Home/Hacemos?section=coaching", "bblue", "col-md-3 col-xs-6")
+    </div>
+}
+else if (ViewBag.Section == "certificaciones")
+{
+    <div class="row">
+        @GUI.MegaBigTop("Certificaciones Internacionales", "bgreen")
+    </div>
+    <div class="row">
+        <div class="col-md-6 widget-container">
+            @GUI.MedBtn("Nivel profesional", "", "bgreen nohover", "", "col-xs-12")
+            @GUI.BigBtn("Coaching<br/>Empresarial<br/>y de vida", "~/Home/Certificaciones?section=actp", "bpink", "col-md-6", true, "id=actp")
+            
+            @GUI.BigBtn("<br/>Coaching<br/>de equipos", "~/Home/Certificaciones?section=equipos", "byellow", "col-md-6")
+            
+        </div>
+        <div class="col-md-6 widget-container">
+            @GUI.MedBtn("Nivel Asociado", "", "bcuruba nohover", "", "col-xs-12")
+            @GUI.BigBtn("Coaching<br/>de vida<br/>y bienestar", "~/Home/Certificaciones?section=vida", "borange", "col-md-6")
+            @GUI.BigBtn("<br/>Coaching<br/>educativo", "~/Home/Certificaciones?section=edu", "bblue", "col-md-6")
+            @GUI.BigBtn("<br/>Coaching<br/>espiritual", "~/Home/Certificaciones?section=esp", "bcuruba", "col-md-6")
+            @GUI.BigBtn("Coaching<br/>empresarial<br/>y de vida", "~/Home/Certificaciones?section=emp", "bred", "col-md-6")
+            
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 widget-container">
+            @GUI.BigBtn("Inteligencia<br/>Emocional<br/>genos", "~/Home/Certificaciones?section=emocional", "bgreen centered", "col-md-3")
+        </div>
+    </div>
+
+}
+else if (ViewBag.Section == "team")
+{
+    <div class="row">
+        @GUI.MegaBigTop("Team Development", "bcuruba")
+    </div>
+
+    <div class="row">
+        @GUI.BigScrlBtn("<br/> Design <br/> thinking", "#design", "bpink")
+        @GUI.BigScrlBtn("<br/>Gestión <br/> del cambio", "#gestion", "byellow")
+        @GUI.BigScrlBtn("<br/>Squid <br/> coaching", "#squid", "bblue")
+        @GUI.BigScrlBtn("PUENTE DE EQUIPOS <br/> DE ALTO RENDIMIENTO <br/> P.E.A.R.", "#pear", "bgreen smooth")
+        @GUI.BigScrlBtn("<br/>Alineación <br/> estratégica", "#alineacion", "bgray")
+        @GUI.BigScrlBtn("Facilitación<br/>de grupos <br/>y equipos", "#grupos", "bred")
+        @GUI.BigScrlBtn("<br/>Entrenamientos <br/> a la medida", "#medida", "borange")
+    </div>
+
+    <div class="row" id="design">
+        <br /><br /><br />
+        @GUI.BigTop("Design thinking", "", "bpink nohover", "col-xs-12", "guepardo.png")        
+        <br /><br /><br />
+        Desarrollamos procesos de innovación bajo los principios de design thinking y lean startup. <br /><br />
+        Potencializamos la gestión de equipos en procesos disruptivos de zonas cómodas para explorar alternativas que permitan crecimiento incremental.<br /><br />
+        Aplicamos la metodología y entregamos capacidades para su aplicación posterior. <br /><br />
+        Nuestro fundamento de Design Thinking se describe como un método que permite a las personas encontrar caminos alternos, que brinden el mayor valor a los usuarios en la satisfacción de sus necesidades por medio de 7 pasos: <br /><br />
+        1. Exploración empática de necesidades<br />
+        2. Definición a partir del entendimiento del reto dirigido al cliente<br />
+        3. Generación de ideas con alto componente disruptivo<br />
+        4. Análisis y selección de ideas para satisfacer de manera alterna a lo cotidiano<br />
+        5. Diseño de productos incrementales para el uso<br />
+        6. Exploración de expectativas y percepciones con el usuario final<br />
+        7. Aprendizaje centrado en el feed back abierto y libre de juicios <br /><br />
+        Acompañamos a personas en la gestión de una cultura de diseño orientada a la innovación simple centrada en el antropo-centrismo.<br /><br />
+    </div>
+    <div class="row" id="gestion">
+        <br /><br /><br />
+        @GUI.BigTop("GESTIÓN DEL CAMBIO", "", "byellow nohover", "col-xs-12", "hombre mirando.png")
+        <br /><br /><br />
+        Acompañamos la proyección y ejecución de procesos de cambio y transición a partir de modelos propios que facilitan a las personas la generación de conciencia emocional colectiva, haciendo que la zona conforme se movilice a la luz de los objetivos y estrategia corporativa.<br /><br />
+        Integramos y entendemos el cambio desde las emociones que se generan en cada una de las etapas que vive una persona u organización en procesos de movilización de su zona cómoda.<br /><br />
+        Diseñamos planes de gestión al cambio, que apoye a los líderes a generar transiciones de manera planificada.<br /><br />
+    </div>
+    <div class="row" id="squid">
+        <br />
+        @GUI.BigTop("SQUID COACHING", "", "bblue nohover", "col-xs-12", "squid.png")
+        <br /><br /><br />
+        Aplicamos procesos fundamentados en el coaching puro para evolucionar grupos a equipos de trabajo, ello a través de un proceso lógico basado en las relaciones humanas y la comunicación corporativa.<br /><br />
+        El calamar es, junto al pulpo, los únicos animales marinos que tienen sus patas pegadas a la cabeza, siendo el calamar el único que nada a gran velocidad con impulso de su cabeza y sus patas compactadas… tal como debe ser en un equipo de trabajo.<br /><br />
+        El Squid coaching es una metodología diseñada por CFW para potencializar y maximizar los colectivos de personas en ambientes de cooperación que configuran equipos.<br /><br />
+        Dicha herramienta es creada a partir de diversas experiencias con organizaciones que a diario viven la realidad de denominar equipos a colectivos de personas que en realidad se comportan como un grupo, lo que dificulta el desarrollo de resultados óptimos de acuerdo a la expectativas organizacionales.<br /><br />
+        Es por ello que hemos trabajado arduamente en el despliegue de un camino probado con personas en el campo, haciendo, por medio de la aplicación de diversas técnicas, la configuración de equipos cohesionados con permanencia en el tiempo.<br /><br />
+        Contacta con nosotros y te mostraremos la metodología al detalle para que la apliques en tu organización.<br /><br />
+    </div>
+    <div class="row" id="pear">
+        <br /><br /><br />
+        @GUI.BigTop("PUENTE DE EQUIPOS DE ALTO RENDIMIENTO P.E.A.R.", "", "bgreen nohover", "col-xs-12", "colores lapices.png")
+        <br /><br /><br />
+        Desplegamos metodología de trabajo en equipo ágil a travez de un modelo de maximización de equipos. <br /><br />
+        El Puente es una herramienta que permite a los equipos desarrollar proyectos complejos a partir de los principios del agilismo y los desarrollos incrementales.<br /><br />
+        Como respuesta a los diversos retos que presentan los equipos en la actualidad, donde la complejidad y las disrupciones son permanentes, cambiando las normas de juego permanentemente, CFW ha desarrollado un método ágil, con herramientas que permiten a colectivos lograr un alto desempeño y mantener un nivel óptimo de adaptación en el despliegue de proyectos a las diversidades de los mercados, los actores y factores del entorno y el cliente.<br /><br />
+        P.E.A.R. es un Framework para el desarrollo de proyectos en contextos diversos, donde es el equipo el encargado de adecuarse a la complejidad a partir de un marco de referencia que se compone de roles, iteraciones y herramientas.<br /><br />
+        Contacta con nosotros y te mostraremos el método para ser aplicado en tu organización.<br /><br />
+    </div>  
+    <div class="row" id="alineacion">
+        <br /><br /><br />
+        @GUI.BigTop("ALINEACIÓN ESTRATÉGICA", "", "bgray nohover", "col-xs-12", "brujula.png")
+        <br /><br /><br />
+        Desarrollamos procesos de endo-marketing para canalizar los procesos estratégicos de la empresa en comportamientos congruentes con la estrategia corporativa.<br /><br />
+        Nuestro objetivo es lograr un equilibrio entre los objetivos, los comportamientos y los resultados para que el día a día responda a las exigencias de la estrategia por medio de estrategias de movilización del SER.<br /><br />
+        Desplegamos estrategias y planes de acción para que los diversos niveles de colaboración organizacionales se encaminen a puntos focales compartidos.<br /><br />
+        Creemos que el fundamento del éxito se encuentra en encontrar los significados que mueven las personas desde el interior, haciendo que la responsabilidad responda a la generación de conciencia.<br /><br />
+        La integración de nuestro portafolio es la garantía para el desarrollo de procesos de alineación de alto impacto en la cultura organizacional.<br /><br />
+    </div>
+    <div class="row" id="grupos">
+        <br /><br /><br />
+        @GUI.BigTop("FACILITACIÓN DE GRUPOS Y EQUIPOS", "", "bred nohover", "col-xs-12", "lapiz mano.png", "", false, "top-img")
+        <br /><br /><br />
+        Agrupamos diversas herramientas, tareas y actividades para que un grupo o equipo de personas encaminen propósitos y obtengan reuniones productivas.<br /><br />
+        Aplicamos técnicas que facilitan el trabajo y permiten mayor conciencia en el proceso colectivo en organizaciones de manera pedagógica y didáctica.<br /><br />
+        Facilitamos encuentros que apoyan equipos a maximizar sus resultados, alineados a los objetivos.<br /><br />
+        Nos concentramos en el desarrollo de inteligencia conversacional en los equipos que intervenimos, logrando interacciones productivas, enriquecedoras y que generen valor a cada miembro y a la organziación a la que pertenecen. Nuestro enfoque es la madurez cultural del colectivo y la solución cooperativa de retos.<br /><br />
+        Desarrollamos diversas técnicas de vanguardia para facilitar resultados específicos en diversos contextos de encuentro entre personas con un objetivo común.<br /><br />
+        Facilitamos diversos contextos con enfoque en sinergia, desde eventos hasta reuniones.<br /><br />
+    </div>
+    <div class="row" id="medida">
+        <br /><br /><br />
+        @GUI.BigTop("ENTRENAMIENTOS A LA MEDIDA", "", "borange nohover", "col-xs-12", "zapatos.png", "", false, "top-img")
+        <br /><br /><br />
+        Desarrollamos procesos formativos ajustados a las necesidades de nuestros clientes con la finalidad de asegurar alineación entre las expectativas y los resultados esperados.<br /><br />
+        Integramos nuestro portafolio de servicios para asegurar el cumplimiento de los objetivos planteados.<br /><br />
+        Construimos contenidos, metodologías y herramientas que respondan a las expectativas, logrando programas y productos enfocados en el aumento del desempeño y resultados con valor agregado por parte de las personas.<br /><br />
+    </div>
+    <br />
+    <br />
+    <br />
+}
+else if (ViewBag.Section == "cortos")
+{
+    <div class="row">
+        @GUI.MegaBigTop("Cursos cortos", "bpink")
+    </div>
+    <br /><br />
+    <p>
+        Contamos con cursos internos para organizaciones de 12 y 30 horas de duración, además del diseño de programas a la medida.
+        Descarga en el enlace el brochure de cursos cortos y no dudes en consultar mayor información del que más te interese para tu equipo de trabajo.
+        Pronto encontrarás en este espacio una ámplia oferta de cursos cortos 100 % virtuales, espéralo.
+    </p>
+}
+else if (ViewBag.Section == "play")
+{
+    <div class="row">
+        @GUI.MegaBigTop("Serious Play", "byellow")
+    </div>
+    <br /><br />
+    <p>
+        Desarrollamos a través de los juegos serios, procesos de innovación, estrategia, trabajo en equipo y desarrollo de competencias específicas en organizaciones, lo que permite generar niveles de conciencia a partir de la práctica constructiva y por ende el logro de resultados diferenciados.
+    </p>    <br /><br />
+    <div class="row">
+        <br /><br /><br />
+        @GUI.BigTop("SESIONES VIVENCIALES ", "", "borange nohover", "col-xs-12", "imagen 7.png")
+        <br /><br /><br />
+        Desarrollamos procesos vivenciales dentro de la organización a partir de herramientas lúdicas y didácticas que persiguen objetivos corporativos específicos. <br /><br />
+        Desplegamos procesos de aprendizaje divertido, que maximice las competencias de los empresarios de la organización.<br /><br />
+        Co-creamos estrategias ajustadas a las necesidades puntuales de nuestros clientes.<br /><br />
+        Los procesos que facilitamos se desarrollan en diversos espacios, tanto aquellos suministrados por la compañía como espacios externos a la misma.<br /><br />
+    </div>
+
+    <div class="row">
+        <br /><br /><br />
+        @GUI.BigTop("JUEGOS A LA MEDIDA", "", "bgreen nohover", "col-xs-12", "ejecutivo lego.png")
+        <br /><br /><br />
+        Estamos en la capacidad de desarrollar juegos serios (Gamificación) ajustados a las necesidades especificas de la organización.<br /><br />
+        Diseñamos ambientes innovadores de aprendizaje didáctico que facilita en las personas una experiencia educativa y creativa que agrega valor a las organizaciones.<br /><br />
+
+        Buscamos el desarrollo de entornos divertidos y amenos que permiten el descubrimiento libre de las personas ante retos complejos, y esto lo logramos a través del juego serio ajustado a los objetivos particulares de la organización.<br /><br />
+
+        Contacta con nosotros y planteanos un reto a desarrollar.<br /><br />
+    </div>
+}
+else if (ViewBag.Section == "seminarios")
+{
+    <div class="row">
+        @GUI.MegaBigTop("Seminarios, talleres y conferencias", "borange")
+    </div>
+    <br /><br />
+    <p>
+        Brindamos conferencias a empresas y grupos en diversos temas, ajustamos sus necesidades a procesos de desarrollo de fortalecimiento corto por medio de charla de alto nivel, con alto nivel pedagógico y equilibrio en el lenguaje técnico y blanco. Entre las conferencias que facilitamos  se encuentran:
+    </p>    <br /><br />
+    <div class="row">
+        @GUI.BigScrlBtn("<br/><small>Seminario - taller</small> <br/>Liderazgo relacional ", "#relacional", "byellow")
+        @GUI.BigScrlBtn("<br/><small>Seminario</small> <br/>Líder coach", "#lider", "bblue")
+        @GUI.BigScrlBtn("<br/><br/> Conferencias", "#conferencias", "bgray")
+    </div>
+    <br /><br />
+    <div id="relacional" class="row">
+        <br /><br /><br />
+        @GUI.BigTop("<small>Seminario - taller</small> <br/>Liderazgo relacional ", "", "byellow nohover", "col-xs-12", "ejecutivo.png")
+        <br /><br /><br />
+        Los modelos de gestión actuales se han enfocado en la orden y el direccionamiento unilateral como forma de movilizar a las personas a objetivos establecidos, aspecto que limita el comportamiento de compromiso hacia la labor y dejando triunfante al acatamiento como respuesta a este tipo de liderazgo.<br /><br />
+        Este Seminario - taller tendrá como eje de su diseño la autogestión en el mediano plazo y la creación de conciencia del concepto de asociatividad interna, que busca el fortalecimiento de las relaciones y flujos de información al interior de los equipos corporativos. <br /><br />
+        Con una duración mínima de 15 horas, este programa profundiza sobre el liderazgo en un contexto social de movimiento constante, que exige el dominio de competencias especificas en las diversas relaciones que implica el ejercicio de equipo y organización. <br /><br />
+        Se hace un recorrido por el SER, además de diversas relaciones presentes en el liderazgo, hasta la gestión de colectivos de personas con diversos roles dentro de un proyecto. <br /><br />
+        Contacta con nosotros y exploraremos juntos las diversas opciones dentro de este Seminario – Taller. <br /><br />
+    </div>
+    <div id="lider" class="row">
+        <br /><br /><br />
+        @GUI.BigTop("<small>Seminario</small> <br/>Líder coach ", "", "bblue nohover", "col-xs-12", "ejecutivo risa.png")
+        <br /><br /><br />
+        La base de la sociedad son las organizaciones de personas que buscan lograr objetivos comunes con diversos propósitos, ello significa que la base del desarrollo y respectivo crecimiento de la humanidad se fundamenta en colectivos de personas que trabajan en una unión de talentos y recursos que les permiten el logro de resultados superiores a la mera individualidad, aspecto en el cual se concentran los equipos.<br /><br />
+        En la actualidad los equipos representan uno de los principales retos en la gestión de cualquier tipo de proyecto, ya que implica el relacionamiento entre seres humanos diversos, con intereses y propósitos que pueden ser distintos entre sí y con estructuras personales muchas veces polarizadas, sin embargo, el hombre ha demostrado que ante nada es un ser cooperativo cuando las condiciones y su propia consciencia así lo permiten.<br /><br />
+        Este seminario de 60 horas está diseñado para personas que desean conocer, profundizar y aplicar destrezas propias del coaching puro en su rol como gerente, padre de familia, líder, ciudadano, jugador de equipo, entre otros. <br /> <br />
+    </div>
+    <div id="conferencias" class="row">
+        <br />
+        <br /><br /><br />
+        @GUI.BigTop("Conferencias ", "", "bgray nohover", "col-xs-12", "microfono.png")
+        <br /><br />
+        <div class="col-md-6 widget-container">
+            @GUI.BigTop("Competencias blandas ", "", "bpink nohover", "col-xs-12")
+            <ul>
+                <li>Gestión de Paradigmas            </li>
+                <li>Inteligencia Emocional           </li>
+                <li>Líder Coach                      </li>
+                <li>Competencias de Conversación     </li>
+                <li>Escucha activa                   </li>
+                <li>Gestión estratégica personal     </li>
+                <li>Asociatividad interna            </li>
+                <li>Trabajo en equipo                </li>
+                <li>Liderazgo                        </li>
+                <li>Comunicación Asertiva            </li>
+                <li>Negociación                      </li>
+                <li>Gestión del cambio               </li>
+                <li>Toma de decisiones               </li>
+                <li>Marketing Personal               </li>
+                <li>Creatividad e Innovación         </li>
+                <li>Equipos de alto desempeño        </li>
+                <li>Design Thinking                  </li>
+                <li>Team Building                    </li>
+                <li>Coaching Ejecutivo y de equipos  </li>
+            </ul>
+        </div>
+        <div class="col-md-6 widget-container">
+            @GUI.BigTop("Competencias duras ", "", "bgreen nohover", "col-xs-12")            
+            <ul>
+                <li>Estrategia Corporativa    </li>
+                <li>Cultura Organizacional    </li>
+                <li>Prospectiva               </li>
+                <li>Gerencia                  </li>
+                <li>Modelos de negocio        </li>
+                <li>Marketing                 </li>
+                <li>Marketing de servicios    </li>
+                <li>Investigación de Mercados </li>
+                <li>Emprendimiento            </li>
+                <li>Servucción                </li>
+                <li>Análisis de entornos      </li>
+                <li>Balanced ScoreCard   </li>
+            </ul>
+        </div>
+        
+    </div>
+
+}
+else if (ViewBag.Section == "coaching")
+{
+    <div class="row">
+        @GUI.MegaBigTop("COACHING DE ALTO NIVEL", "bblue")
+    </div>
+    <div class="row">
+       
+        @GUI.BigScrlBtn("<br/>COACHING</small> <br/>DE EQUIPOS", "#equipo", "bgreen")
+        @GUI.BigScrlBtn("<br/>COACHING<br/>DE CULTURA", "#cultura", "borange")
+        @GUI.BigScrlBtn("<br/>OUTPLACEMENT<br/>COACHING", "#out", "byellow")
+        @GUI.BigScrlBtn("<br/>COACHING<br/>EJECUTIVO", "#ejecutivo", "bblue")
+        @GUI.BigScrlBtn("<br/>COACHING<br/>DE VIDA", "#vida", "bpink")
+        @GUI.BigScrlBtn("<br/>COACHING <br/>DE TELETRABAJO ", "#teletrabajo", "borange")
+    </div>
+    <br /><br />
+    <div id="equipo" class="row">
+        <br /><br /><br />
+        @GUI.BigTop("COACHING DE EQUIPOS ", "", "bgreen nohover", "col-xs-12", "equipo.png", "", false, "mid-img")
+        <br /><br /><br /><br />
+        Desarrollamos procesos de coaching de equipos con coaches expertos, que buscan maximizar los resultados del colectivo por encima de la sumatoria de sus partes.<br /><br />
+        Desplegamos 5 niveles de coaching de equipos: <br /><br />
+        1. Ágil: Apoyo en el despliegue de proyectos que exigen alta complejidad y adaptación.<br /><br />
+        2. Fortalecimiento: Acompañamiento a equipos en la generación de conciencia colectiva con el acompañamiento de un team coach.<br /><br />
+        3. Efectividad: Despliegue de procesos que potencializan la inteligencia colectiva del equipo por medio de acompañamiento en el ecosistema cotidiano.<br /><br />
+        4. Supervisión: Desarrollamos procesos de construcción de mapa colectivo por medio de la observación de ambientes colectivos.<br /><br />
+        5. Playfull. Desplegue de procesos de conciencia colectiva por medio de juegos y lúdica.<br /><br />
+    </div>
+
+    <div id="cultura" class="row">
+        <br /><br /><br />
+        @GUI.BigTop("Coaching de cultura", "", "borange nohover", "col-xs-12", "telescopio.png")
+        <br /><br /><br />
+        Acompañamos las empresas a desplegar su cultura organizacional a partir de los principios del coaching.<br /><br />
+        Nos soportamos en el modelo propio de Diamante Cultural para la movilización de comportamientos corporativos alineados a los objetivos estratégicos de la organización.<br /><br />
+        Entendemos la diversidad cultural y nos soportamos en ella para identificar puntos de encuentro que permita la movilización colectiva hacia puntos focales de manera congruente con la filosofía.<br /><br />
+    </div>
+
+    <div id="out" class="row">
+        <br /><br /><br />
+        @GUI.BigTop("OUTPLACEMENT COACHING", "", "byellow nohover", "col-xs-12", "hombre mirando.png")
+        <br /><br /><br />
+        Acompañamos empleados en proceso de des-vinculación de la empresa con el fin de que descubra su camino.<br /><br />
+        Aplicamos técnicas avanzadas de coaching para que las personas encuentren alternativas en el proceso de transición laboral.<br /><br />
+    </div>
+
+
+    <div id="ejecutivo" class="row">
+        <br /><br /><br />
+        @GUI.BigTop("COACHING EJECUTIVO", "", "bblue nohover", "col-xs-12", "ejecutiva manos arriba.png")
+        <br /><br /><br />
+        Acompañamos Ejecutivos por medio de procesos de coaching puro, que permita maximizar el desempeño de la persona y llevarlo a desarrollar su potencial dentro del cargo y su impacto al equipo de trabajo.<br /><br />
+        Nos soportamos en las necesidades de la organización para que los ejecutivos identifiquen y despliguen acciones hacia el mejoramiento continuo y la contribución corporativa.<br /><br />
+        Somos leales a los principios del coaching en términos de confidencialidad en los procesos que desarrollamos, honrando nuestro código deontológico de ética.
+        <br /><br />
+    </div>
+
+
+    <div id="vida" class="row">
+        <br /><br /><br />
+        @GUI.BigTop("COACHING DE VIDA", "", "bpink nohover", "col-xs-12", "manos cruzadas.png")
+        <br /><br /><br />
+        Desplegamos procesos de coaching de vida, acompañando personas al logro de sus objetivos.<br /><br />
+        Estamos convencidos que el coaching de vida es una herramienta poderosa para apoyar personas en el logro de sus metas mas elevadas, por medio de la aplicación de procesos que permitan el autodescubriemiento, la conciencia y la responsabilidad para avanzar hacia ellos.<br /><br />
+        Contamos con coaches en diversas partes del mundo, apasionados por las diversas agendas que la vida nos presenta.<br /><br />
+        Contacta con nosotros e iniciaremos el camino hacia tus sueños con un coach experto.<br /><br />
+    </div>
+
+
+
+    <div id="teletrabajo" class="row">
+        <br /><br /><br />
+        @GUI.BigTop("COACHING DE TELETRABAJO", "", "borange nohover", "col-xs-12", "escritor.png")
+        <br /><br /><br />
+        Acompañamos personas que trabajan en modelo de home office e free lance, apoyando la maximización de sus talentos y la solución de los retos propios de las nuevas formas de trabajo.<br /><br />
+        Desplegamos moldelos de coach a distancia que se adaptan a la realidad de los clientes, y asegurando así un enlace entre las expectativas de la organización y la persona.<br /><br />
+    </div>
+}

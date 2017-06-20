@@ -1,0 +1,647 @@
+﻿
+@{
+    ViewBag.Title = "Empresas";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    @GUI.MegaBigTop("LO QUE HACEMOS CON ORGANIZACIONES", "bcuruba nohover")
+</div>
+
+<div class="row" id="lev-0">
+    @GUI.MedBtn4JS("FORMACIÓN INTEGRAL DEL SER", "#ser", "#lev-1", "bblue", "", "col-md-6")
+    @GUI.MedBtn4JS("SERIOUS PLAY", "#seriousplay", "#lev-1", "byellow", "", "col-md-6")
+    @GUI.MedBtn4JS("TEAM DEVELOPMENT", "#teamdev", "#lev-1", "bpink", "", "col-md-6")
+    @GUI.MedBtn4JS("COACHING DE ALTO NIVEL", "#coaching", "#lev-1", "borange", "", "col-md-6")
+</div>
+
+<div class="row" id="lev-1">
+    <div id="ser" style="display:none;">
+        @GUI.MedBtn("FORMACIÓN INTEGRAL DEL SER", "", "bblue nohover", "", "col-xs-12")
+        @GUI.BigScrlBtn("SEMINARIOS", "#seminarios", "#lev-11", "bblue-dark", "col-md-3")
+        @GUI.BigScrlBtn("SESIONES <br/> VIVENCIALES", "#vivenciales", "#lev-2", "bblue-med", "col-md-3")
+        @GUI.BigScrlBtn("CONFERENCIAS", "#conferencias", "#lev-2", "bblue-med", "col-md-3")
+        @GUI.BigScrlBtn("CURSOS CORTOS", "#cortos", "#lev-2", "bblue", "col-md-3")
+    </div>
+    <div id="seriousplay" style="display:none;">
+        <br /><br /><br />
+        @GUI.BigTop("SERIOUS PLAY", "", "byellow nohover", "col-xs-12", "ejecutivo lego.png")
+        <br /><br /><br />
+        <p align="justify">
+            Desarrollamos a través de los juegos serios, procesos de innovación, estrategia, trabajo en equipo y desarrollo de competencias específicas en
+            organizaciones, lo que permite generar niveles de conciencia a partir de la práctica constructiva y por ende el logro de resultados diferenciados.
+        </p>
+        <p align="justify">
+            Desplegamos procesos lúdicos y didcáticos (Gamificación) ajustados a las necesidades especificas de la organización.
+        </p>
+        <p align="justify">
+            Diseñamos ambientes innovadores de aprendizaje didáctico que facilita en las personas una experiencia educativa y creativa que agrega valor a las
+            organizaciones.
+        </p>
+        <p align="justify">
+            Buscamos el desarrollo de entornos divertidos y amenos que permiten el descubrimiento libre de las personas ante retos complejos, y esto lo logramos a
+            través de Serious Play ajustado a los objetivos particulares.
+        </p>
+        <p align="justify">
+            Contacta con nosotros y planteanos un reto a desarrollar.
+        </p><br /><br />
+    </div>
+    <div id="teamdev" style="display:none;">
+        @GUI.MedBtn("TEAM DEVELOPMENT", "", "bpink nohover", "", "col-xs-12")
+        @GUI.BigScrlBtn("POTENCIALIZACIÓN DE LIDERAZGO", "#liderazgo", "#lev-2", "bcuruba-dark", "col-md-3")
+        @GUI.BigScrlBtn("ENDOMARKETING", "#endomarketing", "#lev-2", "bcuruba-med", "col-md-3")
+        @GUI.BigScrlBtn("FACILITACIÓN DE EQUIPOS", "#equipos", "#lev-2", "bpink", "col-md-3")
+    </div>
+    <div id="coaching" style="display:none;">
+        @GUI.MedBtn("COACHING DE ALTO NIVEL", "", "borange nohover", "", "col-xs-12")
+        @GUI.BigScrlBtn("COACHING DE EQUIPOS", "#equipos", "#lev-2", "borange-dark", "col-md-3")
+        @GUI.BigScrlBtn("COACHING EJECUTIVO", "#cejecutivo", "#lev-2", "borange-med", "col-md-3")
+        @GUI.BigScrlBtn("COACHING DE CULTURA", "#ccultura", "#lev-2", "borange-med", "col-md-3")
+        @GUI.BigScrlBtn("COACHING DE TELETRABAJO", "#teletrabajo", "#lev-2", "borange", "col-md-3")
+        @GUI.BigScrlBtn("OUTPLACEMENT COACHING", "#cout", "#lev-2", "borange-light", "col-md-3")
+        
+    </div>
+</div>
+<div class="row" id="lev-11">
+    <div id="seminarios" style="display:none;">
+        @GUI.MedBtn("SEMINARIOS", "", "borange nohover", "", "col-xs-12")
+        @GUI.BigScrlBtn("LIDERAZGO RELACIONAL", "#relacional", "#lev-2", "borange-dark", "col-md-3")
+        @GUI.BigScrlBtn("LIDERES COACH - INTELIGENCIA CONVERSACIONAL", "#conversacional", "#lev-2", "borange-med", "col-md-3")
+        @GUI.BigScrlBtn("MOVILIZADORES DEL CAMBIO", "#movilizadores", "#lev-2", "borange-med", "col-md-3")
+        @GUI.BigScrlBtn("MICRO-INNOVADORES LAS PEQUEÑAS GRANDES COSAS", "#innovadores", "#lev-2", "borange", "col-md-3")
+        @GUI.BigScrlBtn("EQUIPOS ALQUÍMICOS", "#alquimicos", "#lev-2", "borange-light", "col-md-3")
+    </div>
+</div>
+
+<br /><br />
+<br />
+
+<div id="lev-2">
+    <div class="row" id="relacional" style="display:none;">
+        <br /><br /><br />
+        @GUI.BigTop("SEMINARIO LIDERAZGO RELACIONAL", "", "byellow nohover", "col-xs-12", "ejecutivo.png")
+        <br /><br /><br />
+        <p align="justify">
+            La base de la sociedad y los negocios son las relaciones entre personas, que son las que movilizan proyectos, innovaciones y desarrollos.
+        </p>
+        <p align="justify">
+            Este Seminario tendrá como eje de su diseño la creación de conciencia en el concepto de asociatividad interna, que busca el fortalecimiento de las
+            relaciones y flujos de información al interior de los equipos corporativos.
+        </p>
+        <p align="justify">
+            Con una duración mínima de 15 horas y máxima de 32 horas, este programa profundiza sobre el liderazgo en un contexto social de movimiento constante, que
+            exige el dominio de competencias especificas en las diversas relaciones que implica el ejercicio de equipo y organización.
+        </p>
+        <p align="justify">
+            Se hace un recorrido por el SER, además de diversas competencias presentes en el liderazgo, hasta la gestión de colectivos de personas con diversos roles
+            dentro de un proyecto.
+        </p>
+        <p align="justify">
+            La metodología utilizada es altamente experiencial, facilitando los procesos de aprendizaje individual y colectivo.
+        </p>
+        <p align="justify">
+            Contacta con nosotros y exploraremos juntos las diversas opciones dentro de este Seminario.
+        </p><br /><br />
+    </div>
+    <div class="row" id="conversacional" style="display:none;">
+        <br /><br /><br />
+        @GUI.BigTop("SEMINARIO LÍDERES COACH – INTELIGENCIA CONVERSACIONAL", "", "bblue nohover", "col-xs-12", "ejecutiva.png")
+        <br /><br /><br />
+        <p align="justify">
+            Los modelos de gestión actuales se han enfocado en la orden y el direccionamiento unilateral como forma de movilizar a las personas a objetivos
+            establecidos, aspecto que limita el comportamiento de compromiso hacia la labor y dejando triunfante al acatamiento como respuesta a este tipo de
+            liderazgo.
+        </p>
+        <p align="justify">
+            El presente seminario contiene las destrezas y principios del coaching, con la finalidad de ser aplicados en diversos contextos personales y laborales para
+            maximizar los niveles de compromiso y aprendizaje de las personas con las que se tiene relación hacia un objetivo.
+        </p>
+        <p align="justify">
+            Con este seminario, el participante podrá iniciar la senda de aplicación de todas las herramientas y destrezas del coaching en conversaciones cotidianas,
+            incrementando así su liderazgo y efectividad en diversas interacciones humanas.
+        </p>
+        <p align="justify">
+            Con una duración mínima de 15 horas y máximo de 32 horas, este programa está diseñado para personas que desean conocer, profundizar y aplicar destrezas
+            propias del coaching puro en su rol como gerente y lider de equipo, manteniendo conversaciones poderosas hacia el logro de resultados superiores.
+        </p>
+        <p align="justify">
+            Se hace un recorrido por la inteligencia conversacional y las principales herramientas del coaching puro, además de diversas competencias específicas de
+            liderazgo e inteligencia emocional.
+        </p>
+        <p align="justify">
+            La metodología utilizada es altamente experiencial, facilitando los procesos de aprendizaje individual y colectivo.
+        </p>
+        <p align="justify">
+            Contacta con nosotros y exploraremos juntos las diversas opciones dentro de este Seminario.
+        </p><br /><br />
+    </div>
+    <div class="row" id="movilizadores" style="display:none;">
+        <br /><br /><br />
+        @GUI.BigTop("SEMINARIO MOVILIZADORES DEL CAMBIO", "", "bgreen nohover", "col-xs-12", "avion.png")
+        <br /><br /><br />
+        <p>
+            Todo está cambiando permanentemente, y aún así el ser humano desea permanecer estable, hecho que no tiene mucho sentido en los procesos evolutivos de las
+            organizaciones.
+        </p>
+        <p>
+            El cambio genera resistencia, en parte por la zona cómoda que se crea el ser humano y en parte por los paradigmas que se convierten en creencias y hábitos
+            que muchas veces son limitantes del aprendizaje y desarrollo.
+        </p>
+        <p>
+            Una organización no podrá cambiar si no ha movilizado sus paradigmas, ya que no encontrará una razón de peso para movilizarse, es por ello que los líderes
+            necesitan girar sus creencias para que sus comportamientos giren, de lo contrario no pasará nada.
+        </p>
+        <p align="justify">
+            El presente seminario contiene los elementos más relevantes para formar facilitadores de cambio en la organización, de acuerdo a la estrategia y cultura
+            corporativa deseada, con la finalidad de movilizar procesos hacia el logro de comportamientos colectivos orientados a los objetivos organizacionales.
+        </p>
+        <p align="justify">
+            Con este seminario, el participante tendrá todas las herramientas para ser un líder del cambio en la organización.
+        </p>
+        <p align="justify">
+            Con una duración mínima de 15 horas y máximo de 32 horas, este programa está diseñado para personas que desean movilizar paradigmas y ser gestores de zonas
+            de confort a zonas hacia el aprendizaje en equipos de trabajo.
+        </p>
+        <p align="justify">
+            Se hace un recorrido por la facilitación y gestión del cambio, tanto desde las competencias personales hasta los procesos y técnicas para la movilización
+            organizacional.
+        </p>
+        <p align="justify">
+            La metodología utilizada es altamente experiencial, facilitando los procesos de aprendizaje individual y colectivo.
+        </p>
+        <p align="justify">
+            Contacta con nosotros y exploraremos juntos las diversas opciones dentro de este Seminario.
+        </p><br /><br />
+    </div>
+    <div class="row" id="innovadores" style="display:none;">
+        <br /><br /><br />
+        @GUI.BigTop("SEMINARIO MICROINNOVADORES – LAS PEQUEÑAS GRANDES COSAS", "", "bred nohover", "col-xs-12", "FIGURA 3.png")
+        <br /><br /><br />
+        <p align="justify">
+            La innovación es uno de los principales conceptos corporativos utilizados en la actualidad, no solamente por su importancia en la competitividad y
+            permanencia, sino por la adaptabilidad que los mercados exigen. Sin embargo, esta claro que hablar de innovación en la práctica no es tan simple, sobre
+            todo por los esfuerzos en los procesos culturales que ello implica, ya que si se continúa en la senda de los exitos obtenidos y los comportamientos
+            relacionados, los resultados innovadores serán los mismos que siempre se han obtenidos.
+        </p>
+        <p align="justify">
+            Creemos que la innovación parte de cada persona relacionada con la razón de ser de la organización, y que se fundamenta en hacer conciencia de pequeñas
+            acciones prácticas que permitan aprendizaje en la cotidianidad de las acciones emprendidas.
+        </p>
+        <p align="justify">
+            El presente seminario aborda la innovación desde las micro-innovaciones, que lleva a la persona dentro de su rutina a hacer cambios que le permitan
+            aprendizaje y mayor efectividad en su trabajo, de cara a crear una cultura de la innovación, en otras palabras, es dar relevancia a las pequeñas – grandes
+            cosas que marcan la diferencia a la hora de innovar.
+        </p>
+        <p align="justify">
+            Con este seminario, el participante tendrá todas las herramientas para ser consciente de como pequeñas obras pueden generar impactos gigantes en la
+            organización y sus resultados en la misma.
+        </p>
+        <p align="justify">
+            Con una duración mínima de 15 horas y máximo de 32 horas, este programa está diseñado para personas que desean abordar la innovación desde un alcance
+            cercano y real.
+        </p>
+        <p align="justify">
+            Se hace un recorrido por la innovación y como a partir desde cada persona, cargo, acción, proceso, procedimiento, idea se pueden lograr resultados
+            tangibles, soportados en el design thinking y el lean start up.
+        </p>
+        <p align="justify">
+            La metodología utilizada es altamente experiencial, facilitando los procesos de aprendizaje individual y colectivo.
+        </p>
+        <p align="justify">
+            Contacta con nosotros y exploraremos juntos las diversas opciones dentro de este Seminario.
+        </p><br /><br />
+    </div>
+    <div class="row" id="alquimicos" style="display:none;">
+        <br /><br /><br />
+        @GUI.BigTop("SEMINARIO EQUIPOS ALQUÍMICOS", "", "bpink nohover", "col-xs-12", "colores lapices.png")
+        <br /><br /><br />
+        <p align="justify">
+            La base de la sociedad son las organizaciones de personas que buscan lograr objetivos comunes con diversos propósitos, ello significa que la base del
+            desarrollo y respectivo crecimiento de la humanidad se fundamenta en colectivos de personas que trabajan en una unión de talentos y recursos que les
+            permiten el logro de resultados superiores a la mera individualidad, aspecto en el cual se concentran los equipos.
+        </p>
+        <p align="justify">
+            En la actualidad los equipos representan uno de los principales retos en la gestión de cualquier tipo de proyecto, ya que implica el relacionamiento entre
+            seres humanos diversos, con intereses y propósitos que pueden ser distintos entre sí y con estructuras personales muchas veces polarizadas, sin embargo, el
+            hombre ha demostrado que ante nada es un ser cooperativo cuando las condiciones y su propia consciencia así lo permiten.
+        </p>
+        <p align="justify">
+            Con una duración mínima de 15 horas y máxima de 32 horas, este seminario está diseñado para equipos corporativos que desean aplicar herramientas que les
+            permitan madurar culturalmente y maximizar su rendimiento colectivo.
+        </p>
+        <p align="justify">
+            Se hace un recorrido por los procesos de desarrollo de equipos, desde el planteamiento del propósito común hasta los resultados obtenidos, además de las
+            relaciones entre los miembros y la gestión del liderazgo.
+        </p>
+        <p align="justify">
+            La metodología utilizada es altamente experiencial, facilitando los procesos de aprendizaje individual y colectivo.
+        </p>
+        <p align="justify">
+            Contacta con nosotros y exploraremos juntos las diversas opciones dentro de este Seminario.
+        </p><br /><br />
+    </div>
+    <div class="row" id="vivenciales" style="display:none;">
+        <br /><br /><br />
+        @GUI.BigTop("SESIONES VIVENCIALES", "", "borange nohover", "col-xs-12", "niño.png")
+        <br /><br /><br />
+        <p align="justify">
+            Desarrollamos procesos vivenciales dentro de la organización a partir de herramientas lúdicas y didácticas que persiguen objetivos corporativos específicos
+            de corta duración.
+        </p>
+        <p align="justify">
+            Desplegamos procesos de aprendizaje divertido, que maximice las competencias de los empleados de la organización en tiempos mínimos de 3 horas y máximo 8
+            horas.
+        </p>
+        <p align="justify">
+            Co-creamos estrategias ajustadas a las necesidades puntuales de nuestros clientes.
+        </p>
+        <p align="justify">
+            Los procesos que facilitamos se desarrollan en diversos espacios, tanto aquellos suministrados por la compañía como espacios externos a la misma (In Door –
+            Out Door Training)
+        </p><br /><br />
+    </div>
+    <div class="row" id="conferencias" style="display:none;">
+        <br /><br /><br />
+        @GUI.BigTop("CONFERENCIAS", "", "bgray nohover", "col-xs-12", "microfono.png")
+        <br /><br /><br />
+        <p align="justify">
+            Brindamos conferencias a empresas en diversos temas, ajustamos sus necesidades a procesos de desarrollo de fortalecimiento corto por medio de charlas de
+            alto nivel, con modelos pedagógicos y didácticos equilibrados con un lenguaje simple y cercano a los públicos.
+        </p>
+        <p align="justify">
+            Entre las conferencias que facilitamos se encuentran:
+        </p>
+        <ul>
+            <li>
+                <p align="justify">
+                    Gestión de Paradigmas
+                </p>
+            </li>
+            <li>
+                <p align="justify">
+                    Inteligencia Emocional
+                </p>
+            </li>
+            <li>
+                <p align="justify">
+                    Líder Coach
+                </p>
+            </li>
+            <li>
+                <p align="justify">
+                    Competencias de Conversación
+                </p>
+            </li>
+            <li>
+                <p align="justify">
+                    Escucha activa
+                </p>
+            </li>
+            <li>
+                <p align="justify">
+                    Gestión estratégica personal
+                </p>
+            </li>
+            <li>
+                <p align="justify">
+                    Asociatividad interna
+                </p>
+            </li>
+            <li>
+                <p align="justify">
+                    Trabajo en equipo
+                </p>
+            </li>
+            <li>
+                <p align="justify">
+                    Liderazgo
+                </p>
+            </li>
+            <li>
+                <p align="justify">
+                    Comunicación Asertiva
+                </p>
+            </li>
+            <li>
+                <p align="justify">
+                    Negociación
+                </p>
+            </li>
+            <li>
+                <p align="justify">
+                    Gestión del cambio
+                </p>
+            </li>
+            <li>
+                <p align="justify">
+                    Toma de decisiones
+                </p>
+            </li>
+            <li>
+                <p align="justify">
+                    Marketing Personal
+                </p>
+            </li>
+            <li>
+                <p align="justify">
+                    Creatividad e Innovación
+                </p>
+            </li>
+            <li>
+                <p align="justify">
+                    Equipos de alto desempeño
+                </p>
+            </li>
+            <li>
+                <p align="justify">
+                    Design Thinking
+                </p>
+            </li>
+            <li>
+                <p align="justify">
+                    Team Building
+                </p>
+            </li>
+            <li>
+                <p align="justify">
+                    Coaching Ejecutivo y de equipos
+                </p>
+            </li>
+        </ul><br /><br />
+    </div>
+    <div class="row" id="cortos" style="display:none;">
+        <br /><br /><br />
+        @GUI.BigTop("CURSOS CORTOS", "", "bblue nohover", "col-xs-12", "lapiz mano.png", "", false, "top-img")
+        <br /><br /><br />
+        <p align="justify">
+            Contamos con cursos internos para organizaciones de hasta 12 horas de duración, además del diseño de programas a la medida de las necesidades.
+        </p>
+        <p align="justify">
+            Dentro de nuestros cursos mas populares se encuentran:
+        </p>
+        <ul>
+            <li>
+                <p align="justify">
+                    Gestión de las prioridades en el tiempo
+                </p>
+            </li>
+            <li>
+                <p align="justify">
+                    Marca personal
+                </p>
+            </li>
+            <li>
+                <p align="justify">
+                    Orientación al logro
+                </p>
+            </li>
+            <li>
+                <p align="justify">
+                    Inteligencia Emocional
+                </p>
+            </li>
+            <li>
+                <p align="justify">
+                    Gerencia del compromiso
+                </p>
+            </li>
+            <li>
+                <p align="justify">
+                    Presentaciones efectivas
+                </p>
+            </li>
+            <li>
+                <p align="justify">
+                    Comunicación empática
+                </p>
+            </li>
+            <li>
+                <p align="justify">
+                    El arte de hablar en público
+                </p>
+            </li>
+            <li>
+                <p align="justify">
+                    Lider Coach
+                </p>
+            </li>
+            <li>
+                <p align="justify">
+                    Gestión de equipos
+                </p>
+            </li>
+            <li>
+                <p align="justify">
+                    Proyecto estratégico personal
+                </p>
+            </li>
+        </ul>
+        <p align="justify">
+            No dudes en consultar mayor información del curso que más te interese para tu equipo de trabajo.
+        </p>
+        <p align="justify">
+            Pronto encontrarás en este espacio una ámplia oferta de cursos cortos 100% virtuales, espéralos.
+        </p><br /><br />
+    </div>    
+    <div class="row" id="team" style="display:none;">
+        <br /><br /><br />
+        @GUI.BigTop("TEAM DEVELOPMENT", "", "byellow nohover", "col-xs-12", "imagen 6.png")
+        <br /><br /><br />
+        <p align="justify">
+            Somos expertos en el desarrollo de equipos organizacionales, a través de metodologías que permiten canalizar esfuerzos colectivos a resultados específicos en el enfoque sistémico. 
+        </p><br /><br />
+    </div>
+    <div class="row" id="liderazgo" style="display:none;">
+        <br /><br /><br />
+        @GUI.BigTop("POTENCIALIZACIÓN DEL LIDERAZGO", "", "bred nohover", "col-xs-12", "guepardo.png")
+        <br /><br /><br />
+        <p align="justify">
+            Un líder es aquel que sabe movilizar emociones, que a partir de ambientes de confianza movilizan sus equipos al logro de resultados superiores.
+        </p>
+        <p>
+            Desarrollamos procesos de potencilización de liderazgo individual y colectivo en la organización, alineados a la cultura y los objetivos estratégicos
+            planteados, aplicando diversos métodos que permitan a los lideres maximizar sus conversaciones e influencia positiva en las personas.
+        </p>
+        <p>
+            La potencialización del liderazgo parte de la premisa que cada persona posee competencias innatas de liderazgo que pueden ser maximizadas por medio de la
+            generación de conciencia en sus conversaciones e interacciones con otros.
+        </p>
+        <p align="justify">
+            Desarrollamos un modelo denominado “Yo líder”, que busca a traves del SER permitir escenarios para que SEAMOS.
+        </p><br /><br />
+    </div>
+    <div class="row" id="facilitacion" style="display:none;">
+        <br /><br /><br />
+        @GUI.BigTop("FACILITACIÓN DE EQUIPOS", "", "bblue nohover", "col-xs-12", "brujula.png")
+        <br /><br /><br />
+        <p align="justify">
+            Agrupamos diversas herramientas, tareas y actividades para que un grupo o equipo de personas encaminen propósitos y obtengan reuniones productivas.
+        </p>
+        <p align="justify">
+            Aplicamos técnicas que facilitan el trabajo y permiten mayor conciencia en el proceso colectivo en organizaciones de manera pedagógica y didáctica.
+        </p>
+        <p align="justify">
+            Facilitamos encuentros que apoyan equipos a maximizar sus resultados, alineados a los objetivos.
+        </p>
+        <p align="justify">
+            Nos concentramos en el desarrollo de inteligencia conversacional en los equipos que intervenimos, logrando interacciones productivas, enriquecedoras y que
+            generen valor a cada miembro y a la organziación a la que pertenecen. Nuestro enfoque es la madurez cultural del colectivo y la solución cooperativa de
+            retos.
+        </p>
+        <p align="justify">
+            Desarrollamos diversas técnicas de vanguardia para facilitar resultados específicos en diversos contextos de encuentro entre personas con un objetivos
+            común.
+        </p>
+        <p align="justify">
+            Facilitamos diversos contextos con enfoque en sinergia, desde eventos hasta reuniones.
+        </p><br /><br />
+    </div>
+    <div class="row" id="endomarketing" style="display:none;">
+        <br /><br /><br />
+        @GUI.BigTop("ENDOMARKETING", "", "byellow nohover", "col-xs-12", "zapatos.png", "", false, "top-img")
+        <br /><br /><br />
+        <p align="justify">
+            Desarrollamos procesos de endo-marketing para canalizar los procesos estratégicos de la empresa en comportamientos congruentes con la estrategia
+            corporativa.
+        </p>
+        <p align="justify">
+            Nuestro objetivo es lograr un equilibrio entre los objetivos, los comportamientos y los resultados para que el día a día responda a las exigencias de la
+            estrategia por medio de la movilización del SER.
+        </p>
+        <p align="justify">
+            Desplegamos estrategias y planes de acción de endo-marketing para que los diversos niveles de colaboración organizacionales se encaminen a puntos focales
+            compartidos.
+        </p>
+        <p align="justify">
+            Creemos que el fundamento del éxito se encuentra en encontrar los significados que mueven las personas desde el interior, haciendo que la responsabilidad
+            responsa a la generación de conciencia.
+        </p>
+        <p align="justify">
+            Acompañamos la proyección y ejecución de procesos de cambio y trancisión a partir de modelos propios que facilitan a las personas la generación de
+            conciencia emocional colectiva, haciendo que la zona conforme se movilice a la luz de los objetivos y estrategia corporativa.
+        </p>
+        <p align="justify">
+            Integramos y entendemos el cambio desde las emociones que se generan en cada una de las etapas que vive una persona u organización en procesos de
+            movilización de su zona de confort.
+        </p>
+        <p align="justify">
+            Diseñamos planes de gestión al cambio, que apoye a los líderes a generar transiciones de manera planificada.
+        </p><br /><br />
+    </div>
+    <div class="row" id="equipos" style="display:none;">
+        <br /><br /><br />
+        @GUI.BigTop("COACHING DE EQUIPOS", "", "bcuruba nohover", "col-xs-12", "equipo.png")
+        <br /><br /><br />
+        <p align="justify">
+            Desarrollamos procesos de coaching de equipos con coaches expertos, que buscan maximizar los resultados del colectivo por encima de la sumatoria de
+            sus partes.
+        </p>
+        <p align="justify">
+            Desplegamos 5 niveles de coaching de equipos:
+        </p>
+        <ol>
+            <li>
+                <p align="justify">
+                    Fortalecimiento: Acompañamiento a equipos en la generación de conciencia colectiva con el acompañamiento de un team coach.
+                </p>
+            </li>
+            <li>
+                <p align="justify">
+                    Efectividad: Despliegue de procesos que potencializan la inteligencia colectiva del equipo por medio de acompañamiento en el ecosistema
+                    cotidiano.
+                </p>
+            </li>
+            <li>
+                <p align="justify">
+                    Supervisión: Desarrollamos procesos de construcción de mapa colectivo por medio de la observación de ambientes colectivos.
+                </p>
+            </li>
+            <li>
+                <p align="justify">
+                    Playfull. Desplegue de procesos de conciencia colectiva por medio de juegos y lúdica.
+                </p>
+            </li>
+            <li>
+                <p align="justify">
+                    Ágil: Apoyo en el despliegue de proyectos que exigen alta complejidad y adaptación.
+                </p>
+            </li>
+        </ol><br /><br />
+    </div>
+    <div class="row" id="ccultura" style="display:none;">
+        <br /><br /><br />
+        @GUI.BigTop("COACHING DE CULTURA", "", "borange nohover", "col-xs-12", "telescopio.png")
+        <br /><br /><br />
+        <p align="justify">
+            Acompañamos las empresas a desplegar su cultura organizacional a partir de los principios del coaching.
+        </p>
+        <p align="justify">
+            Nos soportamos en el modelo propio de Diamante Cultural para la movilización de comportamientos corporativos alineados a los objetivos estratégicos de la
+            organización.
+        </p>
+        <p align="justify">
+            Entendemos la diversidad cultural y nos soportamos en ella para identificar puntos de encuentro que permita la movilización colectiva hacia puntos focales
+            de manera congruente con la filosofía.
+        </p><br /><br />
+    </div>
+    <div class="row" id="cout" style="display:none;">
+        <br /><br /><br />
+        @GUI.BigTop("OUTPLACEMENT COACHING", "", "byellow nohover", "col-xs-12", "imagen 6.png")
+        <br /><br /><br />
+        <p align="justify">
+            Acompañamos empleados en proceso de des-vinculación de la empresa con el fin de que descubra su camino.
+        </p>
+        <p align="justify">
+            Aplicamos técnicas avanzadas de coaching para que las personas encuentren alternativas en el proceso de transición laboral.
+        </p><br /><br />
+    </div>
+    <div class="row" id="cejecutivo" style="display:none;">
+        <br /><br /><br />
+        @GUI.BigTop("COACHING EJECUTIVO", "", "bgreen nohover", "col-xs-12", "ejecutiva manos arriba.png")
+        <br /><br /><br />
+        <p align="justify">
+            Acompañamos Ejecutivos por medio de procesos de coaching puro, que permita maximizar el desempeño de la persona y llevarlo a desarrollar su potencial
+            dentro del cargo y su impacto al equipo de trabajo.
+        </p>
+        <p align="justify">
+            Nos soportamos en las necesidades de la organización para que los ejecutivos identifiquen y despliguen acciones hacia el mejoramiento continuo y la
+            contribución corporativa.
+        </p>
+        <p align="justify">
+            Somos leales a los principios del coaching en términos de confidencialidad en los procesos que desarrollamos, honrando nuestro código deontológico de
+            ética.
+        </p><br /><br />
+    </div>
+    <div class="row" id="cvida" style="display:none;">
+        <br /><br /><br />
+        @GUI.BigTop("COACHING DE VIDA", "", "bred nohover", "col-xs-12", "manos cruzadas.png")
+        <br /><br /><br />
+        <p align="justify">
+            Desplegamos procesos de coaching de vida, acompañando personas al logro de sus objetivos.
+        </p>
+        <p align="justify">
+            Estamos convencidos que el coaching de vida es una herramienta poderosa para apoyar personas en el logro de sus metas mas elevadas, por medio de la
+            aplicación de procesos que permitan el autodescubriemiento, la conciencia y la responsabilidad para avanzar hacia ellos.
+        </p>
+        <p align="justify">
+            Contamos con coaches en diversas partes del mundo, apasionados por las diversas agendas que la vida nos presenta.
+        </p>
+        <p align="justify">
+            Contacta con nosotros e iniciaremos el camino hacia tus sueños con un coach experto.
+        </p>
+        <br /><br />
+    </div>
+    <div class="row" id="teletrabajo" style="display:none;">
+        <br /><br /><br />
+        @GUI.BigTop("COACHING DE TELETRABAJO", "", "bpink nohover", "col-xs-12", "escritor.png")
+        <br /><br /><br />
+        <p align="justify">
+            Acompañamos personas que trabajan en modelo de home office e free lance, apoyando la maximización de sus talentos y la solución de los retos propios de las
+            nuevas formas de trabajo.
+        </p>
+        <p align="justify">
+            Desplegamos moldelos de coach a distancia que se adaptan a la realidad de los clientes, y asegurando así un enlace entre las expectativas de la
+            organización y la persona.
+        </p><br /><br />
+    </div>    
+</div>

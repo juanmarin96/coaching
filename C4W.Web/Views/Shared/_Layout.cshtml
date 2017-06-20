@@ -1,0 +1,222 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" href="@Url.Content("~/favicon.ico")" type="image/x-icon" />
+    <link rel="shortcut icon" href="@Url.Content("~/favicon.ico")" type="image/x-icon" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- child of the body tag -->
+    <span id="top-link-block" class="hidden">
+        <a href="#top" class="btn btn-primary" onclick="$('html,body').animate({scrollTop:0},'slow');return false;">
+            <i class="glyphicon glyphicon-chevron-up"></i>
+        </a>
+    </span><!-- /top-link-block -->
+    <div class="navbar navbar-inverse">
+        <div class="container">             
+            <div class="navbar-header">                
+                <a href="~/Home/" class="navbar-brand">
+                    <img class="img-responsive" id="logo-top" src="~/Content/Images/logo 2 arriba.png" />
+                </a>
+            </div>
+            <div class="social hidden-xs">
+                <a href="https://www.facebook.com/coachingforwellness/?fref=ts" target="_blank"><i class="fa fa-facebook"></i></a>
+                <a href="https://twitter.com/cfwlatam" target="_blank"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.instagram.com/coachingforwellness/" target="_blank"><i class="fa fa-instagram"></i></a>
+            </div>
+            <button type="button" class="navbar-toggle bblue toggle-menu menu-left push-body">
+                MENU <i class="fa fa-bars"></i>
+            </button>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li id="lnk-home" class="bgray">@Html.ActionLink("HOME", "Index", "Home")</li>
+                    <li class="bblue">@Html.ActionLink("LO QUE SOMOS", "About", "Home")</li>
+                    <li class="borange">@Html.ActionLink("CERTIFICACIONES", "Personas", "Home")</li>
+                    <li class="bgreen" style="display:none">@Html.ActionLink("LO QUE PENSAMOS", "Pensamos", "Home")</li>
+                    <li class="byellow">@Html.ActionLink("CONTÁCTANOS", "Contact", "Home")</li>                                      
+                </ul>                
+            </div>
+            <div id="hacemos-menu">
+                <div class="row">
+                    <div class="col-sm-6 " id="personas-btn">
+                        <a class="bpink" href="/Home/Personas">PERSONAS</a>
+                    </div>
+                    <div class="col-sm-6" id="empresas-btn">
+                        <a class="bcuruba" href="/Home/Empresas">ORGANIZACIONES</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Left menu element -->
+    <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left">
+        <br /><br />
+        <a class="bgray" href="~/Home">HOME</a>
+        <a class="bblue" href="~/Home/About">LO QUE SOMOS</a>
+        <a class="borange" href="~/Home/Personas">CERTIFICACIONES</a>
+        <a class="bgreen" href="~/Home/Pensamos" style="display:none">LO QUE PENSAMOS</a>
+        <a class="byellow" href="~/Home/Contact">CONTACTANOS</a>
+        <a class="blight toggle-menu menu-left push-body"><small><span class="dark glyphicon glyphicon-remove">&nbsp;</span> CERRAR</small></a>
+        <a class="" href="https://www.facebook.com/coachingforwellness/?fref=ts" target="_blank"><i class="fa fa-facebook"></i></a>
+        <a class="" href="https://twitter.com/cfwlatam" target="_blank">
+            <i class="fa fa-twitter"></i> </a>
+        <a class="" href="https://www.instagram.com/coachingforwellness/" target="_blank"> 
+            <i class="fa fa-instagram"></i></a>
+    </nav>
+    <div class="container body-content">
+        @Html.Partial("_LoginPartial")
+        @RenderBody()
+        <br />
+        <div class="row">
+            <div class="col-sm-2 hidden-xs">
+                &nbsp;
+            </div>
+            <div class="col-sm-10 no-margin">
+                <!-- GUI.Btn("Descarga tu libro de<br/><span class='default-txt'>Madalas</span><br/>Para colorear", "~/Content/brochure-c4w.pdf", "bcuruba", "", "col-sm-4 col-xs-12", "id=mandala")--> 
+                <div class="col-sm-1 hidden-xs">
+                    &nbsp;
+                </div>
+                @GUI.Btn("<span class='hidden-xs hidden-sm'>Agenda Internacional</span><span class='visible-xs visible-sm'>Agenda</span>", "~/Home/Agenda", "bgreen", "icono agenda-sm.png", "col-sm-3  col-xs-12")               
+                @GUI.Btn("<span class='hidden-xs hidden-sm'>Contáctanos</span><span class='visible-xs visible-sm'>Contacto</span>", "~/Home/Contact", "byellow", "icono contacto pequeño.png", "col-sm-2  col-xs-4")
+                <!--
+                    @GUI.Btn("Brochure", "~/Content/brochure-c4w.pdf", "bgreen", "icono descarga.png", "col-sm-2 col-xs-4", "", true)
+                -->
+                @GUI.Btn("<span class='hidden-xs hidden-sm hidden-md'>Pagos en línea</span><span class='visible-xs visible-sm visible-md'>Pagos</span>", "~/Home/Pagos","bgray", "icono pago en linea.png", "col-sm-2 col-xs-4")
+                @GUI.Btn("<span class='hidden-xs hidden-sm hidden-md'>Campus virtual</span><span class='visible-xs visible-sm visible-md'>Campus</span>", "http://c4w.co/login/index.php", "borange", "icono campus.png", "col-sm-2 col-xs-4", "", true)
+            </div>
+        </div>
+        <br /><br /><br />
+        <footer>
+            <center>
+                <img src="~/Content/Images/separador inferior.png" />
+                <div class="row">
+                    <div class="col-sm-3 hidden-xs">&nbsp;</div>
+                    <div class="col-sm-3 text-left">
+                        <h2><a href="~/Home/About">LO QUE SOMOS</a></h2>
+                        <img class="img-responsive" src="~/Content/Images/barra.png" />
+                        <a href="~/Home/About?section=somos">QUIÉNES SOMOS?</a><br />
+                        <a href="~/Home/About?section=proposito">PROPÓSITO CFW</a><br />
+                        <a href="~/Home/About?section=horizonte">HORIZONTE CFW</a><br />
+                        <a href="~/Home/About?section=compotamientos">LO QUE NOS CARACTERIZA</a><br />
+                        <a href="~/Home/About?section=equipo">NUESTRO EQUIPO</a>
+                    </div>
+
+                    <div class="col-sm-4 text-left">
+                        <h2>LO QUE HACEMOS</h2>
+                        <img class="img-responsive" src="~/Content/Images/barra.png" />
+                        <a href="~/Home/Peronas">PERSONAS</a> <br />
+                        <a href="~/Home/Organizaciones">ORGANIZACIONES</a>
+                    </div>
+                    <br class="visible-xs" />
+                    <div class="col-sm-2">
+                        <img class="img-responsive" src="~/Content/Images/logo inferior web.png" />
+                    </div>
+                </div>
+                <br /><br /><br />
+                <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                LATAM - Alejandra Ramírez (+57) 310 310 68 57
+                <br />
+                
+                <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                USA - Susan Seidman (+1) 917 952 39 13
+                
+                <br /><br />
+                <small>TODOS LOS DERECHOS RESERVADOS - COACHING FOR WELLNESS @DateTime.Now.Year</small>
+                <br /><br />
+                <hr />
+                <small>ESTE SITIO FUE PROGRAMADO POR <br /><a href="http://equilaterus.com" target="_blank"><img class="img-responsive equilaterus-logo" src="~/Content/logo-equilaterus.png" alt="equilaterus" /></a></small>
+            </center>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+    <script>
+        // Only enable if the document has a long scroll bar
+        // Note the window height + offset
+        if ( ($(window).height() + 100) < $(document).height() ) {
+            $('#top-link-block').removeClass('hidden').affix({
+                // how far to scroll down before link "slides" into view
+                offset: {top:100}
+            });
+        }
+    </script>
+
+    <script>    
+        // Toggle menu
+        $(document).ready(function($) {
+	        $('.toggle-menu').jPushMenu();
+        });
+
+        $('#lev-0 .wbutton').on('click', function (e) {
+            $('#lev-0 .wbutton').removeClass('op0');
+            $(this).addClass('op0');
+            
+            $('#lev-11 > div').fadeOut('fast');
+            $('#lev-2 > div').fadeOut('fast');
+            
+            $('#lev-1 > div').each(function () {
+                $(this).fadeOut(0);
+            });
+
+            var element = $(this).data('element');
+            $(element).fadeIn('fast');
+
+            var target = $(this).data('target');
+            doScroll(target);
+        });
+
+        $('#lev-1 .wbutton-xl, #lev-11 .wbutton-xl').on('click', function (e) {
+            e.preventDefault();
+
+            $('#lev-2 > div').fadeOut(0);
+            var element = $(this).data('element');
+            $(element).fadeIn('fast');
+
+            var target = $(this).data('target');
+            if (target == '#lev-11') {
+                $('#lev-1 > div').each(function () {
+                    $(this).fadeOut(0);
+                });
+            }
+            doScroll(target);
+        });
+
+        function doScroll(target) {
+            var $target = $(target);
+            $('html, body').stop().animate({
+                'scrollTop': $target.offset().top
+            }, 900, 'swing', function () {
+                window.location.hash = target;
+            });
+        }
+
+        // Smooth scrolling
+        $(document).ready(function () {
+            $('.smooth').on('click', function (e) {
+                e.preventDefault();
+
+                var target = $(this).data('target');
+                doScroll(target);
+            });
+
+             
+            $('a[data-ajax-menu]').on('click', function () {
+                var objective = $(this).data('ajax-menu');
+                if ($(objective).is(':visible')) {
+                    $(objective).fadeOut('fast');
+                } else {
+                    $(objective).fadeIn('fast');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,363 @@
+﻿@model C4W.Web.Models.Contacto
+@{
+    ViewBag.Title = "INTELIGENCIA CONVERSACIONAL";
+    Layout = "~/Views/Shared/_LayoutLanding.cshtml";
+}
+
+<div class="sslide sslide-2 sslide sslide-2-2 sslide sslide-2-2">
+    <div class="pinkbg">
+        <div class="container">
+            <h2>SEMINARIO</h2>
+            <h1>INTELIGENCIA CONVERSACIONAL</h1>
+            <br />
+            <div class="row to-bottom">
+                <div class="col-sm-4 col-sm-push-8 widget-container">
+                    <div class="empty-widget bblue nohover" id="form-container">
+                        @using (Html.BeginForm("Send", "Landing", FormMethod.Post, new { @class = "form-horizontal", role = "form", @id = "form" }))
+                        {
+                            <div class="col-xs-12">
+                                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                                SOLICITA INFORMACIÓN
+                                <div class="form-group">
+                                    <input type="text" id="Nombre" name="Nombre" placeholder="Nombre" class="form-control" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" id="Pais" name="Pais" placeholder="País" class="form-control" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" id="Ciudad" name="Ciudad" placeholder="Ciudad" class="form-control" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" id="Email" name="Email" placeholder="E-Mail" class="form-control" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" id="Telefono" name="Telefono" placeholder="Teléfono móvil" class="form-control" />
+                                </div>
+                                <input type="hidden" id="Landing" name="Landing" value="@ViewBag.Landing" />
+
+                                <div class="form-group row">
+                                    <input type="button" id="submit" value="CONSULTAR" class="btn byellow btn-block darkcolor" />
+                                    <div class="col-md-6 bpink" id="problema" hidden></div>
+                                </div>
+                            </div>
+
+                        }
+                    </div>
+
+                    <center class="sm-txt">
+                        <a class="link-white" href="mailto:contacto@coachingforwellness.com">contacto@coachingforwellness.com</a>
+                    </center>
+                </div>
+
+                <div class="col-xs-6 visible-xs">
+                    &nbsp;
+                </div>
+                <div class="col-sm-offset-4 col-sm-4 col-sm-pull-4 col-xs-12 ">
+                    <div class="hlwidget bblue nohover margin-top">
+                        INICIA <br />
+                        @ViewBag.Fecha
+                    </div>
+                    <div class="hlwidget bblue nohover margin-bot">
+                        @ViewBag.Ciudad <br />
+                        <small>@ViewBag.Pais</small>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 hidden-xs character-bottom">
+                    <img src="~/Content/Landing/PERSONAJE 3.png" class="img-responsive" />
+                </div>
+                <div class="col-xs-12 visible-xs">
+                    <center>
+                        <img src="~/Content/Landing/PERSONAJE 3.png" class="img-responsive" />
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="empty-slide container">
+    <div class="row">
+        <div class="col-sm-4">
+            <center>
+                <img class="img-responsive" src="~/Content/Landing/IMAGEN MUNDO.png" />
+            </center>
+        </div>
+        <div class="col-sm-8 text-center">
+            “El Coaching es un proceso que potencia a los individuos para ejercer decisiones conscientes alineadas a su máxima visión, manifestada en acción. Este vehículo hace real la expresión más auténtica de los sueños”.<br /><br />
+            Susan Seidman, CEC, MCC
+        </div>
+    </div>
+</div>
+<div class="sslide sslide-2">
+    <div class="yellowbg">
+        <div class="container">
+            <p>
+                Este seminario integra los elementos del coaching de VIDA bajo la perspectiva de las conversaciones transformadoras, brindando al participante las herramientas fundamentales para empezar a integrar la filosofía y práctica del coaching puro en diversos ámbitos del SER.
+            </p>
+            <p>El presente seminario contiene las destrezas y principios del coaching, lo que lo convierte en la base de los procesos de certificación que brindan nuestra compañía, tras lo cual el participante podría continuar con la profundización de programas Internacionales hasta lograr su título como coach.</p>
+            <p>Con este seminario, la persona podrá iniciar la senda de aplicación de todas las herramientas y destrezas del coaching en conversaciones cotidianas en diversos contextos personales, sociales y organizacionales, incrementando así su liderazgo y efectividad en diversas interacciones humanas.</p>
+            <h2>METODOLOGÍA</h2>
+            <p>
+                Se presenta en modalidad presencial, con una metodología altamente experiencial,
+                facilitando así los procesos de aprendizaje.
+            </p>
+            <p>
+                Los temas de exploración en el proceso son los siguientes:
+            </p><ul>
+                <li>
+                    <p align="justify">
+                        Contexto de la inteligencia conversacional
+                    </p>
+                </li>
+                <li>
+                    <p align="justify">
+                        Principios del coaching en conversaciones transformadoras
+                    </p>
+                </li>
+                <li>
+                    <p align="justify">
+                        Diferencias del coaching puro a otras profesiones
+                    </p>
+                </li>
+                <li>
+                    <p align="justify">
+                        Destrezas de coaching
+                    </p>
+                </li>
+                <li>
+                    <p align="justify">
+                        Bloques de construcción
+                    </p>
+                </li>
+                <li>
+                    <p align="justify">
+                        Técnicas de conversaciones transformadoras
+                    </p>
+                </li>
+            </ul>
+            <br /><br />
+        </div>
+    </div>
+</div>
+<div class="empty-slide">
+    <div class="container">
+        <h2 class="hidden-sm hidden-xs">PARA QUIÉN ES ESTE PROGRAMA?</h2>
+        <div class="row">
+            <div class="col-md-2 col-md-push-10">
+                <center>
+                    <img class="img-responsive" src="~/Content/Landing/BOMBILLA.png" />
+                </center>
+            </div>
+            <div class="col-md-10 col-md-pull-2">
+                <h2 class="visible-sm visible-xs">PARA QUIÉN ES ESTE PROGRAMA?</h2>
+                <p>
+                    Este Seminario está dirigido a personas (mayores de 21 años) que se identifiquen con la visión del coaching y la inteligencia conversacional como un vehículo para la transformación de individuos y organizaciones.
+                </p>
+                <p>Se recomienda este programa para profesionales que desean maximizar sus relaciones, conocer los principios del coaching puro para potencializar su liderazgo personal, así como líderes de organizaciones empresariales y sociales, gerentes, empresarios y emprendedores.</p>
+            </div>
+        </div>
+        <h2 class="hidden-sm hidden-xs">TIEMPOS</h2>
+        <div class="row">
+            <div class="col-md-2">
+                <center>
+                    <img class="img-responsive" src="~/Content/Landing/COHETE.png" />
+                </center>
+            </div>
+            <div class="col-md-10">
+                <h2 class="visible-sm visible-xs">TIEMPOS</h2>
+                <p>
+                    El seminario consta de dos (2) días de inmersión para un total de 18 horas de trabajo.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="sslide sslide-2">
+    <div class="yellowbg">
+        <h1>"TODO ESTÁ EN  <br />LAS CONVERSACIONES"</h1>
+        <br />
+    </div>
+</div>
+<div class="sslide sslide-2">
+    <div class="greenbg">
+        <div class="container">
+            <h2>NOSOTROS</h2>
+            <p>
+                Somos una organización de alcance continental, con sedes en New Jersey (USA) y Medellín (Colombia), fundada en 2004 por las Máster Coaches (MCC ICF)  Susan Seidman y Annie Torres.
+            </p>
+            <p>
+                Estamos conformados por un equipo de personas apasionadas por lo que hacen, y que se esfuerzan por hacer del mejoramiento continuo algo real, lo que nos permite ser altamente diferenciados en el mercado.
+            </p>
+            <p>
+                Actuamos bajo la convicción de hacer las cosas con los más altos estándares, brindando a nuestros clientes experiencias que movilizan el ser para maximizar los resultados.
+            </p>
+            <br /><br />
+        </div>
+    </div>
+</div>
+
+<div class="empty-slide">
+    <div class="container">
+        <img class="img-responsive img-right" src="~/Content/landing/CLIP.png" />
+        <h2 class="hl">GRUPOS PEQUEÑOS - CUPOS LIMITADOS</h2>
+    </div>
+</div>
+
+<div class="sslide sslide-2">
+    <div class="yellowbg">
+        <div class="container">
+
+            <h1>CONTÁCTANOS PARA CONOCER PRECIOS <br /> Y FECHAS EN TU CIUDAD</h1>
+
+            <br />
+            <div class="row to-bottom">
+                <div class="col-sm-4 col-sm-push-8 widget-container">
+                    <div class="empty-widget bblue nohover" id="form-container">
+                        @using (Html.BeginForm("Send", "Landing", FormMethod.Post, new { @class = "form-horizontal", role = "form", @id = "form2" }))
+                        {
+                            <div class="col-xs-12">
+                                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                                SOLICITA INFORMACIÓN
+                                <div class="form-group">
+                                    <input type="text" id="Nombre" name="Nombre" placeholder="Nombre" class="form-control" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" id="Pais" name="Pais" placeholder="País" class="form-control" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" id="Ciudad" name="Ciudad" placeholder="Ciudad" class="form-control" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" id="Email" name="Email" placeholder="E-Mail" class="form-control" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" id="Telefono" name="Telefono" placeholder="Teléfono móvil" class="form-control" />
+                                </div>
+                                <input type="hidden" id="Landing" name="Landing" value="@ViewBag.Landing" />
+
+                                <div class="form-group row">
+                                    <input type="button" id="submit2" value="CONSULTAR" class="btn byellow btn-block darkcolor" />
+                                    <div class="col-md-6 bpink" id="problema2" hidden></div>
+                                </div>
+                            </div>
+
+                        }
+                    </div>
+
+                    <center class="sm-txt">
+                        <a class="link-white" href="mailto:contacto@coachingforwellness.com">contacto@coachingforwellness.com</a>
+                    </center>
+                </div>
+
+                <div class="col-xs-6 visible-xs">
+                    &nbsp;
+                </div>
+                <div class="col-sm-offset-4 col-sm-4 col-sm-pull-4 col-xs-12 ">
+                    <div class="hlwidget bblue nohover margin-top">
+                        INICIA <br />
+                        @ViewBag.Fecha
+                    </div>
+                    <div class="hlwidget bblue nohover margin-bot">
+                        @ViewBag.Ciudad <br />
+                        <small>@ViewBag.Pais</small>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 hidden-xs character-bottom">
+                    <img src="~/Content/Landing/PERSONAJE 2.png" class="img-responsive" />
+                </div>
+                <div class="col-xs-12 visible-xs">
+                    <center>
+                        <img src="~/Content/Landing/PERSONAJE 2.png" class="img-responsive" />
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+@section scripts
+{
+    <script>
+        var id = "";
+        var button = "";
+        var problema = "";
+        function successFunc(data) {
+            if (data['type'] == 0) {
+                $(id).html('<h2>' + data['data'] + '</h2>');
+                $(id).removeClass('byellow');
+                $(id).addClass('bgreen');
+
+            }
+            else {
+                $(button).removeAttr('disabled');
+                $(problema).html('<h5>' + data['data'] + '</h5>');
+                $(problema).show();
+            }
+        }
+
+        function errorFunc(data) {
+            $(button).removeAttr('disabled');
+            $(problema).html('<h5>' + data['data'] + '</h5>');
+            $(problema).show();
+        }
+
+
+        $($('#submit').click(function () {
+            var validator = $("#form").validate();
+            var anyError = false;
+            id = "#form-container";
+            button = "#submit";
+            problema = "#problema";
+            $("#form").find("input").each(function () {
+                if (!validator.element(this)) { // validate every input element inside this step
+                    anyError = true;
+                }
+            });
+            if (anyError)
+                return false;
+
+            $.ajax({
+                type: "POST",
+                url: "/Landing/Send",
+                data: $('#form').serialize(),
+                success: successFunc,
+                error: errorFunc
+            });
+            $('#submit').prop('disabled', true);
+        })
+
+
+     );
+
+        $($('#submit2').click(function () {
+            var validator = $("#form2").validate();
+            var anyError = false;
+            id = "#form-container2";
+            button = "#submit2";
+            problema = "#problema2";
+            $("#form2").find("input").each(function () {
+                if (!validator.element(this)) { // validate every input element inside this step
+                    anyError = true;
+                }
+            });
+            if (anyError)
+                return false;
+
+            $.ajax({
+                type: "POST",
+                url: "/Landing/Send",
+                data: $('#form2').serialize(),
+                success: successFunc,
+                error: errorFunc
+            });
+            $('#submit2').prop('disabled', true);
+        })
+
+
+    );
+
+    </script>
+}

@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewBag.Title = "Pagos";
+}
+
+<div class="row">
+    @GUI.MegaBigTop("Pagos seguros en línea", "bgray")
+</div>
+
+<div class="row">
+    @GUI.SmBtn("<center class='bigtext'>Pagos en dólares</center>", "", "bgreen", "col-xs-12")
+    @{//GUI.SmBtn("<center class='bigtext'>Pagos en pesos</center>", "", "baltgreen", "col-xs-6")
+
+    }
+    <br />
+    <div class="col-xs-2">&nbsp;</div>
+    @GUI.MedBtn("PAGO <br/>2Checkout", "~/Home/PagosCCC", "bgray", "icono pago en linea dolares.png", "col-xs-2")
+    <div class="col-xs-2">&nbsp;</div>
+    <div class="col-xs-2">&nbsp;</div>
+    @GUI.MedBtn("PAGO <br/>PayPal", "~/Home/PagosPayPal", "bgray", "icono pago en linea pesos.png", "col-xs-2")
+    <div class="col-xs-2">&nbsp;</div>
+</div>

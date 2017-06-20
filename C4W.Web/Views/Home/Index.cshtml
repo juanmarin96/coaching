@@ -1,0 +1,90 @@
+﻿@{
+    ViewBag.Title = "Coaching for wellness";
+}
+
+<div class="row">
+    <div class="col-xs-12  widget-container">
+        @GUI.Carousel(new string[] { "1 FRONT.jpg", "2 FRONT.jpg", "3 FRONT.jpg", "4 FRONT.jpg"}, new string[] { "~/Home/Hacemos?section=team", "~/Home/Agenda", "~/Home/About", "~/Home/Hacemos" })
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-6 widget-container">
+        <div class="bgreen widget top-spc" onclick="javascript: location.href='@Url.Content("~/Home/Agenda")'">
+            <div class="row text-center">
+                <div class="col-xs-12">
+                    <span class="bigtext">CONSULTA NUESTRA AGENDA INTERNACIONAL</span>
+                </div>                
+            </div>
+            <br class="visible-lg" />
+            <div class="row text-center">
+                <div class="col-xs-12">
+                    <img height="92" style="margin-bottom:8px;" src="~/Content/Images/icono agenda.png" />
+                </div>
+            </div>
+            <br class="visible-lg" />
+            <div class="row text-center">
+                <div class="col-xs-12">
+                    <span class="white-btn">Ver agenda</span>
+                </div>
+            </div>
+            <br class="visible-xs" />
+        </div>
+    </div>
+    <div class="col-md-3 widget-container">
+        <div class="bblue widget text-center" id="videopoup">
+            <div class="row">
+                <center style="margin: 10px;">
+                    <img class="img-responsive" src="~/Content/Images/icono play.png" />
+                </center>
+            </div>
+            <div class="row" style="padding:20px 5px 5px 5px;">
+                <span class="bigtext">PARA QUÉ CFW?</span>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 widget-container">
+        <div class="borange widget text-center" onclick="window.open('http://c4w.co/login/index.php', '_blank');">
+            <div class="row">
+                <center style="margin: 10px;">
+                    <img class="img-responsive" src="~/Content/Images/Icono Campus grande.png" />
+                </center>
+            </div>
+            <div class="row" style="padding:20px 5px 5px 5px;">
+                <span class="bigtext">CAMPUS VIRTUAL</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg video-modal-dialog">        
+        <div class="modal-content video-modal-content">
+            <div class="modal-header">
+                PARA QUÉ CFW?
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="video-container">
+                <iframe frameborder="0" width="560" height="315" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+@section scripts{
+
+    <script>
+        $('#videopoup').click(function () {
+            var src = 'http://www.youtube.com/v/KYcQr6U93vQ&amp;autoplay=1';
+            $('#myModal').modal('show');
+            $('#myModal iframe').attr('src', src);
+        });
+
+        $('#myModal button').click(function () {
+            $('#myModal iframe').removeAttr('src');
+        });
+    </script>
+
+}

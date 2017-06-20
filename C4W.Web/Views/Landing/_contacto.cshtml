@@ -1,0 +1,37 @@
+﻿@model string
+
+<div class="empty-widget bblue nohover" id="form-container">
+    @using (Html.BeginForm("Send", "Landing", FormMethod.Post, new { @class = "form-horizontal", role = "form", @id = "form" }))
+    {
+        <div class="col-xs-12">
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            SOLICITA INFORMACIÓN
+            <div class="form-group">
+                <input type="text" id="Nombre" name="Nombre" placeholder="Nombre" class="form-control" />
+            </div>
+            <div class="form-group">
+                <input type="text" id="Pais" name="Pais" placeholder="País" class="form-control" />
+            </div>
+            <div class="form-group">
+                <input type="text" id="Ciudad" name="Ciudad" placeholder="Ciudad" class="form-control" />
+            </div>
+            <div class="form-group">
+                <input type="text" id="Email" name="Email" placeholder="E-Mail" class="form-control" />
+            </div>
+            <div class="form-group">
+                <input type="text" id="Telefono" name="Telefono" placeholder="Teléfono móvil" class="form-control" />
+            </div>
+            <input type="hidden" id="Landing" name="Landing" value="@ViewBag.Landing" />
+
+            <div class="form-group row">
+                <input type="button" id="submit" value="CONSULTAR" class="btn byellow btn-block darkcolor" />
+                <div class="col-md-6 bpink" id="problema" hidden></div>
+            </div>
+        </div>
+
+    }
+</div>
+
+<center class="sm-txt">
+    <a class="link-white" href="mailto:contacto@coachingforwellness.com">contacto@coachingforwellness.com</a>
+</center>

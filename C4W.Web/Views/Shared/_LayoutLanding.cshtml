@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" href="@Url.Content("~/favicon.ico")" type="image/x-icon" />
+    <link rel="shortcut icon" href="@Url.Content("~/favicon.ico")" type="image/x-icon" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="navbar navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="~/Home/" class="navbar-brand">
+                    <img class="img-responsive" id="logo-top" src="~/Content/Images/logo 2 arriba.png" />
+                </a>
+            </div>
+            <div class="social hidden-xs">
+                <a href="https://www.facebook.com/coachingforwellness/?fref=ts" target="_blank"><i class="fa fa-facebook"></i></a>
+                <a href="https://twitter.com/cfwlatam" target="_blank"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.instagram.com/coachingforwellness/" target="_blank"><i class="fa fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- child of the body tag -->
+    <span id="top-link-block" class="hidden">
+        <a href="#top" class="btn btn-primary" onclick="$('html,body').animate({scrollTop:0},'slow');return false;">
+            <i class="glyphicon glyphicon-chevron-up"></i>
+        </a>
+    </span><!-- /top-link-block -->
+        @Html.Partial("_LoginPartial")
+        @RenderBody()
+        
+        <div class="empty-slide">
+            <h2><a class="hl" href="http://www.coachingforwellness.com" target="_blank">WWW.COACHINGFORWELLNESS.COM</a></h2>
+        </div>
+        <div class="empty-slide">
+            <div class="greenbgclickable">
+                <div class="container" onclick="javascript: location.href='@Url.Content("~/Home/Agenda")'">
+                    <img class="img-responsive img-left animated bounce inf no-anim" src="~/Content/Landing/MANO AGENDA.png" />
+                    <img class="img-responsive img-right animated bounce inf no-anim" src="~/Content/Landing/MANO AGENDA.png" />
+                    <h2 class="lightcolor">CONSULTA NUESTRA</h2>
+                    <h2 class="lightcolor">AGENDA INTERNACIONAL</h2>
+                    <br />
+                </div>
+            </div>
+        </div>    
+
+        <br /><br /><br />
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <center>
+                            <img class="img-responsive" src="~/Content/Images/logo inferior web.png" />
+                        </center>
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="row">
+                            <a class="bluetxt" href="mailto:contacto@coachingforwellness.com">
+                                <img class="img-responsive img-left img-xs hidden-xs" src="~/Content/Landing/CORREO.png" />
+                                CONTACTO@COACHINGFORWELLNESS.COM
+                            </a>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <a class="greentxt" href="callto://+3137919565">
+                                <img class="img-responsive img-left img-xs hidden-xs" src="~/Content/Landing/WHATSAPP.png" />
+                                (+57) 313 791 9565
+                            </a>
+                        </div><br /><br />
+                    </div>
+                </div>
+                
+                <center>
+                    <small>TODOS LOS DERECHOS RESERVADOS <br /> COACHING FOR WELLNESS @DateTime.Now.Year</small>
+                </center>
+            </div>
+        </footer>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+    <script>
+        // Only enable if the document has a long scroll bar
+        // Note the window height + offset
+        if (($(window).height() + 100) < $(document).height()) {
+            $('#top-link-block').removeClass('hidden').affix({
+                // how far to scroll down before link "slides" into view
+                offset: { top: 100 }
+            });
+        }
+
+
+        $(document).ready(function () {
+            $('h1:not(.no-anim)').addClass("hidden-anim").viewportChecker({
+                classToAdd: 'visible-anim animated zoomIn',
+                offset: 100
+            });
+            $('h2:not(.no-anim)').addClass("hidden-anim").viewportChecker({
+                classToAdd: 'visible-anim animated fadeInDown',
+                offset: 100
+            });
+            $('img:not(.no-anim)').addClass("hidden-anim").viewportChecker({
+                classToAdd: 'visible-anim animated fadeIn',
+                offset: 100
+            });
+            $('h3:not(.no-anim)').addClass("hidden-anim").viewportChecker({
+                classToAdd: 'visible-anim animated fadeIn',
+                offset: 0
+            });
+            $('p:not(.no-anim)').addClass("hidden-anim").viewportChecker({
+                classToAdd: 'visible-anim animated fadeIn',
+                offset: 100
+            });
+            $('ul:not(.no-anim)').addClass("hidden-anim").viewportChecker({
+                classToAdd: 'visible-anim animated fadeIn',
+                offset: 100
+            });
+        });
+
+    </script>
+
+    <script>
+        // Toggle menu
+        $(document).ready(function ($) {
+            $('.toggle-menu').jPushMenu();
+        });
+
+        // Smooth scrolling
+        $(document).ready(function () {
+            $('.smooth').on('click', function (e) {
+                e.preventDefault();
+
+                var target = $(this).data('target');
+                var $target = $(target);
+                $('html, body').stop().animate({
+                    'scrollTop': $target.offset().top
+                }, 900, 'swing', function () {
+                    window.location.hash = target;
+                });
+            });
+        });
+    </script>
+</body>
+</html>

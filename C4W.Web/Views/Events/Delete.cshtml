@@ -1,0 +1,71 @@
+﻿@model C4W.Web.Models.Event
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Event</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Month)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Month)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Days)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Days)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FlagUrl)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FlagUrl)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ShortDesc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ShortDesc)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LongDesc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LongDesc)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-primary" /> |
+            @Html.ActionLink("Back to List", "Index", null, new { @class = "btn btn-default" })
+        </div>
+    }
+</div>

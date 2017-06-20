@@ -1,0 +1,60 @@
+﻿@model IEnumerable<C4W.Web.Models.Event>
+@{
+    ViewBag.Title = "Agenda";
+}
+
+<div class="row">
+    @GUI.MegaBigTop("AGENDA INTERNACIONAL", "bgreen")
+</div>
+
+@foreach (var item in Model)
+{
+    <div class="row">
+        @GUI.DateBtn(item, "col-sm-3")
+        <div class="col-sm-2 col-xs-2 widget-container">
+            @{ item.FlagUrl += ".png"; }
+            <img class="img-responsive" style="margin-right: 10px;" src="~/Content/Images/Flags/@item.FlagUrl" /> 
+            <a class="btn bgray hidden-xs" style="width: 100%; margin-top: 5px;" href="~/Home/Contact?e=@item.Id">ME INTERESA</a>
+        </div>
+        <div class="col-sm-7  col-xs-10 widget-container">
+            @item.Location <br />
+            <small>
+               @item.Title
+            </small>       
+
+            <p>@item.ShortDesc</p>   
+            <a class="btn bgray visible-xs" href="~/Home/Contact?e=@item.Id">ME INTERESA</a>
+        </div>
+    </div>
+}
+
+
+<div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="event-title"></h4>
+            </div>
+            <div class="modal-body">
+                <div id="event-desc"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">CERRAR</button>
+                <a id="interesa" class="btn bgreen">ME INTERESA</a>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+@section scripts{
+    <script>
+        $('.datetrigger').click(function () {
+            var id = '#' + $(this).attr('id');
+            $('#event-title').html($(this).data("title"));
+            $('#event-desc').html($(id+'_desc').html());
+            $('#myModal').modal('show');
+            $("#interesa").attr("href", "/Home/Contact?e=" + $(this).data('eventid'));
+        });
+    </script>
+}
