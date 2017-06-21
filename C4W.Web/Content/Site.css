@@ -232,7 +232,7 @@ textarea {
     border-radius: 10px;
 }
     .navbar-nav li a, .cbp-spmenu-vertical a {    
-        color: #000 !important;
+        color: #000 ;
     }
 
     #lnk-home a {
@@ -385,8 +385,8 @@ footer a {
 
 .widget-container {    
     text-transform: uppercase;
-    padding: 4px !important;
-    margin: 5px 0 0 0;
+    padding: 0px 0px 0px 0px !important;
+    margin: 0px 0 0 0;
 }
 
 .widget-container-sm {
@@ -1057,4 +1057,40 @@ a.bluetxt {
 
 .equilaterus-logo {
     max-width: 200px;
+}
+
+.navbar-color {
+    background : rgba(255, 255, 255, 0.7)
+}
+
+.link-nav-color {
+    color: #18a1ac !important;
+}
+
+.color-text {
+    color: #18a1ac;
+}
+
+.img-home {
+    width: 100%;
+}
+
+.btn-footer {
+    background-color: #93c01f;
+    color: black;
+    border-color: white;
+}
+
+.img-radius {
+    border-radius: 20px;
+}
+
+.parrafo-margin {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 2em;
+}
+
+.navbar-ancho {
+    height: 100px;
 }

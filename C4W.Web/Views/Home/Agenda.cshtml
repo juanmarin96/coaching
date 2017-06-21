@@ -4,7 +4,7 @@
 }
 
 <div class="row">
-    @GUI.MegaBigTop("AGENDA INTERNACIONAL", "bgreen")
+    <img src="~/Content/Images/Carousel/3 FRONT.jpg" class="img-responsive" style="width: 100%;"/>
 </div>
 
 @foreach (var item in Model)
@@ -28,24 +28,6 @@
     </div>
 }
 
-
-<div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="event-title"></h4>
-            </div>
-            <div class="modal-body">
-                <div id="event-desc"></div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">CERRAR</button>
-                <a id="interesa" class="btn bgreen">ME INTERESA</a>
-            </div>
-        </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
 
 @section scripts{
     <script>
