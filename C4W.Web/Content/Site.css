@@ -232,7 +232,7 @@ textarea {
     border-radius: 10px;
 }
     .navbar-nav li a, .cbp-spmenu-vertical a {    
-        color: #000 !important;
+        color: #000;
     }
 
     #lnk-home a {
@@ -1077,4 +1077,49 @@ a.bluetxt {
     margin-left: 60px;
     margin-right: 60px;
     margin-top:30px;
+}
+
+.navbar-color {
+    background: rgba(255, 255, 255, 0.7)
+}
+
+.link-nav-color {
+    color: #18a1ac !important;
+}
+
+.color-text {
+    color: #18a1ac;
+}
+
+.img-home {
+    width: 100%;
+}
+
+.btn-footer {
+    background-color: #93c01f;
+    color: black;
+    border-color: white;
+}
+
+.img-radius {
+    border-radius: 20px;
+}
+
+.parrafo-margin {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 2em;
+}
+
+.navbar-ancho {
+    height: 100px;
+}
+
+.color-bar{
+    background-color: white !important;
+}
+
+.img-navbar {
+    width: 70%;
+    height: 70%;
 }
