@@ -501,6 +501,11 @@
     <Content Include="Content\Images\imagenesNuevas\2co.PNG" />
     <Content Include="Content\Images\imagenesNuevas\agenda.PNG" />
     <Content Include="Content\Images\imagenesNuevas\footer.PNG" />
+    <Content Include="Content\Images\imagenesNuevas\LOGOCFW.png" />
+    <Content Include="Content\Images\imagenesNuevas\mandala.jpg" />
+    <Content Include="Content\Images\imagenesNuevas\MANDALAS.jpg" />
+    <Content Include="Content\Images\imagenesNuevas\mandalas2.jpg" />
+    <Content Include="Content\Images\imagenesNuevas\MANDALAS3.jpg" />
     <Content Include="Content\Images\imagenesNuevas\manoAgenda.PNG" />
     <Content Include="Content\Images\imagenesNuevas\mision.PNG" />
     <Content Include="Content\Images\imagenesNuevas\moodle.PNG" />
@@ -508,6 +513,7 @@
     <Content Include="Content\Images\imagenesNuevas\paypal.PNG" />
     <Content Include="Content\Images\imagenesNuevas\valores.PNG" />
     <Content Include="Content\Images\imagenesNuevas\vision.PNG" />
+    <Content Include="Content\Images\imagenesNuevas\WINTER.jpg" />
     <Content Include="Content\Images\lapiz mano.png" />
     <Content Include="Content\Images\libros.png" />
     <Content Include="Content\Images\logo 2 arriba.png" />

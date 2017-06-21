@@ -19,21 +19,20 @@
 	</span><!-- /top-link-block -->
 <nav class="navbar navbar-fixed-top navbar-color">
 	<div class="container-fluid">
-	    <div class="navbar-header">
-	        <img src="~/Content/Images/logo-c4w.png" class="img-responsive img-navbar"/>
-	    </div>
-	    <button style="background: grey; margin-top: 7%; margin-right: 20px;" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-	        <span class="sr-only color-bar">Toggle navigation</span>
-	        <span class="icon-bar color-bar"></span>
-	        <span class="icon-bar color-bar"></span>
-	        <span class="icon-bar color-bar"></span>
-	    </button>
+		<div class="navbar-header">
+			<img src="~/Content/Images/logo-c4w.png" class="img-responsive img-navbar"/>
+		</div>
+		<button style="background: grey; margin-top: 7%; margin-right: 20px;" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+			<span class="sr-only color-bar">Toggle navigation</span>
+			<span class="icon-bar color-bar"></span>
+			<span class="icon-bar color-bar"></span>
+			<span class="icon-bar color-bar"></span>
+		</button>
 		<div class="collapse navbar-collapse">
 			<ul class="nav navbar-nav" style="margin-top: 40px;">
 				<li><a class="link-nav-color" href="~/Home/About">SOBRE NOSOTROS</a></li>
 				<li><a class="link-nav-color" href="~/Home/Personas">CERTIFICACIONES</a></li>
 				<li><a class="link-nav-color" href="~/Home/Servicios">SERVICIOS</a></li>
-				<li><a class="link-nav-color" href="#">CALENDARIO</a></li>
 				<li><a class="link-nav-color" href="~/Home/Contact">CONTÁCTANOS</a></li>
 			</ul>
 		</div>
@@ -44,12 +43,37 @@
 	@RenderBody()
 	<br/>
 	<br/>
-	<footer>
-		<div class="row" style="margin-top: 20px;">
-		    <div class="col-lg-12 col-xs-12 col-md-12 col-sm-12" style="padding: 0px 0px 0px 0px;">
-		        <img src="~/Content/Images/imagenesNuevas/footer.PNG" class="img-responsive" style="width: 100%;"/>
-		    </div>
+	<footer class="footer-distributed">
+		<div class="footer-left">
+			<img src="~/Content/Images/imagenesNuevas/LOGOCFW.png" class="img-responsive" style="width: 60%; height: 60%;"/>
 		</div>
+
+		<div class="footer-center">
+		    <div>
+		        <i class="fa fa-phone"></i>
+		        <p>EE.UU. (+1)917 952 3913|LATAM (+57)310 310 68 57</p>
+		    </div>
+		    <div>
+		        <i class="fa fa-facebook"></i>
+		        <p>/coachingforwellness</p>
+		    </div>
+		    <div>
+		        <i class="fa fa-envelope"></i>
+		        <p><a href="mailto:info@c4w.co">info@c4w.co</a></p>
+		    </div>
+		    <div style="text-align: center;">
+                <p>COPYRIGHT - COACHING FOR WELLNESS 2017</p>
+		    </div>
+		    
+
+		</div>
+
+		<div class="footer-right">
+			<p class="footer-company-about text-center">
+			    <a style="color: black; background: #93c01f; border-color: white; border-width: 2px; " href="~/Home/Contact" class="btn btn-danger btn-lg">CONTÁCTANOS</a>
+			</p>
+		</div>
+
 	</footer>
 </div>
 
