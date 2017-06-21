@@ -243,6 +243,13 @@
     <Content Include="Content\Images\Carousel\SOMOS 3.jpg" />
     <Content Include="Content\Images\Carousel\SOMOS 4.jpg" />
     <Content Include="Content\Images\cfw logo.png" />
+    <Content Include="Content\Images\coaching-acc.PNG" />
+    <Content Include="Content\Images\coaching-asociado.PNG" />
+    <Content Include="Content\Images\coaching-ejecutivo.PNG" />
+    <Content Include="Content\Images\coaching-empresarial.PNG" />
+    <Content Include="Content\Images\coaching-equipos.PNG" />
+    <Content Include="Content\Images\coaching-pcc.PNG" />
+    <Content Include="Content\Images\coaching-profesional.PNG" />
     <Content Include="Content\Images\col.png" />
     <Content Include="Content\Images\colores lapices.png" />
     <Content Include="Content\Images\contacto skype.png" />
@@ -491,6 +498,8 @@
     <Content Include="Content\Images\imagen andres.png" />
     <Content Include="Content\Images\imagen annie.png" />
     <Content Include="Content\Images\imagen susan.png" />
+    <Content Include="Content\Images\img-contact.PNG" />
+    <Content Include="Content\Images\img-servicios.PNG" />
     <Content Include="Content\Images\lapiz mano.png" />
     <Content Include="Content\Images\libros.png" />
     <Content Include="Content\Images\logo 2 arriba.png" />
@@ -513,6 +522,7 @@
     <Content Include="Content\Images\piedras.png" />
     <Content Include="Content\Images\pinceles.png" />
     <Content Include="Content\Images\pluma.png" />
+    <Content Include="Content\Images\programasCertifiacion.PNG" />
     <Content Include="Content\Images\proposito.png" />
     <Content Include="Content\Images\qr.PNG" />
     <Content Include="Content\Images\separador inferior.png" />
@@ -644,6 +654,7 @@
     <Content Include="Views\Landing\ic.cshtml" />
     <Content Include="Views\Landing\coachingempresarialvida.cshtml" />
     <Content Include="Views\Landing\_contacto.cshtml" />
+    <Content Include="Views\Home\Servicios.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

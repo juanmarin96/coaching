@@ -79,6 +79,11 @@ namespace C4W.Web.Controllers
             return View();
         }
 
+        public ActionResult Servicios()
+        {
+            return View();
+        }
+
         public ActionResult Empresas()
         {
             return View();

@@ -68,7 +68,7 @@
         <a class="" href="https://www.instagram.com/coachingforwellness/" target="_blank"> 
             <i class="fa fa-instagram"></i></a>
     </nav>
-    <div class="container body-content">
+    <div  body-content">
         @Html.Partial("_LoginPartial")
         @RenderBody()
         <br />
@@ -83,9 +83,9 @@
                 </div>
                 @GUI.Btn("<span class='hidden-xs hidden-sm'>Agenda Internacional</span><span class='visible-xs visible-sm'>Agenda</span>", "~/Home/Agenda", "bgreen", "icono agenda-sm.png", "col-sm-3  col-xs-12")               
                 @GUI.Btn("<span class='hidden-xs hidden-sm'>Contáctanos</span><span class='visible-xs visible-sm'>Contacto</span>", "~/Home/Contact", "byellow", "icono contacto pequeño.png", "col-sm-2  col-xs-4")
-                <!--
+              
                     @GUI.Btn("Brochure", "~/Content/brochure-c4w.pdf", "bgreen", "icono descarga.png", "col-sm-2 col-xs-4", "", true)
-                -->
+              
                 @GUI.Btn("<span class='hidden-xs hidden-sm hidden-md'>Pagos en línea</span><span class='visible-xs visible-sm visible-md'>Pagos</span>", "~/Home/Pagos","bgray", "icono pago en linea.png", "col-sm-2 col-xs-4")
                 @GUI.Btn("<span class='hidden-xs hidden-sm hidden-md'>Campus virtual</span><span class='visible-xs visible-sm visible-md'>Campus</span>", "http://c4w.co/login/index.php", "borange", "icono campus.png", "col-sm-2 col-xs-4", "", true)
             </div>

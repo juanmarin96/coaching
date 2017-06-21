@@ -195,12 +195,12 @@ textarea {
 }
 
 .btn-default {
-    color: #EC268F !important;
+    color: #92c03e !important;
     background-color: #fff !important;
-    border: 3px solid #EC268F !important;
+    border: 3px solid #92c03e !important;
 }
-    .btn-default:hover {        
-        background-color: #EC268F !important;
+    .btn-default:hover {
+        background-color: #92c03e !important;
         color: #fff !important;
     }
 
@@ -629,7 +629,7 @@ footer a {
         }
 
 .byellow {
-    background-color: #FFBE19 !important;
+    background-color: #22a2ad !important;
 }
     .byellow:not(.nohover):hover { 
         background-color: #fccb4f !important;
@@ -1057,4 +1057,24 @@ a.bluetxt {
 
 .equilaterus-logo {
     max-width: 200px;
+}
+.form-control{
+    background:#9ac9d0;
+}
+.Tprogramas {
+    color: #22a2ad;
+    text-align: center;
+    font-size: 75px;
+}
+.margen{
+    padding-left:30px;
+    padding-right:30px;
+}
+.empresarial{
+    margin-top:15px;
+}
+.margen-empresarial {
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top:30px;
 }

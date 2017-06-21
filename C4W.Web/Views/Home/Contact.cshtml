@@ -3,140 +3,126 @@
     ViewBag.Title = "Contacto";
 }
 <div class="row">
-    <div class="col-md-4 hidden-sm hidden-xs">
-        <img class="img-responsive" src="~/Content/Images/mapa.png" />
-        <small>
-            <i class="fa fa-whatsapp" aria-hidden="true"></i>
-            LATAM - Alejandra Ramírez (+57) 310 310 68 57
-            <br />
-
-            <i class="fa fa-whatsapp" aria-hidden="true"></i>
-            USA - Susan Seidman (+1) 917 952 39 13
-        </small>
-        
-        
-        
+    <div class="col-lg-12" style="padding:0px;margin:0px">
+        <img src="~/Content/Images/img-contact.PNG" class="img-responsive" style="width:100%" />
     </div>
+ </div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="col-md-12 widget-container">
 
-    <div class="col-md-8">
-    @GUI.MegaBigTop("Contáctanos", "bpink")   
-    <div class="col-md-12 widget-container">
-
-        <div class="empty-widget byellow nohover" id="form-container">
-            @using (Html.BeginForm("Send", "Home", FormMethod.Post, new { @class = "form-horizontal", role = "form", @id = "form" }))
+                <div class="empty-widget byellow nohover" id="form-container">
+                    @using (Html.BeginForm("Send", "Home", FormMethod.Post, new { @class = "form-horizontal", role = "form", @id = "form" }))
             {
-                <div class="col-xs-12">
-                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-                    <div class="form-group">
-                        @Html.LabelFor(m => m.Nombre, new { @class = "col-md-2 control-label text-right" })
-                        <div class="col-md-10">
-                            @Html.TextBoxFor(m => m.Nombre, new { @class = "form-control" })
-                            @Html.ValidationMessageFor(m => m.Nombre, "", new { @class = "text-danger" })
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        @Html.LabelFor(m => m.Pais, new { @class = "col-md-2 control-label text-right" })
-                        <div class="col-md-10">
-                            @Html.TextBoxFor(m => m.Pais, new { @class = "form-control" })
-                            @Html.ValidationMessageFor(m => m.Pais, "", new { @class = "text-danger" })
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        @Html.LabelFor(m => m.Ciudad, new { @class = "col-md-2 control-label text-right" })
-                        <div class="col-md-10">
-                            @Html.TextBoxFor(m => m.Ciudad, new { @class = "form-control" })
-                            @Html.ValidationMessageFor(m => m.Ciudad, "", new { @class = "text-danger" })
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        @Html.LabelFor(m => m.Telefono, new { @class = "col-md-2 control-label text-right" })
-                        <div class="col-md-10">
-                            @Html.TextBoxFor(m => m.Telefono, new { @class = "form-control" })
-                            @Html.ValidationMessageFor(m => m.Telefono, "", new { @class = "text-danger" })
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        @Html.LabelFor(m => m.Correo, new { @class = "col-md-2 control-label text-right" })
-                        <div class="col-md-10">
-                            @Html.TextBoxFor(m => m.Correo, new { @class = "form-control" })
-                            @Html.ValidationMessageFor(m => m.Correo, "", new { @class = "text-danger" })
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        @Html.LabelFor(m => m.Comentario, new { @class = "col-md-2 control-label text-right" })
-                        <div class="col-md-10">
-                            @Html.TextAreaFor(m => m.Comentario, new { @class = "form-control", rows = "4" })
-                            @Html.ValidationMessageFor(m => m.Comentario, "", new { @class = "text-danger" })
-                        </div>
-                    </div>
+                        <div class="col-xs-12">
+                            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.Nombre, new { @class = "col-md-2 control-label text-right" })
+                                <div class="col-md-10">
+                                    @Html.TextBoxFor(m => m.Nombre, new { @class = "form-control" })
+                                    @Html.ValidationMessageFor(m => m.Nombre, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.Pais, new { @class = "col-md-2 control-label text-right" })
+                                <div class="col-md-10">
+                                    @Html.TextBoxFor(m => m.Pais, new { @class = "form-control" })
+                                    @Html.ValidationMessageFor(m => m.Pais, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.Ciudad, new { @class = "col-md-2 control-label text-right" })
+                                <div class="col-md-10">
+                                    @Html.TextBoxFor(m => m.Ciudad, new { @class = "form-control" })
+                                    @Html.ValidationMessageFor(m => m.Ciudad, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.Telefono, new { @class = "col-md-2 control-label text-right" })
+                                <div class="col-md-10">
+                                    @Html.TextBoxFor(m => m.Telefono, new { @class = "form-control" })
+                                    @Html.ValidationMessageFor(m => m.Telefono, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.Correo, new { @class = "col-md-2 control-label text-right" })
+                                <div class="col-md-10">
+                                    @Html.TextBoxFor(m => m.Correo, new { @class = "form-control" })
+                                    @Html.ValidationMessageFor(m => m.Correo, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.Comentario, new { @class = "col-md-2 control-label text-right" })
+                                <div class="col-md-10">
+                                    @Html.TextAreaFor(m => m.Comentario, new { @class = "form-control", rows = "4" })
+                                    @Html.ValidationMessageFor(m => m.Comentario, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
 
-                    <div class="form-group row">
-                        <div class="col-md-offset-2 col-md-4">
-                            <input type="button" id="submit" value="ENVIAR" class="btn btn-default" />
+                            <div class="form-group row">
+                                <div class="col-md-offset-6 col-md-4">
+                                    <input type="button" id="submit" value="ENVIAR" class="btn btn-default" />
+                                </div>
+                                <div class="col-md-6 bpink" id="problema" hidden></div>
+                            </div>
                         </div>
-                        <div class="col-md-6 bpink" id="problema" hidden></div>
-                    </div>
+
+                    }
                 </div>
-
-            }
+            </div>
         </div>
-        </div>
+            <div class="col-lg-6 col-md-6 col-lg-offset-6 col-md-offset-6">
+                <p style="font-weight:bold">INFO@C4W.CO</p>
+            </div>
     </div>
-</div>
-
-
-<div class="row">
-    <div class="col-xs-12  widget-container">
-        @GUI.Carousel(new string[] { "CONTACTO 1.jpg", "CONTACTO 2.jpg", "CONTACTO 3.jpg" })
-    </div>
-</div>
-
-@section scripts
+ </div>
+    @section scripts
 {
-    <script>
+        <script>
 
-        function successFunc(data) {
-            if (data['type'] == 0) {
-                $('#form-container').html('<h2>' + data['data'] + '</h2>');
-                $('#form-container').removeClass('byellow');
-                $('#form-container').addClass('bgreen');
+            function successFunc(data) {
+                if (data['type'] == 0) {
+                    $('#form-container').html('<h2>' + data['data'] + '</h2>');
+                    $('#form-container').removeClass('byellow');
+                    $('#form-container').addClass('bgreen');
 
+                }
+                else {
+                    $('#submit').removeAttr('disabled');
+                    $('#problema').html('<h5>' + data['data'] + '</h5>');
+                    $('#problema').show();
+                }
             }
-            else {
+
+            function errorFunc(data) {
                 $('#submit').removeAttr('disabled');
                 $('#problema').html('<h5>' + data['data'] + '</h5>');
                 $('#problema').show();
             }
-        }
-
-        function errorFunc(data) {
-            $('#submit').removeAttr('disabled');
-            $('#problema').html('<h5>' + data['data'] + '</h5>');
-            $('#problema').show();
-        }
 
 
-        $($('#submit').click(function () {
-            var validator = $("#form").validate();
-            var anyError = false;
-            $("#form").find("input").each(function () {
-                if (!validator.element(this)) { // validate every input element inside this step
-                    anyError = true;
-                }
-            });
-            if (anyError)
-                return false;
+            $($('#submit').click(function () {
+                var validator = $("#form").validate();
+                var anyError = false;
+                $("#form").find("input").each(function () {
+                    if (!validator.element(this)) { // validate every input element inside this step
+                        anyError = true;
+                    }
+                });
+                if (anyError)
+                    return false;
 
-            $.ajax({
-                type: "POST",
-                url: "/Home/Send",
-                data: $('#form').serialize(),
-                success: successFunc,
-                error: errorFunc
-            });
-            $('#submit').prop('disabled', true);      
-        })
-     );
+                $.ajax({
+                    type: "POST",
+                    url: "/Home/Send",
+                    data: $('#form').serialize(),
+                    success: successFunc,
+                    error: errorFunc
+                });
+                $('#submit').prop('disabled', true);
+            })
+            );
 
-    </script>
-}
+        </script>
+    }
