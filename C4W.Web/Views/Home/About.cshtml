@@ -1,188 +1,66 @@
 ﻿@{
     ViewBag.Title = "Lo que somos";
 }
-
-@if (ViewBag.Section == null)
-{
-
-    <div class="row">
-        <div class="col-xs-12  widget-container">
-            @GUI.Carousel(new string[] { "SOMOS 1.jpg", "SOMOS 2.jpg", "SOMOS 3.jpg", "SOMOS 4.jpg" })
-        </div>
+<div class="row">
+    <div class="col-lg-12">
+        <img src="~/Content/Images/Carousel/CONTACTO 3.jpg" style="width:100%;" class="img-responsive"/>
     </div>
-    <div class="row">
-        @GUI.BigBtn("Quienes <br/> somos?", "~/Home/About?section=somos", "bblue", "col-md-15 col-xs-6")
-        @GUI.BigBtn("Nuestro <br/> propósito", "~/Home/About?section=proposito", "bgreen", "col-md-15 col-xs-6")
-        @GUI.BigBtn("Nuestro <br/> Horizonte", "~/Home/About?section=horizonte", "borange", "col-md-15 col-xs-6")
-        @GUI.BigBtn("Nuestros<br/> comportamientos", "~/Home/About?section=comportamientos", "bpink", "col-md-15 col-xs-6")
-        @GUI.BigBtn("Nuestro <br/> equipo", "~/Home/About?section=equipo", "bcuruba", "col-md-15 col-xs-6")
+</div>
+<div class="row">
+    <div class="col-lg-12">
+        <p class="parrafo-margin">Somos una organización que promueve el bienestar en todos los aspectos de la vida.
+            Coaching For Wellness (CFW) fue creado por Susan Seidman y Annie Torres, ambas
+            Máster Coaches Certificadas (MCC por sus siglas en inglés) y pioneras en la profesión
+            de coaching en los Estados Unidos, Puerto Rico y Latinoamérica.</p>
     </div>
-}
-else
-{
-    <div class="row">
-        <br /><br /><br />
-        @if (ViewBag.Section == "somos")
-        {
-            @GUI.BigTop("Quienes somos?", "~/Home/About?section=somos", "bblue", "col-xs-12", "imagen 1.png")
-        }
-        @if (ViewBag.Section == "proposito")
-        {
-            @GUI.BigTop("Nuestro propósito", "~/Home/About?section=proposito", "bgreen", "col-xs-12", "proposito.png")
-        }
-
-        @if (ViewBag.Section == "horizonte")
-        {
-            @GUI.BigTop("Nuestro horizonte", "~/Home/About?section=horizonte", "borange", "col-xs-12", "avion.png")
-        }
-
-        @if (ViewBag.Section == "comportamientos")
-        {
-            @GUI.BigTop("Nuestros comportamientos", "~/Home/About?section=comportamientos", "bpink", "col-xs-12", "corazon.png")
-        }
-
-        @if (ViewBag.Section == "equipo")
-        {
-            @GUI.BigTop("Nuestro equipo", "~/Home/About?section=equipo", "bcuruba", "col-xs-12", "pinceles.png")
-        }
-
-
+</div>
+<div class="row">
+    <div class="col-lg-12">
+        <img src="~/Content/Images/imagenesNuevas/mision.PNG" style="width:100%;" class="img-responsive"/>
     </div>
-    <div class="row">
-        <div class="col-sm-8 text-left">
-            <br />
-            <br /><br />
-            @if (ViewBag.Section == "somos")
-            {
-                <p class="al">
-                    Somos una organización de alcance continental, con sedes en New Jersey (USA) y Medellín (Colombia), fundada en 2004 por las Máster Coaches(MCC ICF) Susan Seidman y Annie Torres. <br /><br />
-                    Estamos conformados por un equipo de personas apasionadas por lo que hacemos. Nos esforzamos por hacer del mejoramiento continuo algo real, lo que nos permite ser altamente diferenciados en el mercado. <br /><br />
-                    Actuamos bajo la convicción de hacer las cosas con excelencia, brindando a nuestros clientes experiencias que movilizan el ser para maximizar los resultados. <br /><br />
-                    Somos responsables con nuestro entorno y con cada persona con la que tenemos contacto, creyendo firmemente que el amor es la fuerza que moviliza cualquier circunstancia. <br /><br />
-                    Nuestros clientes, además de Estados Unidos, se han concentrado en paises como Panamá, Perú, Colombia, Argentina y Puerto Rico con la facilidad de brindar servicios en todos los países de Ameríca Latina y Habla Hispana. <br /><br />
-                </p>
-            }
-            @if (ViewBag.Section == "proposito")
-            {
-                <span>
-                    Somos un equipo que existe para inspirar el máximo potencial humano y empresarial, soportados en los principios filosóficos del coaching.
-                </span>
-            }
-
-            @if (ViewBag.Section == "horizonte")
-            {
-                <span>
-                    En el año 2019 seremos lideres globales en la línea de pensamiento del coaching con una perspectiva vanguardista en factores que agregan valor en la expansion de conciencia a nuestros publicos de interes.
-                </span>
-            }
-
-            @if (ViewBag.Section == "comportamientos")
-            {
-                <div class="row">
-                    <div class="col-sm-6">
-                        <a class="valor" style="background-image: url('@Url.Content("~/Content/Images/comp 1.png")')" data-title="PASIÓN" data-desc="Es el motor que impulsa nuestros comportamientos, vinculando nuestros propósitos superiores al proyecto de vida de cada persona que tiene contacto con nosotros, lo cual inspira y deja huella.">
-                            Pasión
-                        </a>
-                    </div>
-                </div>
-
-                <div class="row">                    
-                    <div class="col-sm-offset-6 col-sm-6">
-                        <a class="valor" style="background-image: url('@Url.Content("~/Content/Images/comp 2.png")')" data-title="CONGRUENCIA" data-desc="Buscamos permanente equilibrio entre nuestros ideales, acciones y forma de vida, que permita acercarnos al mundo desde el ejemplo, generando inspiración en cada ser.">
-                            Congruencia
-                        </a>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-sm-6">
-                        <a class="valor" style="background-image: url('@Url.Content("~/Content/Images/comp 3.png")')" data-title="DISCIPLINA" data-desc="Mantenemos coordinadas nuestras actitudes a la filosofía de vida corporativa, siendo diligentes en las acciones que nos permitan logros superiores y prósperos.">
-                            Disciplina
-                        </a>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-sm-offset-6 col-sm-6">
-                        <a class="valor" style="background-image: url('@Url.Content("~/Content/Images/comp 4.png")')" data-title="AUTENTICIDAD" data-desc="Somos una empresa auténtica y respetamos la autenticidad de cada ser, aspecto que honramos con la ausencia de juicios y celebrando la persona como un ser único e irrepetible.">
-                            Autenticidad
-                        </a>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-sm-6">
-                        <a class="valor" style="background-image: url('@Url.Content("~/Content/Images/comp 5.png")')" data-title="TRANSPARENCIA" data-desc="Somos abiertos como organización en nuestros actos, permitiendo a las personas que tienen relación con nosotros un ambiente de confianza, sinceridad y confidencialidad.">
-                            Transparencia
-                        </a>
-                    </div>
-                </div>
-                
-                <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                <h4 class="modal-title" id="valor-title"></h4>
-                            </div>
-                            <div class="modal-body">
-                                <div id="valor-desc"></div>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">CERRAR</button>
-                            </div>
-                        </div><!-- /.modal-content -->
-                    </div><!-- /.modal-dialog -->
-                </div><!-- /.modal -->
-
-                @section scripts{
-                    <script>
-                        $('.valor').click(function () {
-                            var id = '#' + $(this).attr('id');
-                            $('#valor-title').html($(this).data("title"));
-                            $('#valor-desc').html($(this).data("desc"));
-                            $('#myModal').modal('show');
-                        });
-                    </script>
-                }
-            }
-
-            @if (ViewBag.Section == "equipo")
-            {
-                <p>
-                    <ul>
-                        <li>Susan Seidman</li>
-                        <li>Annie Torres          </li>                        
-                        <li>Lisa Soto             </li>
-                    </ul>
-                </p>
-            }
-
-        </div>
-        <div class="col-sm-4 no-margin">
-            @if (ViewBag.Section != "somos")
-            {
-                @GUI.SmBtn("Quienes somos?", "~/Home/About?section=somos", "bblue")
-            }
-            @if (ViewBag.Section != "proposito")
-            {
-                @GUI.SmBtn("Nuestro propósito", "~/Home/About?section=proposito", "bgreen")
-            }
-
-            @if (ViewBag.Section != "horizonte")
-            {
-                @GUI.SmBtn("Nuestro horizonte", "~/Home/About?section=horizonte", "borange")
-            }
-
-            @if (ViewBag.Section != "comportamientos")
-            {
-                @GUI.SmBtn("Nuestros comportamientos", "~/Home/About?section=comportamientos", "bpink")
-            }
-
-            @if (ViewBag.Section != "equipo")
-            {
-                @GUI.SmBtn("Nuestro equipo", "~/Home/About?section=equipo", "bcuruba")
-            }
-        </div>
+</div>
+<div class="row">
+    <div class="col-lg-12">
+        <p  class="parrafo-margin">Nuestra misión es brindar un esquema de pensamiento holístico y empoderado a
+            individuos y organizaciones, mediante el arte del coaching transformacional.</p>
     </div>
-}
+</div>
+<div class="row">
+    <div class="col-lg-12">
+        <img src="~/Content/Images/imagenesNuevas/vision.PNG" style="width:100%;" class="img-responsive"/>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-12">
+        <p  class="parrafo-margin">Nuestra visión es participar en la evolución de la transformación global,
+            ofreciendo el proceso de coaching como un camino viable hacia la expansión de la
+            conciencia humana, resultando en la realización del potencial de los seres.</p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-12">
+        <img src="~/Content/Images/imagenesNuevas/valores.PNG" style="width:100%;" class="img-responsive" />
+    </div>
+</div>
+<div class="row">
+    <div class=" col-lg-offset-3 col-lg-3 col-sm-6 col-xs-6">
+        <ul style="font-size: 2em;">
+            <li>Amor</li>
+            <li>Autenticidad</li>
+            <li>Bondad</li>
+            <li>Compasión</li>
+            <li>Congruencia</li>
+            <li>Creatividad</li>
+        </ul>
+    </div>
+    <div class="col-lg-3 col-sm-6 col-xs-6">
+        <ul style="font-size: 2em;">
+            <li>Empatía</li>
+            <li>Gratitud</li>
+            <li>Integridad</li>
+            <li>Pasión</li>
+            <li>Servicio</li>
+            <li>Visión</li>
+        </ul>
+    </div>
+</div>
