@@ -234,6 +234,10 @@
     <Content Include="Content\Images\Carousel\HACEMOS 2.jpg" />
     <Content Include="Content\Images\Carousel\HACEMOS 3.jpg" />
     <Content Include="Content\Images\Carousel\HACEMOS 4.jpg" />
+    <Content Include="Content\Images\Carousel\imagen 4.png" />
+    <Content Include="Content\Images\Carousel\pasarela 1.png" />
+    <Content Include="Content\Images\Carousel\pasarela 2.png" />
+    <Content Include="Content\Images\Carousel\pasarela 3.png" />
     <Content Include="Content\Images\Carousel\PENSAMOS 1.jpg" />
     <Content Include="Content\Images\Carousel\PENSAMOS 2.jpg" />
     <Content Include="Content\Images\Carousel\PENSAMOS 3.jpg" />
@@ -534,6 +538,7 @@
     <Content Include="Content\Images\imagenesNuevas\2co.PNG" />
     <Content Include="Content\Images\imagenesNuevas\agenda.PNG" />
     <Content Include="Content\Images\imagenesNuevas\footer.PNG" />
+    <Content Include="Content\Images\imagenesNuevas\icono pago.png" />
     <Content Include="Content\Images\imagenesNuevas\imagenesv2\shutterstock_110379005.jpg" />
     <Content Include="Content\Images\imagenesNuevas\imagenesv2\shutterstock_113161126.jpg" />
     <Content Include="Content\Images\imagenesNuevas\imagenesv2\shutterstock_116283283.jpg" />
@@ -552,10 +557,6 @@
     <Content Include="Content\Images\imagenesNuevas\imagenesv2\shutterstock_76175764.jpg" />
     <Content Include="Content\Images\imagenesNuevas\imagenesv2\shutterstock_97696616.jpg" />
     <Content Include="Content\Images\imagenesNuevas\LOGOCFW.png" />
-    <Content Include="Content\Images\imagenesNuevas\mandala.jpg" />
-    <Content Include="Content\Images\imagenesNuevas\MANDALAS.jpg" />
-    <Content Include="Content\Images\imagenesNuevas\mandalas2.jpg" />
-    <Content Include="Content\Images\imagenesNuevas\MANDALAS3.jpg" />
     <Content Include="Content\Images\imagenesNuevas\manoAgenda.PNG" />
     <Content Include="Content\Images\imagenesNuevas\mision.PNG" />
     <Content Include="Content\Images\imagenesNuevas\moodle.PNG" />

@@ -382,8 +382,6 @@ footer a {
 
 .widget-container {    
     text-transform: uppercase;
-    padding: 4px !important;
-    margin: 5px 0 0 0;
 }
 
 .widget-container-sm {
@@ -1322,6 +1320,7 @@ a.bluetxt {
 }
 
 .img-banner-pagos {
+    cursor: pointer;
     background: #18a1ac;
     height: 0;
     padding-bottom: 20%;
