@@ -1368,7 +1368,7 @@ a.bluetxt {
     width: 12%;
 }
 #banner-contacto {
-    background-image: url('Images/img-contacto.jpg');
+    background-image: url('Images/imagen 19.png');
     background-size: cover;
     height: 400px;
     background-position: 50% 50%;
@@ -1388,7 +1388,7 @@ a.bluetxt {
     font-size: 2em;
 }
 #texo-servicio-img {
-    background-image: url('Images/img-servicios.jpg');
+    background-image: url('Images/imagen 16.png');
     background-size: cover;
     height: 400px;
     background-position: 50% 50%;
@@ -1401,7 +1401,7 @@ a.bluetxt {
         color: white;
 }
 .texo-personas-img {
-    background-image: url('Images/program-cetification.jpg');
+    background-image: url('Images/imagen 10.png');
     background-size: cover;
     height: 400px;
     background-position: 90% 90%;
@@ -1442,6 +1442,13 @@ a.bluetxt {
     bottom: 40%;
     left: 5%;
     color: white;
+}
+.pcc {
+    position: absolute;
+    bottom: 40%;
+    right: 20%;
+    color: white;
+    font-size:25px;
 }
 .texto-emp-vida {
     position: relative;
@@ -1500,10 +1507,10 @@ a.bluetxt {
 }
 /*helper de las certificaciones*/
 .banner-pcc {
-    background-image: url('Images/coaching-empresrial-vida.jpg');
+    background-image: url('Images/imagen 15.png');
     background-size: cover;
     height: 400px;
-    background-position: 20% 20%;
+    background-position: 50% 50%;
 }
  .banner-pcc h1 {
         position: absolute;
@@ -1513,10 +1520,10 @@ a.bluetxt {
 }
 
 .banner-acc {
-    background-image: url('Images/coaching-empresrial-vida.jpg');
+    background-image: url('Images/Imagen coaching empresarial y de vida asociado.png');
     background-size: cover;
     height: 400px;
-    background-position: 20% 20%;
+    background-position: 100% 100%;
 }
 
 .banner-acc h1 {
@@ -1528,7 +1535,7 @@ a.bluetxt {
 
 
 .banner-bienestar {
-    background-image: url('Images/coaching-empresrial-vida.jpg');
+    background-image: url('Images/Imagen coaching de vida y bienestar1.png');
     background-size: cover;
     height: 400px;
     background-position: 20% 20%;
@@ -1550,10 +1557,10 @@ color: black;
 
 
 .banner-espirirtual {
-    background-image: url('Images/coaching-empresrial-vida.jpg');
+    background-image: url('Images/Imagen coaching vida y espiritual1.png');
     background-size: cover;
     height: 400px;
-    background-position: 20% 20%;
+    background-position: 50% 50%;
 }
 .banner-oasis h1 {
         position: absolute;
@@ -1564,8 +1571,8 @@ color: black;
 
 
 .banner-oasis {
-    background-image: url('Images/coaching-empresrial-vida.jpg');
+    background-image: url('Images/Imagen tecnicas de respiracion1.png');
     background-size: cover;
     height: 400px;
-    background-position: 20% 20%;
+    background-position: 70% 70%;
 }
