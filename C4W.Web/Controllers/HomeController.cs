@@ -14,7 +14,29 @@ namespace C4W.Web.Controllers
 
         public ActionResult Index()
         {
+            var lang = Session["lang"];
+
+            //texto en el idioma ingles
+            if(lang!=null && lang.ToString() == "en")
+            {
+                ViewData[""] = "";
+            }
+            //texto en el idioma español
+            else
+            {
+                ViewData[""] = "";
+            }
             return View();
+        }
+        public ActionResult Es()
+        {
+            Session["lang"] = "es";
+            return RedirectToAction("Index");
+        }
+        public ActionResult En()
+        {
+            Session["lang"] = "en";
+            return RedirectToAction("Index");
         }
 
         public ActionResult About(string section)
