@@ -1367,15 +1367,14 @@ a.bluetxt {
     left: 7%;
     width: 12%;
 }
-}
-#foto {
+#banner-contacto {
     background-image: url('Images/img-contacto.jpg');
     background-size: cover;
     height: 400px;
     background-position: 50% 50%;
 }
 
-#foto h1 {
+#banner-contacto h1 {
         position: absolute;
         bottom: 30%;
         right: 12%;
@@ -1397,7 +1396,7 @@ a.bluetxt {
 
 #texo-servicio-img h1 {
         position: absolute;
-        bottom: 40%;
+        bottom: 25%;
         right: 20%;
         color: white;
 }
@@ -1410,7 +1409,7 @@ a.bluetxt {
 
 .texo-personas-img h1 {
     position: absolute;
-    bottom: 40%;
+    bottom: 30%;
     left: 5%;
     color: white;
 }
