@@ -150,10 +150,7 @@ a:active, a:active  {
   border-radius: 0;
 }
 
-body {
-    padding-top: 10px;
-    padding-bottom: 20px;    
-}
+
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: bold; 
@@ -1294,6 +1291,82 @@ a.bluetxt {
         margin-left: 0;
     }
 
+}
+
+.text-banner {
+    color: white;
+    position: absolute;
+}
+
+.img-banner-pago {
+    background-image: url("Images/imagenesNuevas/imagenesv2/shutterstock_271371923.jpg");
+    background-size: cover;
+    height: 420px;
+    background-position: 50% 50%;
+}
+
+.img-banner-about {
+    background-image: url("Images/imagenesNuevas/imagenesv2/shutterstock_255518731.jpg");
+    background-size: cover;
+    height: 420px;
+    background-position: 50% 50%;
+}
+
+.img-banner-video {
+    background-image: url("Images/imagenesNuevas/imagenesv2/shutterstock_110379005.jpg");
+    background-size: cover;
+    height: 0;
+    padding-bottom: 20%;
+    background-position: 50% 50%;
+    background-color: rgba(51,204,204,0.1);
+}
+
+.img-banner-pagos {
+    background: #18a1ac;
+    height: 0;
+    padding-bottom: 20%;
+}
+
+.img-banner-moodle {
+    cursor: pointer;
+    background-image: url("Images/imagenesNuevas/imagenesv2/shutterstock_116283283.jpg");
+    background-size: cover;
+    height: 0;
+    padding-bottom: 20%;
+    background-position: 50% 50%;
+    background-color: rgba(51,204,204,0.1);
+}
+
+.img-banner-mandala {
+    cursor: pointer;
+    background-image: url("Images/imagenesNuevas/imagenesv2/shutterstock_97696616.jpg");
+    background-size: cover;
+    height: 0;
+    padding-bottom: 20%;
+    background-position: 50% 50%;
+    background-color: rgba(51,204,204,0.1);
+}
+
+.play-btn {
+    bottom: 30%;
+    left: 45%;
+    position: absolute;
+    width: 7%;
+}
+
+.pay-btn {
+    bottom: 30%;
+    left: 45%;
+    position: absolute;
+    width: 15%;
+}
+
+.moodle-img {
+    position: absolute;
+    bottom: 52%;
+    left: 7%;
+    width: 12%;
+}
 }
 #foto {
     background-image: url('Images/img-contacto.jpg');

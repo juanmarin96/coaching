@@ -19,10 +19,10 @@
 	</span><!-- /top-link-block -->
 <nav class="navbar navbar-fixed-top navbar-color">
 	<div class="container-fluid">
-		<div class="navbar-header">
-			<img src="~/Content/Images/logo-c4w.png" class="img-responsive img-navbar"/>
+		<div class="navbar-header" style="padding:10px 10px;">
+			<a href="~/Home"><img src="~/Content/Images/logo-c4w.png" class="img-responsive img-navbar" /></a>
 		</div>
-		<button style="background: grey; margin-top: 7%; margin-right: 20px;" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+		<button style="background: grey; margin-top: 10%; margin-right: 20px;" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
 			<span class="sr-only color-bar">Toggle navigation</span>
 			<span class="icon-bar color-bar"></span>
 			<span class="icon-bar color-bar"></span>
@@ -43,44 +43,71 @@
 	@RenderBody()
 	<br/>
 	<br/>
+	<div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg video-modal-dialog">        
+			<div class="modal-content video-modal-content">
+				<div class="modal-header">
+					PARA QUÉ CFW?
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="video-container">
+					<iframe frameborder="0" width="560" height="315" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
 	<footer class="footer-distributed">
 		<div class="footer-left">
 			<img src="~/Content/Images/imagenesNuevas/LOGOCFW.png" class="img-responsive" style="width: 60%; height: 60%;"/>
 		</div>
 
 		<div class="footer-center">
-		    <div>
-		        <i class="fa fa-phone"></i>
-		        <p>EE.UU. (+1)917 952 3913|LATAM (+57)310 310 68 57</p>
-		    </div>
-		    <div>
-		        <i class="fa fa-facebook"></i>
-		        <p>/coachingforwellness</p>
-		    </div>
-		    <div>
-		        <i class="fa fa-envelope"></i>
-		        <p><a href="mailto:info@c4w.co">info@c4w.co</a></p>
-		    </div>
-		    <div style="text-align: center;">
-                <p>COPYRIGHT - COACHING FOR WELLNESS 2017</p>
-		    </div>
-		    
+			<div>
+				<i class="fa fa-phone"></i>
+				<p>EE.UU. (+1)917 952 3913|LATAM (+57)310 310 68 57</p>
+			</div>
+			<div>
+				<i class="fa fa-facebook"></i>
+				<p>/coachingforwellness</p>
+			</div>
+			<div>
+				<i class="fa fa-envelope"></i>
+				<p><a href="mailto:info@c4w.co">info@c4w.co</a></p>
+			</div>
+			<div style="text-align: center;">
+				<p>COPYRIGHT - COACHING FOR WELLNESS 2017</p>
+			</div>
+			
 
 		</div>
 
 		<div class="footer-right">
 			<p class="footer-company-about text-center">
-			    <a style="color: black; background: #93c01f; border-color: white; border-width: 2px; " href="~/Home/Contact" class="btn btn-danger btn-lg">CONTÁCTANOS</a>
+				<a style="color: black; background: #93c01f; border-color: white; border-width: 2px; " href="~/Home/Contact" class="btn btn-danger btn-lg">CONTÁCTANOS</a>
 			</p>
 		</div>
 
 	</footer>
 </div>
 
+
 @Scripts.Render("~/bundles/jquery")
 @Scripts.Render("~/bundles/jqueryval")
 @Scripts.Render("~/bundles/bootstrap")
 @RenderSection("scripts", required: false)
+<script>
+	$('#videopoup').click(function () {
+		var src = 'https://www.youtube.com/embed/KYcQr6U93vQ';
+		$('#myModal').modal('show');
+		$('#myModal iframe').attr('src', src);
+	});
+
+	$('#myModal button').click(function () {
+		$('#myModal iframe').removeAttr('src');
+	});
+</script>
 <script>
 	// Only enable if the document has a long scroll bar
 	// Note the window height + offset
