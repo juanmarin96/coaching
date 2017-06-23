@@ -1064,7 +1064,6 @@ a.bluetxt {
 .Tprogramas {
     color: #22a2ad;
     text-align: center;
-    font-size: 75px;
 }
 .margen{
     padding-left:30px;
@@ -1295,4 +1294,206 @@ a.bluetxt {
         margin-left: 0;
     }
 
+}
+#foto {
+    background-image: url('Images/img-contacto.jpg');
+    background-size: cover;
+    height: 400px;
+    background-position: 50% 50%;
+}
+
+#foto h1 {
+        position: absolute;
+        bottom: 30%;
+        right: 12%;
+        color: white;
+}
+.texto-helper {
+    font-size: 5em;
+}
+
+.texto-helperm {
+    font-size: 2em;
+}
+#texo-servicio-img {
+    background-image: url('Images/img-servicios.jpg');
+    background-size: cover;
+    height: 400px;
+    background-position: 50% 50%;
+}
+
+#texo-servicio-img h1 {
+        position: absolute;
+        bottom: 40%;
+        right: 20%;
+        color: white;
+}
+.texo-personas-img {
+    background-image: url('Images/program-cetification.jpg');
+    background-size: cover;
+    height: 400px;
+    background-position: 90% 90%;
+}
+
+.texo-personas-img h1 {
+    position: absolute;
+    bottom: 40%;
+    left: 5%;
+    color: white;
+}
+.servicios-texto {
+    position: relative;
+}
+
+.servicios-texto h1 {
+        position: absolute;
+        bottom: 40%;
+        right: 20%;
+        color: white;
+}
+#texto-personas-ppal {
+    position: relative;
+}
+
+#texto-personas-ppal h1{
+    position: absolute;
+    bottom: 40%;
+    right: 20%;
+    color: white;
+}
+.texto-coaching-profesional {
+    position: relative;
+}
+
+.texto-coaching-profesional h1{
+    position: absolute;
+    bottom: 40%;
+    left: 5%;
+    color: white;
+}
+.texto-emp-vida {
+    position: relative;
+}
+.texto-emp-vida  h1{
+    position: absolute;
+    bottom: 30%;
+    left: 20%;
+    color: white;
+}
+.texto-asociado {
+    position: relative;
+}
+.texto-asociado  h1{
+    position: absolute;
+    bottom: 30%;
+    right: 10%;
+    color: white;
+}
+.texto-coach-vida{
+    position: relative;
+}
+.texto-coach-vida h1 {
+  position: absolute;
+  bottom: 30%;
+  left: 20%;
+  color: white;
+}
+.texto-bienestar {
+    position: relative;
+}
+.texto-bienestar h1{
+    position: absolute;
+    bottom: 30%;
+    left: 20%;
+    color: white;
+}
+.texto-espiritual {
+    position: relative;
+}
+.texto-espiritual h1{
+    position: absolute;
+    bottom: 30%;
+    left: 20%;
+    color: white;
+}
+.oasis {
+    position: relative;
+}
+
+.oasis h1 {
+        position: absolute;
+        bottom: 30%;
+        left: 5%;
+        color: white;
+}
+/*helper de las certificaciones*/
+.banner-pcc {
+    background-image: url('Images/coaching-empresrial-vida.jpg');
+    background-size: cover;
+    height: 400px;
+    background-position: 20% 20%;
+}
+ .banner-pcc h1 {
+        position: absolute;
+        bottom: 30%;
+        left: 5%;
+        color:black;
+}
+
+.banner-acc {
+    background-image: url('Images/coaching-empresrial-vida.jpg');
+    background-size: cover;
+    height: 400px;
+    background-position: 20% 20%;
+}
+
+.banner-acc h1 {
+        position: absolute;
+        bottom: 30%;
+        left: 5%;
+        color: black;
+}
+
+
+.banner-bienestar {
+    background-image: url('Images/coaching-empresrial-vida.jpg');
+    background-size: cover;
+    height: 400px;
+    background-position: 20% 20%;
+}
+
+.banner-bienestar h1 {
+position: absolute;
+bottom: 30%;
+left: 5%;
+color: black;
+}
+
+.banner-espirirtual h1 {
+    position: absolute;
+    bottom: 30%;
+    left: 5%;
+    color: black;
+}
+
+
+.banner-espirirtual {
+    background-image: url('Images/coaching-empresrial-vida.jpg');
+    background-size: cover;
+    height: 400px;
+    background-position: 20% 20%;
+}
+.banner-oasis h1 {
+        position: absolute;
+        bottom: 30%;
+        left: 5%;
+        color: black;
+}
+
+
+.banner-oasis {
+    background-image: url('Images/coaching-empresrial-vida.jpg');
+    background-size: cover;
+    height: 400px;
+    background-position: 20% 20%;
 }

@@ -3,8 +3,13 @@
     ViewBag.Title = "Personas";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
-
+<div class="row">
+    <div class="col-lg-12 texo-personas-img">
+        <!--<img src="~/Content/Images/program-cetification.jpg" class="img-responsive" style="width:100%;height:400px" />-->
+        <h1 class="visible-lg visible-md" style="font-size:3em">PROGRAMAS <br /> DE CERTIFICACIÓN</h1>
+        <h1 class="visible-sm visible-xs">PROGRAMAS <br /> DE CERTIFICACIÓN</h1>
+    </div>
+</div>
 
 <div class="row" id="lev-1">
     <div id="seminarios" style="display:none;">
@@ -15,9 +20,6 @@
         @GUI.BigScrlBtn("INTELIGENCIA EMOCIONAL", "#emocional", "#lev-2", "bgreen", "col-md-3")
         @GUI.BigScrlBtn("INTELIGENCIA ESPIRITUAL", "#espiritual", "#lev-2", "bgreen-light", "col-md-3")
     </div>
-    <div id="certificaciones" style="">
-
-        <img src="~/Content/Images/programasCertifiacion.PNG" class="img-responsive" style="width:100%" />
         <div class="margen">
             <div class="col-lg-12">
                 <h1 class="Tprogramas" id="coaching">COACHING</h1>
@@ -34,23 +36,38 @@
                 </p>
             </div>
         </div>
-        <div style="cursor:pointer">
-            <img src="~/Content/Images/coaching-profesional.PNG" class="img-responsive" style="width:100%" />
+        <div class="texto-coaching-profesional">
+            <img src="~/Content/Images/coaching-nivel-prpfesional.jpg" class="img-responsive" style="width:100%;height:250px" />
+            <h1>COACHING NIVEL <br />PROFESIONAL</h1>
         </div>
-        <div style="cursor:pointer" data-target="#lev-2" data-element="#internacional" class="wbutton-xl empresarial">
-            <center><img src="~/Content/Images/coaching-empresarial.PNG" class="img-responsive" style="width:70%" /></center>
+        <div style="cursor:pointer" data-target="#lev-2" data-element="#internacional" class="wbutton-xl empresarial texto-emp-vida">
+            <center><img src="~/Content/Images/coaching-empresrial-vida.jpg" class="img-responsive" style="width:70%;height:250px" /></center>
+            <h1 id="l1">COACH<br /> EMPRESARIAL<br /> Y DE VIDA</h1>
         </div>
-        <div style="cursor:pointer" class="empresarial">
-            <img src="~/Content/Images/coaching-asociado.PNG" class="img-responsive" style="width:100%" />
+        <div style="cursor:pointer" class="empresarial texto-asociado">
+            <img src="~/Content/Images/coaching-nivel-asociado.jpg" class="img-responsive" style="width:100%;height:250px" />
+            <h1>COACHING<br />NIVEL ASOCIADO</h1>
         </div>
-        <div style="cursor:pointer" class="empresarial">
-            <center><img src="~/Content/Images/coaching-acc.PNG" class="img-responsive" style="width:70%" /></center>
+        <div style="cursor:pointer" data-target="#lev-2" data-element="#actp" class="wbutton-xl empresarial texto-coach-vida" >
+            <center><img src="~/Content/Images/coaching-acc.jpg" class="img-responsive" style="width:70%;height:250px" /></center>
+            <h1 id="kn">COACH<br />EMPRESARIAL<br />Y DE VIDA</h1>
         </div>
-
-       
-    </div>
+        <!--COACHING DE VIDA Y BIENESTAR-->
+        <div style="cursor:pointer" data-target="#lev-2" data-element="#vida" class="wbutton-xl empresarial texto-bienestar">
+            <center><img src="~/Content/Images/coaching-acc.jpg" class="img-responsive" style="width:70%;height:250px" /></center>
+            <h1>COACH DE VIDA<br /> Y BIENESTAR</h1>
+        </div>
+        <!--●	COACHING DE VIDA Y ESPIRITUAL-->
+        <div style="cursor:pointer" data-target="#lev-2" data-element="#cespiritual" class="wbutton-xl empresarial texto-espiritual">
+            <center><img src="~/Content/Images/coaching-acc.jpg" class="img-responsive" style="width:70%;height:250px" /></center>
+            <h1>COACH DE VIDA<br /> Y ESPIRITUAL</h1>
+        </div>
+        <!--oasis-->
+        <div style="cursor:pointer" data-target="#lev-2" data-element="#oasis" class="wbutton-xl empresarial oasis">
+            <img src="~/Content/Images/coaching-acc.jpg" class="img-responsive" style="width:100%;height:250px" />
+            <h1>TÉCNICA <br />DE RESPIRACIÓN<br /> OASIS</h1>
+        </div>
 </div>
-<br /><br />
 <br />
 
 <div id="lev-2">
@@ -820,8 +837,8 @@
     </div>
 
     <div class="row" id="internacional" style="display:none;">
-        <div class="col-lg-12">
-            <img src="~/Content/Images/coaching-pcc.PNG" class="img-responsive" style="width:100%"/>
+        <div class="col-lg-12 banner-pcc">
+            <h1>COACH<br /> EMPRESARIAL<br /> Y DE VIDA</h1>
         </div>
         <div class="margen-empresarial">
         <div class="col-lg-12">
@@ -883,9 +900,10 @@
     </div>
 
     <div class="row" id="actp" style="display:none;">
-        <br /><br /><br />
-        @GUI.BigTop("CERTIFICACIÓN PROFESIONAL EN COACHING PROFESIONAL Y DE VIDA - ACTP", "", "bpink nohover", "col-xs-12", "ejecutiva.png")
-        <br /><br /><br />
+        <div class="col-lg-12 banner-acc">
+            <h1>COACH<br /> EMPRESARIAL<br /> Y DE VIDA</h1>
+        </div>
+        <div class="margen-empresarial">
         <p align="justify">
             Esta certificación hace un recorrido por los temas de mayor importancia en la profesión del Coaching, enfocada en elementos equilibrados entre la vida y la
             empresa, lo que permite ampliar las posibilidades de ejercer con éxito en diversos nichos de mercado. Se encuentra acreditada como ACTP, lo que permite
@@ -1223,6 +1241,7 @@
             Descarga el brochure del programa para conocer más detalles.
         </p>
         <br /><br />
+        </div>
     </div>
 
     <div class="row" id="equipos" style="display:none;">
@@ -1425,9 +1444,10 @@
     </div>
 
     <div class="row" id="vida" style="display:none;">
-        <br /><br /><br />
-        @GUI.BigTop("CERTIFICACIÓN INTERNACIONAL COACHING DE VIDA Y BIENESTAR ", "", "bcuruba nohover", "col-xs-12", "piedras.png")
-        <br /><br /><br />
+        <div class="col-lg-12 banner-bienestar">
+            <h1>COACH DE VIDA<br /> Y BIENESTAR</h1>
+        </div>
+        <div class="margen-empresarial">
         <p align="justify">
             Esta certificación se concentra en el SER, y sus posibilidades infinitas de prosperidad y bienestar a todos los niveles. Hace un recorrido por todos los
             temas del coaching de vida, desde una perspectiva holística, lo que permite al participante contar con herramientas de vanguardia con las que se podrá
@@ -1604,18 +1624,21 @@
         </p>
         <p>
             <br />
-            La presente certificación se encuentra alineada al código de ética y las competencias centrales de la Federación Internacional de Caoching (ICF).
+            La certificación está alineada al código de ética y las competencias centrales de la International Coach Federation (ICF). Además, brinda los requisitos necesarios para solicitar la acreditación ACC (Associate Certified Coach) en la ICF, luego de culminado el proceso con CFW y luego de haber completado el total de horas de experiencia requeridas por la ICF.
+
         </p>
         <p align="justify">
             Descarga el brochure del programa para conocer más detalles.
         </p>
         <br /><br />
+      </div>
     </div>
 
     <div class="row" id="cespiritual" style="display:none;">
-        <br /><br /><br />
-        @GUI.BigTop("CERTIFICACIÓN INTERNACIONAL EN COACHING ESPIRITUAL", "", "borange nohover", "col-xs-12", "mujer mirando.png")
-        <br /><br /><br />
+        <div class="col-lg-12 banner-espirirtual">
+            <h1>COACH DE VIDA<br /> Y ESPIRITUAL</h1>
+        </div>
+       <div class="margen-empresarial">
         <p align="justify">
             Esta certificación se concentra en el SER ESPIRITUAL, y sus posibilidades infinitas de felicidad y conexión que llevan a la paz interior y la plenitud de
             la vida. Hace un recorrido por los temas del coaching de vida, desde una perspectiva holística, ademas de explirar a profundidad la espiritualidad humana
@@ -1798,12 +1821,50 @@
         </p>
         <p>
             <br />
-            La presente certificación se encuentra alineada al código de ética y las competencias centrales de la Federación Internacional de Caoching (ICF).
+            La certificación está alineada al código de ética y las competencias centrales de la International Coach Federation (ICF). Además, brinda los requisitos necesarios para solicitar la acreditación ACC (Associate Certified Coach) en la ICF, luego de culminado el proceso con CFW y luego de haber completado el total de horas de experiencia requeridas por la ICF.
+
         </p>
         <p align="justify">
             Descarga el brochure del programa para conocer más detalles.
         </p>
         <br /><br />
+      </div>
+    </div>
+    <!--oasis------------------------------>
+    <div class="row" id="oasis" style="display:none;">
+        <div class="col-lg-12 banner-oasis">
+            <h1>TÉCNICA <br />DE RESPIRACIÓN<br /> OASIS</h1>
+        </div>
+        <div class="margen-empresarial">
+            <h4 align="center">¿El estrés está causando estragos en su vida personal / profesional?</h4>
+            <h4 align="center">¿Busca calma en el caos?</h4>
+            <h4 align="center">Encuéntrelo en OASIS.</h4>
+            <br />
+            <p align="center">Aprenda las estrategias de 60 segundos de OASIS para una vida más feliz y saludable.
+                Encuentre equilibrio y disfrute hoy.
+            </p>
+            <p>Susan Seidman es una adiestradora certificada de Oasis, quien ofrece programas de certificación en persona y en línea, tanto en español como en inglés.</p>
+            <p>Las estrategias de Oasis de 60 segundos son un kit para dar un impulso y lograr sanidad en todos los sectores de la vida.</p>
+            <ul>
+                <li>Cuatro estrategias probadas para cambiar su cerebro y su vida en menos de un minuto.</li>
+                <li>Son estrategias diarias sencillas, prácticas y fáciles de aprender.</li>
+                <li>Honestamente toman sólo 60 segundos cada una.</li>
+                <li>Son una vía rápida para volver a alambrar su cerebro del caos a la calma. </li>
+                <li>Son herramientas prácticas de Mindfulness para fortalecer su mente, cuerpo y espíritu.</li>
+            </ul>
+            <p>Las estrategias de 60 segundos de OASIS le enseñan cómo navegar las pequeñas olas de la vida y los grandes tsunamis para disfrutar de una mayor salud y felicidad en su vida.</p>
+            <p>Aprenda a usar la neuroplasticidad de su propio cerebro.Conviértase en el CEO de su propia vida.</p>
+            <p>La esencia de OASIS no es eliminar el estrés. Más bien, es ayudarnos a interactuar conscientemente - y con claridad - con lo que está en nuestro plato.</p>
+            <p>Todos tenemos estrés. La buena noticia: no necesitamos ser víctimas indefensas. La manera como respondemos al estrés hace toda la diferencia.</p>
+            <h4>¿POR QUÉ ESPERAR? ¡Dése un OASIS ahora!</h4>
+            <p>Este curso también ofrece a los coaches las siguientes horas de educación continua:</p>
+            <ul>
+                <li>Competencias básicas - 7.38 horas</li>
+                <li>Desarrollo de Recursos - 4.62 horas</li>
+            </ul>
+            <p>Para obtener información adicional, visite: </p>
+            <a href="http://www.milliegrenough.com/oasis-training/oasis-trainers/">http://www.milliegrenough.com/oasis-training/oasis-trainers/</a>
+        </div>
     </div>
 
     <div class="row" id="genos" style="display:none;">

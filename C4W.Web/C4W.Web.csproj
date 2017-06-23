@@ -243,11 +243,17 @@
     <Content Include="Content\Images\Carousel\SOMOS 3.jpg" />
     <Content Include="Content\Images\Carousel\SOMOS 4.jpg" />
     <Content Include="Content\Images\cfw logo.png" />
+    <Content Include="Content\Images\coaching-acc.jpg" />
     <Content Include="Content\Images\coaching-acc.PNG" />
     <Content Include="Content\Images\coaching-asociado.PNG" />
+    <Content Include="Content\Images\coaching-ejecutivo.jpg" />
     <Content Include="Content\Images\coaching-ejecutivo.PNG" />
     <Content Include="Content\Images\coaching-empresarial.PNG" />
+    <Content Include="Content\Images\coaching-empresrial-vida.jpg" />
+    <Content Include="Content\Images\coaching-equipos.jpg" />
     <Content Include="Content\Images\coaching-equipos.PNG" />
+    <Content Include="Content\Images\coaching-nivel-asociado.jpg" />
+    <Content Include="Content\Images\coaching-nivel-prpfesional.jpg" />
     <Content Include="Content\Images\coaching-pcc.PNG" />
     <Content Include="Content\Images\coaching-profesional.PNG" />
     <Content Include="Content\Images\col.png" />
@@ -466,6 +472,7 @@
     <Content Include="Content\Images\Flags\za.png" />
     <Content Include="Content\Images\Flags\zm.png" />
     <Content Include="Content\Images\Flags\zw.png" />
+    <Content Include="Content\Images\flor.PNG" />
     <Content Include="Content\Images\guepardo.png" />
     <Content Include="Content\Images\hombre mirando.png" />
     <Content Include="Content\Images\icono agenda-sm.png" />
@@ -514,6 +521,9 @@
     <Content Include="Content\Images\imagenesNuevas\valores.PNG" />
     <Content Include="Content\Images\imagenesNuevas\vision.PNG" />
     <Content Include="Content\Images\imagenesNuevas\WINTER.jpg" />
+    <Content Include="Content\Images\img-contacto.jpg" />
+    <Content Include="Content\Images\img-servicios.jpg" />
+    <Content Include="Content\Images\img-servicios2.jpg" />
     <Content Include="Content\Images\lapiz mano.png" />
     <Content Include="Content\Images\libros.png" />
     <Content Include="Content\Images\logo 2 arriba.png" />
@@ -536,6 +546,7 @@
     <Content Include="Content\Images\piedras.png" />
     <Content Include="Content\Images\pinceles.png" />
     <Content Include="Content\Images\pluma.png" />
+    <Content Include="Content\Images\program-cetification.jpg" />
     <Content Include="Content\Images\programasCertifiacion.PNG" />
     <Content Include="Content\Images\proposito.png" />
     <Content Include="Content\Images\qr.PNG" />
