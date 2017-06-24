@@ -1444,10 +1444,10 @@ a.bluetxt {
 }
 .pcc {
     position: absolute;
-    bottom: 40%;
+    bottom: 30%;
     right: 20%;
     color: white;
-    font-size:25px;
+    font-size:15px;
 }
 .texto-emp-vida {
     position: relative;
