@@ -3,86 +3,88 @@
 }
 <div class="row">
     <div class="col-lg-12 col-md-12 col-xs-12 img-banner-about">
-        <h4 style="left: 7%; bottom: 12%; text-align: center;font-size: 5em;" class="text-banner visible-lg visible-md">QUIENES<br/>SOMOS</h4>
-        <h4 style="left: 7%; bottom: 12%; text-align: center;font-size: 3em;" class="text-banner visible-sm visible-xs">QUIENES<br/>SOMOS</h4>
+        <h4 style="left: 7%; bottom: 12%; text-align: center;font-size: 4em;" class="text-banner visible-lg visible-md">@ViewData["T1_sobre1"]<br/>@ViewData["T1_sobre2"]</h4>
+        <h4 style="left: 7%; bottom: 12%; text-align: center;font-size: 3em;" class="text-banner visible-sm visible-xs">@ViewData["T1_sobre1"]<br />@ViewData["T1_sobre2"]</h4>
     </div>
 </div>
 <div class="row">
     <div class="col-lg-12">
-        <p class="parrafo-margin text-center"> Somos una organización que promueve el bienestar en 
-            todos los aspectos de la vida. Coaching For Wellness (CFW) fue fundado en 2004 por Susan Seidman y Annie Torres, 
-            ambas Máster Coaches Certificadas (MCC por sus siglas en inglés) y pioneras en la profesión de coaching en los Estados Unidos, 
-            Puerto Rico y Latinoamérica.
-            Nos apasiona lo que hacemos. Procuramos hacer del mejoramiento continuo algo real, lo que nos permite ser
-            altamente diferenciados en el mercado.</p>  
+        <p class="parrafo-margin text-center">@ViewData["p1_sobre"]</p>  
             
-        <p class="parrafo-margin text-center">Actuamos bajo la convicción de hacer las cosas con excelencia, brindando a nuestros clientes experiencias que inspiran al Ser para maximizar los resultados.
-            Somos responsables con nuestro entorno y con cada persona con la que tenemos contacto, creyendo firmemente que el amor es la fuerza que transforma cualquier situación.
-            Nuestros clientes, además de en Estados Unidos, se han concentrado en países como Puerto Rico, Colombia, Perú, Argentina y Panamá.</p>
+        <p class="parrafo-margin text-center">@ViewData["p2_sobre"]</p>
     </div>
 </div>
 <div class="row">
     <div class="col-lg-12">
-        <img src="~/Content/Images/imagenesNuevas/mision.PNG" style="width:100%;" class="img-responsive"/>
+        <img src="~/Content/Images/imagenesNuevas/imagen 7.png" style="width:100%; min-height: 100px;" class="img-responsive"/>
+        <h4 style="left: 37%; bottom: 5%; text-align: center; font-size: 4.5em;" class="text-banner visible-lg visible-md">@ViewData["mision_titulo_sobre1"]<br/>@ViewData["mision_titulo_sobre2"]</h4>
+        <h4 style="left: 40%; bottom: 2%; text-align: center; font-size: 2em;" class="text-banner visible-sm visible-xs">@ViewData["mision_titulo_sobre1"]<br />@ViewData["mision_titulo_sobre2"]</h4>
     </div>
 </div>
 <div class="row">
     <div class="col-lg-12">
-        <p  class="parrafo-margin text-center">Nuestra misión es brindar un esquema de pensamiento holístico y empoderado a individuos y organizaciones, mediante el arte del coaching transformacional.</p>
+        <p  class="parrafo-margin text-center">@ViewData["mision_sobre"]</p>
     </div>
 </div>
 <div class="row">
     <div class="col-lg-12">
-        <img src="~/Content/Images/imagenesNuevas/vision.PNG" style="width:100%;" class="img-responsive"/>
+        <img src="~/Content/Images/imagenesNuevas/imagen 8.png" style="width:100%; min-height: 100px;" class="img-responsive"/>
+        <h4 style="left: 39%; bottom: 5%; text-align: center; font-size: 4.5em;" class="text-banner visible-lg visible-md">@ViewData["vision_titulo_sobre1"]<br/>@ViewData["vision_titulo_sobre2"]</h4>
+        <h4 style="left: 40%; bottom: 2%; text-align: center; font-size: 2em;" class="text-banner visible-sm visible-xs">@ViewData["vision_titulo_sobre1"]<br />@ViewData["vision_titulo_sobre2"]</h4>
     </div>
 </div>
 <div class="row">
     <div class="col-lg-12">
-        <p  class="parrafo-margin text-center">Nuestra visión es participar en la evolución de la transformación global, ofreciendo el proceso de coaching como un camino viable hacia la expansión de la conciencia humana, resultando en la realización del potencial de los seres humanos.</p>
+        <p  class="parrafo-margin text-center">@ViewData["vision_sobre"]</p>
     </div>
 </div>
 <div class="row">
     <div class="col-lg-12">
-        <img src="~/Content/Images/imagenesNuevas/valores.PNG" style="width:100%;" class="img-responsive" />
+        <img src="~/Content/Images/imagenesNuevas/imagen 9.png" style="width:100%;min-height: 100px;" class="img-responsive" />
+        <h4 style="left: 18%; bottom: 7%; text-align: center; font-size: 4.5em;" class="text-banner visible-lg visible-md">@ViewData["valoresCentrales_sobre1"]<br/>@ViewData["valoresCentrales_sobre2"]</h4>
+        <h4 style="left: 12%; bottom: 3%; text-align: center; font-size: 2em;" class="text-banner visible-sm visible-xs">@ViewData["valoresCentrales_sobre1"]<br />@ViewData["valoresCentrales_sobre2"]</h4>
     </div>
 </div>
 <div class="row">
     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-        <h3 class="title-margin">Amor</h3>
+        <h3 class="title-margin text-center color-title">@ViewData["amor_titulo"]</h3>
         <p class="parrafo-margin">
-            Todos nuestros valores se fundamentan sobre una base de amor, la cual comprende el propósito más elevado de nuestra existencia como organización, así como la razón de ser de nuestros servicios.
+            @ViewData["p_amor_titulo"]
         </p>
 
     </div>
     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-        <h3 class="title-margin">Autenticidad</h3>
+        <h3 class="title-margin text-center color-title">@ViewData["auten_titulo"]</h3>
         <p class="parrafo-margin">
-            Somos una organización auténtica y respetamos la autenticidad de cada ser, aspecto que honramos celebrando a cada persona como un ser único e irrepetible.
+            @ViewData["p_auten_titulo"]
         </p>
     </div>
 </div>
 <div class="row">
     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-        <h3 class="title-margin">Congruencia</h3>
+        <h3 class="title-margin text-center color-title">@ViewData["congru_titulo"]</h3>
         <p class="parrafo-margin">
-            Buscamos permanente equilibrio entre nuestros ideales, acciones y filosofía de vida, que permita acercarnos al mundo desde la integridad y el ejemplo, generando inspiración en cada ser.</p>
+            @ViewData["p_congru_titulo"]
+        </p>
     </div>
     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-        <h3 class="title-margin">Gratitud</h3>
+        <h3 class="title-margin text-center color-title">@ViewData["grati_titulo"]</h3>
         <p class="parrafo-margin">
-            La gratitud está presente en todo lo que hacemos, ya que valoramos cómo la experiencia de coaching nos permite contribuir a transformar vidas.</p>
+            @ViewData["p_grati_titulo"]
+        </p>
     </div>
 </div>
 <div class="row">
     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-        <h3 class="title-margin">Pasión</h3>
+        <h3 class="title-margin text-center color-title">@ViewData["pasion_titulo"]</h3>
         <p class="parrafo-margin">
-            Es el motor que impulsa nuestros comportamientos, vinculando nuestro- propósito- superior- al proyecto de vida de cada persona que tiene contacto con nosotros, lo cual les inspira y deja huellas para todos.
+            @ViewData["p_pasion_titulo"]
         </p>
     </div>
     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-        <h3 class="title-margin">Transparencia</h3>
+        <h3 class="title-margin text-center color-title">@ViewData["transpa_titulo"]</h3>
         <p class="parrafo-margin">
-            Nuestra meta principal es crear un ambiente amoroso - de confianza, honestidad y confidencialidad - para nuestros clientes y colegas.        </p>
+            @ViewData["p_transpa_titulo"]
+        </p>
     </div>
 </div>
