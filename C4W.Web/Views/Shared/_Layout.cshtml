@@ -30,10 +30,10 @@
 		</button>
 		<div class="collapse navbar-collapse">
 			<ul class="nav navbar-nav" style="margin-top: 40px;">
-				<li><a class="link-nav-color" href="~/Home/About">SOBRE NOSOTROS</a></li>
-				<li><a class="link-nav-color" href="~/Home/Personas">CERTIFICACIONES</a></li>
-				<li><a class="link-nav-color" href="~/Home/Servicios">SERVICIOS</a></li>
-				<li><a class="link-nav-color" href="~/Home/Contact">CONTÁCTANOS</a></li>
+				<li><a class="link-nav-color" href="~/Home/About">@ViewData["aboutUs_link"]</a></li>
+				<li><a class="link-nav-color" href="~/Home/Personas">@ViewData["certi_link"]</a></li>
+				<li><a class="link-nav-color" href="~/Home/Servicios">@ViewData["servi_link"]</a></li>
+				<li><a class="link-nav-color" href="~/Home/Contact">@ViewData["contact_link"]</a></li>
 			</ul>
 		</div>
 	</div>
@@ -76,8 +76,8 @@
 				<i class="fa fa-envelope"></i>
 				<p><a href="mailto:info@c4w.co">info@c4w.co</a></p>
 			</div>
-			<div style="text-align: center;">
-				<p>COPYRIGHT - COACHING FOR WELLNESS 2017</p>
+			<div>
+				<p class="text-center">@ViewData["derechos_index"]</p>
 			</div>
 			
 
@@ -85,7 +85,7 @@
 
 		<div class="footer-right">
 			<p class="footer-company-about text-center">
-				<a style="color: black; background: #93c01f; border-color: white; border-width: 2px; " href="~/Home/Contact" class="btn btn-danger btn-lg">CONTÁCTANOS</a>
+				<a style="color: black; background: #93c01f; border-color: white; border-width: 2px; " href="~/Home/Contact" class="btn btn-danger btn-lg">@ViewData["contactanos_index"]</a>
 			</p>
 		</div>
 
