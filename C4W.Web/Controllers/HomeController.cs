@@ -27,7 +27,8 @@ namespace C4W.Web.Controllers
                 ViewData["mandalas2"] = " MANDALA COLORING BOOK";
                 ViewData["contactanos_index"] = "CONTACT US";
                 ViewData["derechos_index"] = "ALL RIGHTS RESERVED - COACHING FOR WELLNESS 2017";
-                
+                ViewData["cfw"] = "";
+                ViewData["susan"] = "";
 
                 //navbar links
                 ViewData["aboutUs_link"] = "ABOUT US";
@@ -49,6 +50,8 @@ namespace C4W.Web.Controllers
                 ViewData["derechos_index"] = "TODOS LOS DERECHOS RESERVADOS - COACHING FOR WELLNESS 2017";
                 ViewData["T1_sobre1"] = "QUIÉNES";
                 ViewData["T1_sobre2"] = "SOMOS";
+                ViewData["cfw"] = "¿PARA QUÉ CWF?";
+                ViewData["susan"] = "SUSAN SEIDMAN TE LO EXPLICA";
 
                 //navbas links
                 ViewData["aboutUs_link"] = "SOBRE NOSOTROS";
