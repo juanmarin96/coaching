@@ -6,6 +6,8 @@
 	<meta charset="utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>@ViewBag.Title</title>
+	<link rel="stylesheet" href="~/Content/carrusel.css">
+	<link rel="stylesheet" href="~/Content/sss.css">
 	@Styles.Render("~/Content/css")
 	@Scripts.Render("~/bundles/modernizr")
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -19,15 +21,15 @@
 	</span><!-- /top-link-block -->
 <nav class="navbar navbar-fixed-top navbar-color">
 	<div class="row">
-	    <button style="background: grey;margin-top: 30px; margin-right: 20px;" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-	        <span class="sr-only color-bar">Toggle navigation</span>
-	        <span class="icon-bar color-bar"></span>
-	        <span class="icon-bar color-bar"></span>
-	        <span class="icon-bar color-bar"></span>
-	    </button>
-	    <div class="navbar-header" style="padding:10px 10px;">
-	        <a href="~/Home"><img src="~/Content/Images/logo-c4w.png" style="width: 200px; padding-left: 20px;" class="img-responsive img-navbar" /></a>
-	    </div>
+		<button style="background: grey;margin-top: 30px; margin-right: 20px;" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+			<span class="sr-only color-bar">Toggle navigation</span>
+			<span class="icon-bar color-bar"></span>
+			<span class="icon-bar color-bar"></span>
+			<span class="icon-bar color-bar"></span>
+		</button>
+		<div class="navbar-header" style="padding:10px 10px;">
+			<a href="~/Home"><img src="~/Content/Images/logo-c4w.png" style="width: 200px; padding-left: 20px;" class="img-responsive img-navbar" /></a>
+		</div>
 		<div class="collapse navbar-collapse">
 			<ul class="nav navbar-nav" style="margin-top: 25px;">
 				<li><a class="link-nav-color" href="~/Home/About">@ViewData["aboutUs_link"]</a></li>
@@ -98,7 +100,9 @@
 @Scripts.Render("~/bundles/jquery")
 @Scripts.Render("~/bundles/jqueryval")
 @Scripts.Render("~/bundles/bootstrap")
+
 @RenderSection("scripts", required: false)
+<script src="~/Scripts/sss.js"></script>
 <script>
 	$('#videopoup').click(function () {
 		var src = 'https://www.youtube.com/embed/KYcQr6U93vQ';
@@ -108,6 +112,17 @@
 
 	$('#myModal button').click(function () {
 		$('#myModal iframe').removeAttr('src');
+	});
+</script>
+
+	
+<!--Carrusel de testimonios-->
+<script>
+	jQuery(function($){
+		$('.slider-testimonial').sss({
+			slideShow : true,
+			speed : 4000
+		});
 	});
 </script>
 
@@ -198,6 +213,7 @@
 			});
 	});
 </script>
+
 <script>
 	function redirect(a) {
 		if (a == 1) {
