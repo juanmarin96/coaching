@@ -217,8 +217,10 @@
     <Content Include="Content\animate.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\carrusel.css" />
     <Content Include="Content\Images\2cc.png" />
     <Content Include="Content\Images\actp.png" />
+    <Content Include="Content\Images\arr.png" />
     <Content Include="Content\Images\avion.png" />
     <Content Include="Content\Images\barra.png" />
     <Content Include="Content\Images\brujula.png" />
@@ -516,6 +518,7 @@
     <Content Include="Content\Images\imagenesNuevas\imagen 7.png" />
     <Content Include="Content\Images\imagenesNuevas\imagen 8.png" />
     <Content Include="Content\Images\imagenesNuevas\imagen 9.png" />
+    <Content Include="Content\Images\imagenesNuevas\Imagen testimonios.png" />
     <Content Include="Content\Images\imagenesNuevas\imagenesv2\shutterstock_110379005.jpg" />
     <Content Include="Content\Images\imagenesNuevas\imagenesv2\shutterstock_113161126.jpg" />
     <Content Include="Content\Images\imagenesNuevas\imagenesv2\shutterstock_116283283.jpg" />
@@ -582,6 +585,7 @@
     <Content Include="Content\Landing\PERSONAJE 5.png" />
     <Content Include="Content\Landing\PERSONAJE 6.png" />
     <Content Include="Content\logo-equilaterus.png" />
+    <Content Include="Content\sss.css" />
     <Content Include="Scripts\jquery.viewportchecker.min.js" />
     <Content Include="Content\jsPushMenu.css" />
     <Content Include="Content\Landing\ACTP.png" />
@@ -634,6 +638,7 @@
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\sss.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>

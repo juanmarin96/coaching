@@ -76,7 +76,58 @@ namespace C4W.Web.Controllers
         public ActionResult About(string section)
         {
             var lang = Session["lang"];
-
+            //autores
+                ViewData["aut_1"] = "Juan, Puerto Rico";
+                ViewData["aut_2"] = "José Luis, Puerto Rico";
+                ViewData["aut_3"] = "José Luis, Puerto Rico";
+                ViewData["aut_4"] = "José Luis, Puerto Rico";
+                ViewData["aut_5"] = "Anamer, Puerto Rico";
+                ViewData["aut_6"] = "Cecilia, Perú";
+                ViewData["aut_7"] = "Cecilia, Perú";
+                ViewData["aut_8"] = "Cecilia, Perú";
+                ViewData["aut_9"] = "Ángela, Colombia  ";
+                ViewData["aut_10"] = "Ángela, Colombia";
+                ViewData["aut_11"] = "Teresita, Colombia";
+                ViewData["aut_12"] = "Teresita, Colombia ";
+                ViewData["aut_13"] = "Diana, Colombia ";
+                ViewData["aut_14"] = "Jaime, Perú";
+                ViewData["aut_15"] = "Carolina, Colombia ";
+                ViewData["aut_16"] = "Ana María, Colombia ";
+                ViewData["aut_17"] = "Hernando, Colombia";
+                ViewData["aut_18"] = "Ciro, Colombia";
+                ViewData["aut_19"] = "Ciro, Colombia";
+                ViewData["aut_21"] = "Ricardo, Colombia";
+                ViewData["aut_22"] = "Ricardo, Colombia";
+                ViewData["aut_23"] = "Ricardo, Colombia";
+                ViewData["aut_24"] = "Gina, Colombia";
+                ViewData["aut_25"] = "Lisa, Puerto Rico";
+                ViewData["aut_26"] = "Lisa, Puerto Rico";
+                ViewData["aut_27"] = "Lisa, Puerto Rico";
+                ViewData["aut_28"] = "Joaquín, Puerto Rico";
+                ViewData["aut_29"] = "Joaquín, Puerto Rico";
+                ViewData["aut_30"] = "Héctor, Puerto Rico ";
+                ViewData["aut_31"] = "Lissette, Puerto Rico";
+                ViewData["aut_32"] = "Lissette, Puerto Rico";
+                ViewData["aut_33"] = "Claudia, Colombia";
+                ViewData["aut_34"] = "Claudia, Colombia";
+                ViewData["aut_35"] = "César, Colombia";
+                ViewData["aut_36"] = "César, Colombia";
+                ViewData["aut_37"] = "César, Colombia";
+                ViewData["aut_38"] = "José Enrique, Puerto Rico";
+                ViewData["aut_39"] = "José Enrique, Puerto Rico";
+                ViewData["aut_40"] = "José Enrique, Puerto Rico";
+                ViewData["aut_41"] = "Rocío, Colombia";
+                ViewData["aut_42"] = "Rocío, Colombia";
+                ViewData["aut_43"] = "Rocío, Colombia";
+                ViewData["aut_44"] = "Rocío, Colombia";
+                ViewData["aut_45"] = "Rocío, Colombia";
+                ViewData["aut_46"] = "Ana Victoria, Colombia";
+                ViewData["aut_47"] = "Ana Victoria, Colombia";
+                ViewData["aut_48"] = "Carmen Helena, Colombia";
+                ViewData["aut_49"] = "Carmen Helena, Colombia";
+                ViewData["aut_50"] = "Carmen Helena, Colombia";
+                ViewData["aut_51"] = "Carmen Helena, Colombia";
+                
             //texto en el idioma ingles
             if (lang != null && lang.ToString() == "en")
             {
@@ -113,6 +164,63 @@ namespace C4W.Web.Controllers
                 ViewData["servi_link"] = "SERVICES";
                 ViewData["contact_link"] = "CONTACT US";
 
+                //testimonios
+                ViewData["title_test"] = "TESTIMONIALS";
+                ViewData["test_1"] = "I am impressed by the living example that the coaches provide and the effectiveness of their method…how complete the program is. ";
+                ViewData["test_2"] = "…in reality, I feel that my life has changed because the lenses with which I saw the world were blurry; and experiencing Life Coaching with its lessons, has allowed me to find the magic to see the beauty within others…and not wear away at me as it was doing before… ";
+                ViewData["test_3"] = "Thank you…for sharing and focusing a vision of life and relationships of excellence. My gratitude for supporting my growth and that of my team as well…";
+                ViewData["test_4"] = "The beginning of Coaching was excellent and I am grateful for the quality of the team that supported our process. I am greatly satisfied with the initial experience. ";
+                ViewData["test_5"] = "Coaching gave me a powerful tool to rediscover myself as a new person, confident, aware and conscious of my complete potential and willing to succeed in all of my life projects. ";
+                ViewData["test_6"] = "I would recommend the Program to anyone who wishes to apply it to business purposes as well as for those who wish to live more happily, live more completely, in other words, get the best out of life…";
+                ViewData["test_7"] = "This really has been a life experience for me; a lesson of how to see things from the most simplest to the most complex, and which has made me feel really GOOD about myself, about others, about all my surroundings and with life in general… ";
+                ViewData["test_8"] = "…it has helped me to open my heart, to look at situations, people, etc., without prejudice, with compassion and humility. This truly makes me happier. ";
+                ViewData["test_9"] = "The essential experience of this training…has been a profound way of recognizing what you have and what needs development, and with great LOVE recognize how you can achieve it with these life transformation strategies.";
+                ViewData["test_10"] = "I was happy to be there with the distinguished and spectacular team that participated in my experiences of encountering a new world in my life… [a] form of seeing and living from inside, which is what ultimately makes you vibrate happiness, because you learn how to value all the good that is within you and all the good that surrounds you. ";
+                ViewData["test_11"] = "To be a Coach has deep meaning because there is no way you can do it without being it. This has been the principal lesson from my teachers, who believe that infinite possibilities have been given to us, of transforming from within and from there accompany others in their path.";
+                ViewData["test_12"] = "…a profound personal process, the Coaching Certification allowed me to gather and take advantage of many tools, experiences and knowledge of a powerful practice, whose magical results I can testify to.";
+                ViewData["test_13"] = "Coaching has not only been a process of formation for me, but definitely a life changing process, since I took the certification I can see things from a different dimension, and in the same way I can support other people…the process was a complement to my career as a Psychologist and I definitely discovered that what I want to do with my life is support others in their development.";
+                ViewData["test_14"] = "Valuable, necessary, satisfying, technical, human, useful, transcendent, warm, dedicated, professional, demanding, with a vision of the future; are the qualities that best describe the feelings that I experienced during my formation with Coaching For Wellness. [I express my gratitude] to my teachers and the members of my group for sharing with me your warmth, your knowledge and your experience.";
+                ViewData["test_15"] = "To be a coach means to touch your soul and accompany others so that they can touch theirs.";
+                ViewData["test_16"] = "The Coaching Program is a combination of life experiences, knowledge, learning and sharing, in a setting of high professionalism, direction and focus; through powerful tools that consolidate the Coaching methodology, [and with limitless application,] develop competencies, abilities and skills in people.";
+                ViewData["test_17"] = "My last years as a business consultant and entrepreneur of my own manufacturing business has changed 180 degrees; the extraordinary process that I experienced in the modules [and in the practices]…[gave] me marvelous personal experiences…[And] a new way to see my personal and family life…";
+                ViewData["test_18"] = "Thanks to this certification, the business that I direct has made a shift in its organizational culture; today we live a culture of respect, abundance, emotion and trust. In essence, today I work less hard but more intelligently…Coaching truly changed our way of doing business and helping others.";
+                ViewData["test_19"] = "Thanks to this process, I understood the real essence of leadership and transformational Coaching. …six more colleagues [certified], which lead to excellent strategic, tactical and operational results. ";
+                ViewData["test_21"] = "The process has served me by moving many internal aspects, and best of all, by applying this transformation to the development of my career as a business consultant.";
+                ViewData["test_22"] = "I recommend this team for its human quality, genuine concern for the students, and interest in sharing the best that they have in their minds and hearts.";
+                ViewData["test_23"] = "Today I consider myself a better professional and a better human being because certifying as a Coach is something that touches all areas of your life.";
+                ViewData["test_24"] = "I learned to know myself and understand others; I learned the value of being authentic, and a beautiful way to accompany others. It has been undoubtedly the best gift life has given me.";
+                ViewData["test_25"] = "Completing this Coaching certification has meant much more that acquiring certain professional skills; it has been an awakening to the life that I want and can have. ";
+                ViewData["test_26"] = "Thanks to this process I have made profound life decisions, like starting my own business in order to fulfill my life purpose: to contribute in some way to the well-being of others.";
+                ViewData["test_27"] = "Thanks to Coaching For Wellness for contributing in so many ways to my personal and professional development. ";
+                ViewData["test_28"] = "The program has taught me that all human beings have to some degree an amount of fear of achieving their full potential. The simple act of calmly exploring without passing judgment is the best tool for self knowledge and SEEING THE TRUTH about what they want to do with their lives. ";
+                ViewData["test_29"] = "Also, it has given me tools to identify and work on the blocks which separate me from believing in myself.";
+                ViewData["test_30"] = "In a highly professional environment and guided by excellent coaches, I began this journey of learning, fine tuning skills, practice, connection and above all, self discovery. Susan Seidman and Annie Torres, Master Coaches, are two beings of light that illuminated our path in our formation and certification as coaches. The experience is so special, that only by living it can you experience it. ";
+                ViewData["test_31"] = "The Coaching Certification has been a wonderful growth experience for me. Recognizing the greatness in all human beings, without passing judgment are aspects that I seek to improve every day. ";
+                ViewData["test_32"] = "It has provided me with tools that help evaluate life experiences in a positive way, recognizing that within me lies the power to decide how I will respond to the situations that confront me and learn from them. ";
+                ViewData["test_33"] = "Knowing how to express feelings, how to understand others without passing judgment, and how to relate in a loving way, makes my life meaningful from a personal point of view. And professionally, I can soothe and guide others to find their own solutions and alternative paths that offer them a better quality of life.";
+                ViewData["test_34"] = "I recommend the program because Coaching is a lifestyle that permanently keeps you growing. Also, most importantly for my life, I count on tools, intuition, and wisdom to approach my children, my husband, my family, my friends and acquaintances; respecting their points of view, feelings, individuality, and permitting a mutual growth because we are all teachers.";
+                ViewData["test_35"] = "Studying with Coaching For Wellness has significantly opened doors in my life towards freedom, and towards encountering my inner, authentic self. And being able to support other human beings in doing the same, has given me a taste for this beautiful, spiritual flavor, and also the enjoyment that helping others represents. Through Coaching, I have been able to better define my life  mission and vision.";
+                ViewData["test_36"] = "Coaching has allowed me to see myself and others through different eyes. It is the look that comes from a platform of no ego. After coaching, I am less concern about being right or having control, and what interest me most is connecting to life like a child does, in the here and now. ";
+                ViewData["test_37"] = "I recommend Coaching because it goes beyond a simple mental conceptualization and enters into the enchantment and magic of life; because it revitalizes and recreates human relationships, within a universal language of connection with life, with the moment, and the authentic, committed, and vital self.";
+                ViewData["test_38"] = "The certification process has allowed me to see life from a different perspective. Encountering my internal coach has been marvelous, hopeful, and has increased my possibilities. I re-assessed my qualities as a leader and human being. My humanity flourished. Now I connect with the wisdom of each person that crosses my path, and I see their potential. ";
+                ViewData["test_39"] = "If I were asked what has been the most important decision that I made this year, without hesitation, it would be having participated in this transformational process. ";
+                ViewData["test_40"] = "… today I can say that yes, [Coaching] works, of course it works! And I have proven it with my own experience.";
+                ViewData["test_41"] = "[The most essential thing that I received from this experience] is an awakening, rebirth, and openness to understand one self and others. ";
+                ViewData["test_42"] = "[This experience] has allowed me to be more observant, value my feelings and emotions, and value those of the people that surround me. ";
+                ViewData["test_43"] = "[Thanks to this process] I am committed to service, renewed in knowledge and support to promote self discovery. ";
+                ViewData["test_44"] = "I recommend [the program] to everyone who can and wants to become stronger, who wants to live more fully, and who wishes to be of service.";
+                ViewData["test_45"] = "[What I liked the most was] sharing life experiences and processes, observing changes in myself and my classmates, seeing us flourish, and most of all, working with wonderful teachers.";
+                ViewData["test_46"] = "Having had the possibility of living my process with Coaching For Wellness is the greatest gift that life has given me. As a Business and Life Coach, today I see that I am wholeheartedly committed to BEING a human being. ";
+                ViewData["test_47"] = "Being able to contribute so that others discover all of their possibilities, change their limiting beliefs, and see their strengths and greatness is something beyond words. It is a unique experience that you can only live, experience, and [fully] appreciate when you have the privilege of being a coach. ";
+                ViewData["test_48"] = "The essential lesson of this life process, that is coaching, has been the possibility of having a holistic perspective of the world and elevated level of consciousness. One learns to have awareness of “being one with the world”. ";
+                ViewData["test_49"] = "I recommend this program because you deserve to elevate your level of consciousness and establish outstanding relationships; because you deserve the best and have the possibility of sharing your best with others. ";
+                ViewData["test_50"] = "I recommend this program because you deserve to elevate your level of consciousness and establish outstanding relationships; because you deserve the best and have the possibility of sharing your best with others. ";
+                ViewData["test_51"] = "For me, Coaching has meant taking my life and context of life to another level.";
+                
+
+               
+                
+                
 
             }
             //texto en el idioma español
@@ -152,6 +260,58 @@ namespace C4W.Web.Controllers
                 ViewData["servi_link"] = "SERVICIOS";
                 ViewData["contact_link"] = "CONTÁCTANOS";
 
+                //testimonios
+                ViewData["title_test"] = "TESTIMONIOS";
+                ViewData["test_1"] = "A mí me ha impresionado el ejemplo vivo que dan las coaches y la efectividad del método…lo completo que es el programa.";
+                ViewData["test_2"] = "…en realidad siento que mi vida ha cambiado porque mis lentes con que veía el mundo estaban borrosos y el coaching de vida experimentado con sus enseñanzas, me ha  permitido encontrar en mí la magia para ver lo bello del otro… y no desgastarme tanto como lo estaba haciendo…";
+                ViewData["test_3"] = "Gracias…por compartir y enfocar en una visión de vida y relaciones con excelencia.  Mi agradecimiento por apoyar mi crecimiento y el de mis compañeros en el equipo...";
+                ViewData["test_4"] = "El comienzo del Coaching fue excelente y agradezco la calidad del equipo que nos apoyo en  proceso.  Me siento muy complacido con la experiencia inicial.";
+                ViewData["test_5"] = "El coaching me brindó una poderosa herramienta para redescubrirme como ser humano creando en mí una nueva persona,  segura de sí misma, en conciencia de todo su potencial y dispuesta a triunfar en todos sus proyectos de vida.";
+                ViewData["test_6"] = "Recomendaría el Programa tanto a quienes quisieran aplicarlo luego con fines profesionales como para aquellos que quieran vivir más felices, vivir más plenamente, es decir sacarle el jugo a la vida…";
+                ViewData["test_7"] = "Realmente para mí ha sido y es una experiencia de vida, un aprendizaje de cómo ver las cosas desde lo más sencillo hasta lo más complejo, y que de hecho me hace sentir MUY BIEN conmigo misma, con los demás, con lo que me rodea y con la vida en general…";
+                ViewData["test_8"] = "…me ha ayudado a abrir mi corazón, a mirar las situaciones, personas, etc., sin juicios, con compasión y con humildad. Esto me hace mucho más feliz.";
+                ViewData["test_9"] = "Lo esencial como experiencia en este entrenamiento…ha sido una forma profunda de lograr reconocer lo que tienes como esencia contigo mismo y lo que hace falta, y con mucho AMOR reconocer cómo lo puedes alcanzar con estas estrategias de transformación de vida.";
+                ViewData["test_10"] = "Me alegró estar ahí con este distinguido y espectacular equipo que fue partícipe de mis experiencias para encontrar un nuevo mundo en mi vida…[una] forma de ver y vivir las [cosas] desde adentro, que es lo que finalmente te hace vibrar y ser feliz porque aprendes a valorar todo lo bueno que eres y tienes a tu alrededor.";
+                ViewData["test_11"] = "Ser Coach es todo un significado porque no hay riesgo de que lo hagas sin que lo seas. Esa ha sido la principal enseñanza de mis maestras que creen en la posibilidad infinita que nos ha sido dada, de transformarnos y desde allí acompañar a otros en ese camino.";
+                ViewData["test_12"] = "…una profundización en el proceso personal, la certificación en Coaching me permitió recoger y aprovechar muchas herramientas, experiencias y conocimientos en una práctica poderosa de cuyos resultados mágicos he sido testigo.";
+                ViewData["test_13"] = "El coaching para mí no solo fue un proceso de formación sino definitivamente un proceso de cambio de vida, desde que tomé la certificación puedo ver las cosas desde una dimensión diferente; y así mismo puedo apoyar a otras personas, fue un proceso de mucho complemento para mi carrera de psicología y descubrí que definitivamente lo que quiero hacer con mi vida es poder apoyar a otros a desarrollarse.";
+                ViewData["test_14"] = "Valioso, necesario, grato, técnico, humano, útil, trascendente, cálido, esmerado, profesional, exigente, con visión de futuro; son las calificaciones que describen mi sentimiento por lo vivido en la experiencia formativa con Coaching For Wellness. A ustedes y a mis compañeros de grupo, mi agradecimiento por permitirme compartir su calidez, su conocimiento y su experiencia.";
+                ViewData["test_15"] = "Ser coach significa tocarse el alma y acompañar a las personas para que toquen la suya.";
+                ViewData["test_16"] = "El programa de coaching es un conjunto de vivencias, experiencia, conocimiento, aprendizaje e intercambio, en un escenario de profesionalismo, alto direccionamiento y enfoque; que logra a través de herramientas poderosas consolidar la metodología coaching, desarrollar competencias, habilidades y destrezas en las personas, con aplicación en dimensiones y áreas sin fronteras.";
+                ViewData["test_17"] = "Mis últimos años de vida como consultor empresarial y como emprendedor de mi propio negocio de manufactura han cambiado 180 grados; el extraordinario proceso vivido en los módulos [y en las prácticas]…me [dejó] experiencias personales maravillosas… [Y] una nueva forma de ver la vida personal y familiar…";
+                ViewData["test_18"] = "Gracias a esta certificación, la empresa que dirijo ha dado un giro en su cultura organizacional; hoy se transpira una cultura de respeto, de ley de abundancia, de emotividad y confianza.  En esencia, hoy trabajamos menos duro pero más inteligentemente…el coaching verdaderamente cambió nuestra manera de hacer negocios y de ayudar a las personas.";
+                ViewData["test_19"] = "Gracias a este proceso entendí la verdadera esencia del liderazgo y del coaching transformador.  …[certificamos] seis colegas más, dando excelente resultados en lo estratégico, táctico y operativo.";
+                ViewData["test_21"] = "El proceso me ha servido para movilizar muchos aspectos internos y, lo mejor, para aplicar esta transformación en el desarrollo de mi carrera como consultor de empresas.";
+                ViewData["test_22"] = "Recomiendo a este equipo por su calidad humana, genuina preocupación por los estudiantes e interés por compartir lo mejor que tienen en sus mentes y corazones.";
+                ViewData["test_23"] = "Hoy en día considero que soy un mejor profesional y un mejor ser humano porque certificarse como Coach es algo que toca todas las áreas de tu vida.";
+                ViewData["test_24"] = "Aprendí a conocerme a mí misma, aprendí a entender a los demás, aprendí el valor de ser autentica, aprendí una hermosa forma de acompañar a los demás. Ha sido indudablemente el mejor regalo de vida que me he podido dar.";
+                ViewData["test_25"] = "Completar esta certificación de coaching ha significado mucho más que la adquisición de ciertas destrezas profesionales; ha sido un despertar a la vida que deseo y puedo tener.";
+                ViewData["test_26"] = "Gracias a este proceso he tomado decisiones transcendentales en mi vida, como es el inicio de mi negocio para cumplir mi propósito de vida: contribuir de alguna manera al bienestar de los demás.";
+                ViewData["test_27"] = "Gracias a Coaching For Wellness por contribuir de tantas maneras a mi desarrollo personal y profesional.";
+                ViewData["test_28"] = "El programa me ha enseñado que todos los seres humanos tenemos en mayor o menor medida miedo a llegar a ser todo lo que somos capaces de ser. El simple hecho de explorar con tranquilidad, sin prejuicios es la mejor herramienta para conocernos y ver DE VERDAD qué queremos hacer de nuestras vidas.";
+                ViewData["test_29"] = "También me ha dado las herramientas para identificar las barreras que me separan de creer en mí mismo y cómo trabajar con ellas.";
+                ViewData["test_30"] = "En un ambiente altamente profesional y guiado por excelentes Coaches emprendí esta jornada de aprendizaje, afinar destrezas, práctica, conexión y sobre todo mucho descubrimiento personal.  Susan Seidman y Annie Torres, Master Coaches, son dos seres de luz que iluminaron nuestro camino en nuestra formación y certificación como Coaches. Una experiencia tan especial que solo viviéndola la podrás experimentar.";
+                ViewData["test_31"] = "La certificación como coach ha sido para mí una experiencia maravillosa de crecimiento. El reconocer la grandeza en todos los seres humanos, el no emitir juicio son aspectos en los cuales cada día busco mejorar.";
+                ViewData["test_32"] = "Me ha provisto de unas herramientas que me han ayudado a evaluar las experiencias de la vida de una forma positiva, reconociendo que dentro de mí está el poder de decidir cómo voy a responder a las situaciones que confronto y el aprendizaje que contienen nuestras experiencias.";
+                ViewData["test_33"] = "Saber cómo expresar sentimientos, cómo entender a otros sin juzgar y cómo relacionarnos de manera amorosa hace que mi vida se vuelva significativa, desde mi perspectiva personal. Y desde  la profesional, puedo ser un bálsamo y una guía para que otros encuentren soluciones o caminos alternativos que les permitan mejorar su calidad de vida.";
+                ViewData["test_34"] = "Recomiendo el programa porque el coaching es un estilo de vida que te hace crecer de manera permanente. Además, lo más representativo para mi vida es contar con herramientas, con intuición, con sabiduría para acercarme a mis hijos, mi esposo, mi familia, amigos y conocidos; respetando su pensar, su sentir, su individualidad y permitiendo un crecimiento mutuo porque todos nos volvemos maestros de todos.";
+                ViewData["test_35"] = "Ingresar a Coaching For Wellness ha significado para mi vida abrir puertas hacia la libertad y hacia el encuentro con mi ser interior, con mi ser auténtico. Y el poder apoyar a otros seres humanos a que hagan lo mismo, me ha permitido degustar ese hermoso sabor espiritual que deja y saborear también esa alegría que representa estar en servicio del otro. A través del coaching he podido definir mejor mi misión y mi visión en esta vida.";
+                ViewData["test_36"] = "El Coaching me ha permitido verme y ver a los demás con otros ojos. Es la mirada que surge cuando se puede mirar parado en una plataforma distinta a la plataforma del ego. Después del coaching me interesa menos tener la razón o el control, me interesa más conectarme con la vida como lo hace un niño, en el aquí y el ahora.";
+                ViewData["test_37"] = "Recomiendo el coaching porque desborda la simple conceptualización mental y entra en el terreno de la magia y el encanto de la vida. Porque revitaliza y recrea las relaciones humanas, dentro de un lenguaje universal de conexión con la vida, con el momento, con el ser auténtico comprometido y vital.";
+                ViewData["test_38"] = "El proceso de la certificación me permitió ver mi vida bajo una perspectiva diferente. El encuentro con mi coach interno ha sido maravilloso y esperanzador; aumentaron mis posibilidades. Realicé una revaloración de mis cualidades de líder y sobre todo de ser humano. Floreció mi humanidad. Ahora me conecto con el punto de sabiduría de cada ser que se me cruza en el camino y veo sus potencialidades.";
+                ViewData["test_39"] = "Si me preguntaran cual ha sido la decisión más importante que he tomado durante este año, [diría] sin temor a equivocarme, el haber participado de este proceso transformador.";
+                ViewData["test_40"] = "… hoy puedo decir que [el Coaching] sí funciona, ¡claro que funciona! Y lo he validado con mi experiencia.";
+                ViewData["test_41"] = "[Lo más esencial que he obtenido de la experiencia] es un despertar, un renacer, un abrirse a la posibilidad de entenderte y comprender al otro.";
+                ViewData["test_42"] = "[Esta experiencia] me ha permitido ser una persona más observadora, valorar mis sentimientos y emociones, así como las de las personas con las que me relaciono.";
+                ViewData["test_43"] = "[Gracias a este proceso] soy una mujer reafirmada en el servicio, una persona  renovada en conocimientos de acompañamiento y de facilitación para apalancar el descubrir.";
+                ViewData["test_44"] = "Recomiendo [el programa] a todas las personas que puedan y quieran fortalecerse, que quieran vivir más plenamente y que deseen servir.";
+                ViewData["test_45"] = "[Lo más que me ha gustado de la experiencia:] el intercambio de experiencias de vida y de procesos, el observar un cambio en mí y en mis compañeros, en vernos florecer y lo máximo compartir con unas maestras maravillosas.";
+                ViewData["test_46"] = "Haber tenido la posibilidad de vivir mi proceso en CFW para ser coach es el más grande regalo que la vida me ha dado. Como Coach Empresarial y de Vida, hoy veo que como ser humano, me dispuse de corazón para SER ser humano.";
+                ViewData["test_47"] = "Poder ser contribución para que otros seres humanos descubran todas sus posibilidades, salgan de sus creencias, vean sus fortalezas y vean lo grandes que son es algo que no tiene descripción en palabras. Esa es una única experiencia que sólo puedes vivirla, experimentarla y agradecerla cuando tienes el privilegio de ser coach.";
+                ViewData["test_48"] = "El aprendizaje esencial de todo este proceso de vida, que es coaching, ha sido la posibilidad de tener una perspectiva holística del mundo y elevar el nivel de conciencia. Se aprende a tener conciencia de “ser (tú mismo) uno con el mundo”.";
+                ViewData["test_49"] = "Te recomiendo este programa porque mereces elevar tu nivel de conciencia y establecer relaciones sin precedentes. Porque mereces darte lo mejor y tener la posibilidad de transmitir lo mejor de ti a los demás.";
+                ViewData["test_50"] = "Coaching se trata de “establecer relaciones poderosas y dar a conocer una perspectiva de vida que funcione para todos”… aplicable a cualquier contexto.";
+                ViewData["test_51"] = "Para mí, Coaching ha sido la posibilidad de llevar mi vida y mi contexto de vida a otro nivel.";
 
             }
             ViewBag.Section = section;
