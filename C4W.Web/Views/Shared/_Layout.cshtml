@@ -20,7 +20,8 @@
 		</a>
 	</span><!-- /top-link-block -->
 <nav class="navbar navbar-fixed-top navbar-color">
-	<div class="row">
+     
+	<div class="container">
 		<button style="background: grey;margin-top: 30px; margin-right: 20px;" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
 			<span class="sr-only color-bar">Toggle navigation</span>
 			<span class="icon-bar color-bar"></span>
@@ -36,13 +37,13 @@
 				<li><a class="link-nav-color" href="~/Home/Personas">@ViewData["certi_link"]</a></li>
 				<li><a class="link-nav-color" href="~/Home/Servicios">@ViewData["servi_link"]</a></li>
 				<li><a class="link-nav-color" href="~/Home/Contact">@ViewData["contact_link"]</a></li>
-				<li style="border:1px solid white;background-color:#22a2ad"> <a style="color:white" href="~/Home/En">En</a></li>
-				<li style="border:1px solid white;background-color:#22a2ad"> <a style="color:white" href="~/Home/Es">Es</a></li>
+				<li><a class="langb" href="~/Home/En">English</a></li>
+				<li><a class="langb" href="~/Home/Es">Español</a></li>
 			</ul>
 		</div>
 	</div>
 </nav>
-<div>
+<div class="container">
 	@Html.Partial("_LoginPartial")
 	@RenderBody()
 	<br/>
@@ -62,38 +63,40 @@
 			</div>
 		</div>
 	</div>
-	<footer class="footer-distributed">
-		<div class="footer-left">
-			<img src="~/Content/Images/imagenesNuevas/LOGOCFW.png" class="img-responsive" style="width: 60%; height: 60%;"/>
-		</div>
+    <div class="row">
+        <footer class="footer-distributed">
+            <div class="footer-left">
+                <img src="~/Content/Images/imagenesNuevas/LOGOCFW.png" class="img-responsive" style="width: 60%; height: 60%;" />
+            </div>
 
-		<div class="footer-center">
-			<div>
-				<i class="fa fa-phone"></i>
-				<p>EE.UU. (+1)917 952 3913|LATAM (+57)310 310 68 57</p>
-			</div>
-			<div>
-				<i class="fa fa-facebook"></i>
-				<p>/coachingforwellness</p>
-			</div>
-			<div>
-				<i class="fa fa-envelope"></i>
-				<p><a href="mailto:info@c4w.co">info@c4w.co</a></p>
-			</div>
-			<div>
-				<p class="text-center">@ViewData["derechos_index"]</p>
-			</div>
-			
+            <div class="footer-center">
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <p>USA (+1) 917 952 3913 | LATAM (+57) 310 310 6857</p>
+                </div>
+                <div>
+                    <i class="fa fa-facebook"></i>
+                    <p>/coachingforwellness</p>
+                </div>
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <p><a href="mailto:info@c4w.co">info@c4w.co</a></p>
+                </div>
+                <div>
+                    <p class="text-center">@ViewData["derechos_index"]</p>
+                </div>
 
-		</div>
 
-		<div class="footer-right">
-			<p class="footer-company-about text-center">
-				<a style="color: black; background: #93c01f; border-color: white; border-width: 2px; " href="~/Home/Contact" class="btn btn-danger btn-lg">@ViewData["contactanos_index"]</a>
-			</p>
-		</div>
+            </div>
 
-	</footer>
+            <div class="footer-right">
+                <p class="footer-company-about text-center">
+                    <a style="color: black; background: #93c01f; border-color: white; border-width: 2px; " href="~/Home/Contact" class="btn btn-danger btn-lg">@ViewData["contactanos_index"]</a>
+                </p>
+            </div>
+
+        </footer>
+    </div>
 </div>
 
 
