@@ -136,7 +136,7 @@ namespace C4W.Web.Controllers
                 ViewData["T1_sobre1"] = "WHO";
                 ViewData["T1_sobre2"] = "WE ARE";
                 ViewData["mision_titulo_sobre1"] = "OUR";
-                ViewData["mision_titulo_sobre2"] = "MISION";
+                ViewData["mision_titulo_sobre2"] = "MISSION";
                 ViewData["mision_sobre"] = "Our mission is to bring a holistic and empowered mindset to individuals and organizations through the art of transformational coaching.";
                 ViewData["vision_titulo_sobre1"] = "OUR";
                 ViewData["vision_titulo_sobre2"] = "VISION";
@@ -425,6 +425,7 @@ namespace C4W.Web.Controllers
                 ViewData["contactanos_index"] = "CONTACT US";
                 ViewData["contact_link"] = "CONTACT US";
                 ViewData["derechos_index"] = "ALL RIGHTS RESERVED - COACHING FOR WELLNESS 2017";
+                
 
             }
             //texto en el idioma español
@@ -439,7 +440,7 @@ namespace C4W.Web.Controllers
                 ViewData["contactanos_index"] = "CONTÁCTANOS";
                 ViewData["contact_link"] = "CONTÁCTANOS";
                 ViewData["derechos_index"] = "TODOS LOS DERECHOS RESERVADOS - COACHING FOR WELLNESS 2017";
-
+                
 
             }
             return View();
@@ -1072,6 +1073,24 @@ namespace C4W.Web.Controllers
                 ViewData["certi_link"] = "CERTIFICATIONS";
                 ViewData["servi_link"] = "SERVICES";
                 ViewData["contact_link"] = "CONTACT US";
+
+                ViewData["texto-0"] = "Credit Card Payment";
+
+                ViewData["texto-1"] = "The following is the form to pay for any of the services offered by CFW. Enter your information (name and email), in the field titled: \"Concept or Service to Pay\" type or select the service you wish to purchase, then define the value per unit (in USD) and the corresponding amount.";
+                ViewData["texto-2"] = "Once you click on the \"Proceed with Payment...\" icon, you will be redirected to the 2Checkout online payment system where you can enter your card information and safely complete the transaction.";
+                ViewData["texto-3"] = "This is a one time payment and there will be no recurring charges.";
+                ViewData["texto-4"] = "Please contact info@coachingforwellness.com if you have any questions or concerns, and we will be happy to assist you.";
+                ViewData["texto-5"] = "Thank you.";
+                ViewData["texto-6"] = "PLEASE TYPE THE FOLLOWING INFORMATION:";
+                ViewData["texto-7"] = "Name:";
+                ViewData["texto-8"] = "E-mail:";
+                ViewData["texto-9"] = "Your group name/code:";
+                ViewData["texto-10"] = "(Leave blank if unknown.)";
+                ViewData["texto-11"] = "Concept or service to pay:";
+                ViewData["texto-12"] = "Unit value:";
+                ViewData["texto-13"] = "Amount:";
+                ViewData["texto-14"] = "Pay";
+
             }
             //texto en el idioma español
             else
@@ -1084,6 +1103,26 @@ namespace C4W.Web.Controllers
                 ViewData["certi_link"] = "CERTIFICACIONES";
                 ViewData["servi_link"] = "SERVICIOS";
                 ViewData["contact_link"] = "CONTÁCTANOS";
+
+
+                ViewData["texto-0"] = "Pago con Tarjeta";
+
+                ViewData["texto-1"] = "El siguiente es el formulario para pagar cualquiera de los servicios que ofrece CFW. Ingrese sus datos básicos (nombre y correo electrónico), en el campo \"Concepto o Servicio a Pagar\" escriba o seleccione el servicio que le corresponda, luego defina el valor por unidad (en USD) y la cantidad correspondiente.";
+                ViewData["texto-2"] = "Al hacer clic en el botón \"Proceder con el Pago...\" será redirigido al sistema de pagos online 2Checkout donde podrá ingresar la información de su tarjeta con total seguridad.";
+                ViewData["texto-3"] = "Este es un pago de una única vez y no se harán cargos recurrentes.";
+                ViewData["texto-4"] = "Cualquier inquietud al respecto sírvase info@coachingforwellness.com y con gusto le orientaremos.";
+                ViewData["texto-5"] = "Gracias.";
+                ViewData["texto-6"] = "POR FAVOR INGRESE LOS SIGUIENTES DATOS:";
+                ViewData["texto-7"] = "Nombre Completo:";
+                ViewData["texto-8"] = "Correo Electrónico:";
+                ViewData["texto-9"] = "Grupo al que pertenece:";
+                ViewData["texto-10"] = "(sí aún no lo sabe, deje este campo vacío)";
+                ViewData["texto-11"] = "Concepto o servicio a pagar:";
+                ViewData["texto-12"] = "Valor Unitario:";
+                ViewData["texto-13"] = "Cantidad:";
+                ViewData["texto-14"] = "PROCEDER CON EL PAGO...";
+
+
             }
 
             return View();
@@ -1102,6 +1141,20 @@ namespace C4W.Web.Controllers
                 ViewData["certi_link"] = "CERTIFICATIONS";
                 ViewData["servi_link"] = "SERVICES";
                 ViewData["contact_link"] = "CONTACT US";
+
+                ViewData["texto_principal"] = "Please use the form below to pay for any service from Coaching for Wellness, which can be a mentoring session (US$100), a module's fee (US$1,000) or even a complete certification program.";
+
+                ViewData["texto-1"] = "Please select the amount to pay and type the corresponding service on the text field.";
+
+                ViewData["text-2"] = "This is a One Time payment type.";
+                ViewData["text-3"] = "Thank you.";
+                ViewData["texto-4"] = "PayPal Payment:";
+
+                ViewData["texto-5"] = "Payment Gateway";
+
+                ViewData["texto-6"] = "Select amount to pay:";
+
+                ViewData["texto-7"] = "Service you are paying for:";
             }
             //texto en el idioma español
             else
@@ -1114,6 +1167,18 @@ namespace C4W.Web.Controllers
                 ViewData["certi_link"] = "CERTIFICACIONES";
                 ViewData["servi_link"] = "SERVICIOS";
                 ViewData["contact_link"] = "CONTÁCTANOS";
+
+                ViewData["texto_principal"] = "Por favor, utilice el formulario que aparece abajo para pagar cualquier servicio de Coaching for Wellness, que puede ser una sesión de tutoría (US $ 100), un pago parcial de inmersión presencial (US $ 1,000) o incluso un programa completo de certificación.";
+                ViewData["texto-1"] = "Seleccione el importe a pagar y escriba el servicio correspondiente en el campo de texto.";
+                ViewData["text-2"] = "Este es un pago de una única vez y no se harán cargos recurrentes.";
+                ViewData["text-3"] = "Gracias";
+                ViewData["texto-4"] = "Pago a través de PayPal:";
+
+                ViewData["texto-5"] = "Portal de pago";
+
+                ViewData["texto-6"] = "Seleccione la cantidad a pagar:";
+
+                ViewData["texto-7"] = "Indique el servicio que está pagando:";
             }
 
             return View();

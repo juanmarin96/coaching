@@ -549,6 +549,7 @@
     <Content Include="Content\Images\imagenesNuevas\2co.PNG" />
     <Content Include="Content\Images\imagenesNuevas\agenda - copia.PNG" />
     <Content Include="Content\Images\imagenesNuevas\agenda.PNG" />
+    <Content Include="Content\Images\imagenesNuevas\Annie.png" />
     <Content Include="Content\Images\imagenesNuevas\footer.PNG" />
     <Content Include="Content\Images\imagenesNuevas\icono pago.png" />
     <Content Include="Content\Images\imagenesNuevas\imagen 7.png" />
@@ -580,6 +581,7 @@
     <Content Include="Content\Images\imagenesNuevas\pagos.PNG" />
     <Content Include="Content\Images\imagenesNuevas\paypal.PNG" />
     <Content Include="Content\Images\imagenesNuevas\somos.PNG" />
+    <Content Include="Content\Images\imagenesNuevas\Susan.png" />
     <Content Include="Content\Images\imagenesNuevas\valores.PNG" />
     <Content Include="Content\Images\imagenesNuevas\vision.PNG" />
     <Content Include="Content\Images\imagenesNuevas\WINTER.jpg" />

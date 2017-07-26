@@ -5,17 +5,17 @@
 <div class="container">
     <div class="row" style="margin-top: 200px;">
         <div class="col-md-12">
-            <h3>Pago con Tarjeta</h3>
+            <h3>@ViewData["texto-0"]</h3>
             <img src="~/Content/Images/2cc.png" align="right" alt="2Checkout">
             <p>
-                El siguiente es el formulario para pagar cualquiera de los servicios que ofrece CFW.  Ingrese sus datos básicos (nombre y correo electrónico), en el campo "Concepto o Servicio a Pagar" escriba o seleccione el servicio que le corresponda, luego defina el valor por unidad (en USD) y la cantidad correspondiente.<br />
+                @ViewData["texto-1"]<br />
                 <br />
-                Al hacer clic en el botón "Proceder con el Pago..." será redirigido al sistema de pagos online 2Checkout donde podrá ingresar la información de su tarjeta con total seguridad. <br />
+                @ViewData["texto-2"] <br />
                 <br />
-                Este es un pago de una única vez y no se harán cargos recurrentes. <br />
+                @ViewData["texto-3"] <br />
                 <br />
-                Cualquier inquietud al respecto sírvase <a>info@coachingforwellness.com</a> y con gusto le orientaremos.<br />
-                Gracias.
+                @ViewData["texto-4"]<br />
+                @ViewData["texto-5"]
             </p>
         </div>
 
@@ -25,21 +25,21 @@
                 <table class="table-responsive table-striped">
                     <tr>
                         <td colspan="2">
-                            <strong>POR FAVOR INGRESE LOS SIGUIENTES DATOS:</strong>
+                            <strong>@ViewData["texto-6"]</strong>
                         </td>
                     </tr>
-                    <tr><td align="right">Nombre Completo: </td><td><input name='card_holder_name' type='text' size='30' maxlength='128'> </td></tr>
-                    <tr><td align="right">Correo Electrónico: </td><td><input name='email' type='text' size='30' maxlength="64"> </td></tr>
+                    <tr><td align="right">@ViewData["texto-7"]</td><td><input name='card_holder_name' type='text' size='30' maxlength='128'> </td></tr>
+                    <tr><td align="right">@ViewData["texto-8"]</td><td><input name='email' type='text' size='30' maxlength="64"> </td></tr>
                     <tr>
-                        <td align="right">Grupo al que pertenece: </td>
+                        <td align="right">@ViewData["texto-9"]</td>
                         <td>
                             <input name='grupo' type='text' size='20'>
-                            <span style="font-size:12px">(sí aún no lo sabe, deje este campo vacío)</span>
+                            <span style="font-size:12px">@ViewData["texto-10"]</span>
                         </td>
                     </tr>
-                    <tr><td align="right"><label for="tags"> Concepto o servicio a pagar: </label></td><td><input id="tags" type='text' size='70' maxlength='128' name='li_0_name' value='ej: Inscripción Programa de Certificación en Inteligencia Emocional GENOS' onClick="this.form.li_0_name.value=''"></td></tr>
-                    <tr><td align="right">Valor Unitario: </td><td>$<input type='text' size='10' name='li_0_price' value='ej: 99.99' onClick="this.form.li_0_price.value=''">USD</td></tr>
-                    <tr><td align="right">Cantidad: </td><td><input type='text' size='4' name='li_0_quantity' value='1'></td></tr>
+                    <tr><td align="right"><label for="tags">@ViewData["texto-11"]</label></td><td><input id="tags" type='text' size='70' maxlength='128' name='li_0_name'  onClick="this.form.li_0_name.value=''"></td></tr>
+                    <tr><td align="right">@ViewData["texto-12"]</td><td><input type='text' size='10' name='li_0_price' value='ej: 99.99' onClick="this.form.li_0_price.value=''">$USD</td></tr>
+                    <tr><td align="right">@ViewData["texto-13"]</td><td><input type='text' size='4' name='li_0_quantity' value='1'></td></tr>
                     <tr>
                         <td>
 
@@ -51,7 +51,7 @@
                             <input type='hidden' name='lang' value='es_la'>
                         </td>
                         <td>
-                            <br /><div align="left"><input class="ui-button" name='submit' type='submit' value=' PROCEDER CON EL PAGO... '></div>
+                            <br /><div align="left"><input class="ui-button" name='submit' type='submit' value='@ViewData["texto-14"]'></div>
                             <br />
 
                         </td>
