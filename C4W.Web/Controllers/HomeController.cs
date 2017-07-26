@@ -249,7 +249,7 @@ namespace C4W.Web.Controllers
                 ViewData["p_auten_titulo"] = "Somos una organización auténtica y respetamos la autenticidad de cada ser, aspecto que honramos celebrando a cada persona como un ser único e irrepetible.";
                 ViewData["p_congru_titulo"] = "Buscamos permanente equilibrio entre nuestros ideales, acciones y filosofía de vida, que permita acercarnos al mundo desde la integridad y el ejemplo, generando inspiración en cada ser.";
                 ViewData["p_grati_titulo"] = "La gratitud está presente en todo lo que hacemos, ya que valoramos cómo la experiencia de coaching nos permite contribuir a transformar vidas.";
-                ViewData["p_pasion_titulo"] = "Es el motor que impulsa nuestros comportamientos, vinculando nuestro- propósito- superior- al proyecto de vida de cada persona que tiene contacto con nosotros, lo cual les inspira y deja huellas para todos.";
+                ViewData["p_pasion_titulo"] = "Es el motor que impulsa nuestros comportamientos, vinculando nuestro propósito superior al proyecto de vida de cada persona que tiene contacto con nosotros, lo cual les inspira y deja huellas para todos.";
                 ViewData["p_transpa_titulo"] = "Nuestra meta principal es crear un ambiente amoroso - de confianza, honestidad y confidencialidad - para nuestros clientes y colegas.";
                 ViewData["contactanos_index"] = "CONTÁCTANOS";
                 ViewData["derechos_index"] = "TODOS LOS DERECHOS RESERVADOS - COACHING FOR WELLNESS 2017";
@@ -362,8 +362,8 @@ namespace C4W.Web.Controllers
                 ViewData["t3C"] = "PAÍS";
                 ViewData["t4C"] = "CIUDAD";
                 ViewData["t5C"] = "E-MAIL";
-                ViewData["t6C"] = "TELEPHONE";
-                ViewData["t7C"] = "COMENTARIO";
+                ViewData["t6C"] = "TELÉFONO";
+                ViewData["t7C"] = "COMENTARIOS";
                 ViewData["t8C"] = "ENVIAR";
             }
             if (e == null)
@@ -718,7 +718,7 @@ namespace C4W.Web.Controllers
                 ViewData["t1Cer"] = "PROGRAMAS";
                 ViewData["t1Cer1"] = "DE CERTIFICACIÓN";
                 ViewData["t2Cer"] = "COACHING";
-                ViewData["t3Cer"] = "Toda preparación profesional en el desarrollo de las competencias de coaching, su integración y su aplicación, comienza por el área de vida.Este programa enseña todas las destrezas de coaching desde un punto de vista del coaching de vida, aspecto de gran pertinencia en la formación de un coach ejecutivo y corporativo.";
+                ViewData["t3Cer"] = "Toda preparación profesional en el desarrollo de las competencias de coaching, su integración y su aplicación, comienza por el área de vida. Este programa enseña todas las destrezas de coaching desde un punto de vista del coaching de vida, aspecto de gran pertinencia en la formación de un coach ejecutivo y corporativo.";
                 ViewData["t4Cer"] = "NUESTROS PROGRAMAS CERTIFICADOS";
                 ViewData["t5Cer"] = "Ofrecen dos niveles de certificación que cumplen a cabalidad con los requerimientos de la ICF para cada nivel de credencial.";
                 ViewData["t6Cer"] = "COACHING";
@@ -920,8 +920,8 @@ namespace C4W.Web.Controllers
                 ViewData["ta7"] = "En resumen, utilizamos un enfoque integral y ontológico para resaltar la importancia de ir más allá del trabajo externo de establecer metas e implementar planes de acción, y profundizar en los procesos internos que permitan a los coachees conocerse mejor y utilizar esta información para moverse hacia el logro de sus metas.";
                 ViewData["ta8"] = "METODOLOGÍA";
                 ViewData["ta9"] = "Se presenta en metodología Blended (Mixto: presencial – en línea), la cual incluye tres (3) inmersiones presenciales de 20 horas cada una (en fines de semana completos de dos días) con intervalos de 2 a 3 meses entre cada encuentro. El total de horas de trabajo durante el proceso de formación son 128.";
-                ViewData["ta10"] = "Este programa también se desarrolla 100% en línea con tele-clases en vivo semanales..";
-                ViewData["ta11"] = "Los temas de exploración en el proceso son los siguientes";
+                ViewData["ta10"] = "Este programa también se desarrolla 100% en línea con tele-clases en vivo semanales.";
+                ViewData["ta11"] = "Los temas de exploración en el proceso son los siguientes:";
                 ViewData["ta12"] = "INMERSIÓN 1:";
                 ViewData["ta13"] = "Coaching de vida (20 horas)";
                 ViewData["ta14"] = "INMERSIÓN 2:";
@@ -1017,7 +1017,7 @@ namespace C4W.Web.Controllers
                 ViewData["t6Ser"] = "Coaching de relaciones";
                 ViewData["t7Ser"] = "Coaching de bienestar";
                 ViewData["t8Ser"] = "Coaching espiritual";
-                ViewData["t9Ser"] = "Contáctenos para información adicional sobre nuestros servicios.";
+                ViewData["t9Ser"] = "Contáctanos para información adicional sobre nuestros servicios.";
                 ViewData["t10Ser"] = "CHARLAS EN";
                 ViewData["t10Serl"] = "LÍNEA";
                 ViewData["t11Ser"] = "Ofrecemos charlas virtuales (webinars) sobre diversos temas para:";
@@ -1025,11 +1025,11 @@ namespace C4W.Web.Controllers
                 ViewData["t13Ser"] = "Interesados en formarse como coaches";
                 ViewData["t14Ser"] = "Coaches certificados";
                 ViewData["t15Ser"] = "Público en general";
-                ViewData["t16Ser"] = "Contáctenos para información adicional sobre nuestras charlas y otros eventos.";
-                ViewData["t17Ser"] = "MENTORIAS PARA";
+                ViewData["t16Ser"] = "ContáctAnos para información adicional sobre nuestras charlas y otros eventos.";
+                ViewData["t17Ser"] = "MENTORÍAS PARA";
                 ViewData["t17Serco"] = "COACHES";
                 ViewData["t18Ser"] = "Ofrecemos servicios individualizados y grupales de mentoría en coaching dirigidos a coaches en formación y/o certificados que deseen mejorar sus destrezas de coaching, o para coaches interesados en cumplir con el requisito de mentorías  que les permita solicitar credenciales ante la ICF.";
-                ViewData["t18Seru"] = "Contáctenos para información adicional sobre nuestros programa";
+                ViewData["t18Seru"] = "Contáctanos para información adicional sobre nuestros programas.";
             }
             
             return View();
