@@ -1,6 +1,6 @@
 ﻿
 @{
-    ViewBag.Title = "Personas";
+    ViewBag.Title = "Certifications";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <div class="row">
@@ -23,11 +23,11 @@
         <div class="margen">
             <div class="col-lg-12">
                 <h1 class="Tprogramas" id="coaching">@ViewData["t2Cer"]</h1>
-                <p>
+                <p style="text-align:center">
                     @ViewData["t3Cer"]
                 </p>
                 <h1 class="Tprogramas">@ViewData["t4Cer"]</h1>
-                <p>
+                <p  style="text-align:center">
                     @ViewData["t5Cer"]
                 </p>
             </div>
@@ -55,13 +55,18 @@
         <div style="cursor:pointer" data-target="#lev-2" data-element="#vida" class="wbutton-xl empresarial texto-bienestar">
             <center><img src="~/Content/Images/Imagen coaching de vida y bienestar.png" class="img-responsive" style="width:70%;height:250px" /></center>
             <h1>@ViewData["t11Cer"]<br />@ViewData["t11Cerw"]<br /> @ViewData["t11Cer11"]</h1>
+            <h4 class="visible-md visible-lg pcc">@ViewData["t10Cer"]<br />ACC</h4>
         </div>
         <!--●	COACHING DE VIDA Y ESPIRITUAL-->
         <div style="cursor:pointer" data-target="#lev-2" data-element="#cespiritual" class="wbutton-xl empresarial texto-espiritual">
             <center><img src="~/Content/Images/Imagen coaching vida y espiritual.png" class="img-responsive" style="width:70%;height:250px" /></center>
             <h1>@ViewData["t12Cer"]<br />@ViewData["t12Cerv"]<br />@ViewData["t12kCer"]</h1>
+            <h4 class="visible-md visible-lg pcc">@ViewData["t10Cer"]<br />ACC</h4>
         </div>
         <!--oasis-->
+        <div class="col-lg-12">
+            <h1 class="Tprogramas" id="coaching">@ViewData["tother"]</h1>
+        </div>
         <div style="cursor:pointer" data-target="#lev-2" data-element="#oasis" class="wbutton-xl empresarial oasis">
             <img src="~/Content/Images/Imagen tecnicas de respiracion.png" class="img-responsive" style="width:100%;height:250px" />
             <h1>@ViewData["t13Cer"]</h1>
@@ -838,33 +843,53 @@
     <div class="row" id="internacional" style="display:none;">
         <div class="col-lg-12 banner-pcc">
             <h1>@ViewData["t7Cer"]<br />@ViewData["t7Cere"]<br />@ViewData["t7jCer"]</h1>
+            <h2 class="visible-md visible-lg pcc" style="float:right;color:black;font-size:23px">@ViewData["t8Cer"]<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PCC</h2>
         </div>
         <div class="margen-empresarial">
         <div class="col-lg-12">
             <p>@ViewData["t14Cer"]</p>
-            <h4>@ViewData["t15Cer"]</h4>
+            <p align="justify">
+                <strong>@ViewData["t15Cer"]</strong>
+            </p>
             <p>@ViewData["t16Cer"] </p>
-            <h4>@ViewData["t17Cer"]</h4>
+            <p>
+                <strong>@ViewData["t17Cer"]</strong>
+            </p>
             <p>@ViewData["t18Cer"] </p>
             <p>@ViewData["t19Cer"]</p>
-            <h4>@ViewData["t20Cer"]</h4>
+            <p>
+                <strong>@ViewData["t20Cer"]</strong>
+            </p>
             <p>@ViewData["t21Cer"]</p>
             <p>@ViewData["t22Cer"]</p>
-            <h4>@ViewData["t23Cer"]</h4>
+            <p>
+                <strong>@ViewData["t23Cer"]</strong>
+            </p>
             <p>@ViewData["t24Cer"]</p>
-            <h4>@ViewData["t25Cer"]</h4>
+            <p>
+                <strong>@ViewData["t25Cer"]</strong>
+            </p>
             <p>@ViewData["t26Cer"]</p>
-            <h4>@ViewData["t27Cer"]</h4>
+            <p>
+                <strong>@ViewData["t27Cer"]</strong>
+            </p>
             <p>@ViewData["t28Cer"]</p>
-            <h4>@ViewData["t29Cer"]</h4>
+            <p>
+                <strong>@ViewData["t29Cer"]</strong>
+            </p>
             <p>@ViewData["t30Cer"]</p>
-            <h4>@ViewData["t31Cer"]</h4>
+            <p>
+                <strong>@ViewData["t31Cer"]</strong>
+            </p>
             <ul>
                 <li>@ViewData["t32Cer"]</li>
                 <li>@ViewData["t33Cer"]</li>
                 <li>@ViewData["t34Cer"]</li>
             </ul>
-            <h4>@ViewData["t35Cer"]</h4>
+            <br />
+            <p>
+                <strong>@ViewData["t35Cer"]</strong>
+            </p>
             <p>@ViewData["t36Cer"]</p>
             <ul>
                 <li>@ViewData["t37Cer"]</li>
@@ -876,7 +901,11 @@
                 <li>@ViewData["t43Cer"]</li>
                 <li>@ViewData["t44Cer"]</li>
             </ul>
-            <h4>@ViewData["t45Cer"]</h4>
+            <br />
+            <p>
+                <strong>@ViewData["t45Cer"]</strong>
+            </p>
+           
             <ul>
                 <li>@ViewData["t46Cer"]</li>
                 <li>@ViewData["t47Cer"]</li>
@@ -885,15 +914,26 @@
                 <li>@ViewData["t50Cer"]</li>
                 <li>@ViewData["t51Cer"]</li>
             </ul>
-            <h4>@ViewData["t52Cer"]</h4>
+            <br />
+            <p>
+                <strong>@ViewData["t52Cer"]</strong>
+            </p>
             <p>@ViewData["t53Cer"]</p>
-            <h4>@ViewData["t54Cer"]</h4>
+            <p>
+                <strong>@ViewData["t54Cer"]</strong>
+            </p>
             <p>@ViewData["t55Cer"]</p>
-            <h4>@ViewData["t56Cer"]</h4>
+            <p>
+                <strong>@ViewData["t56Cer"]</strong>
+            </p>
             <p>@ViewData["t57Cer"]</p>
-            <h4>@ViewData["t58Cer"]</h4>
+            <p>
+                <strong>@ViewData["t58Cer"]</strong>
+            </p>
             <p>@ViewData["t59Cer"]</p>
-            <h4>@ViewData["t60Cer"]</h4>
+            <p>
+                <strong>@ViewData["t60Cer"]</strong>
+            </p>
             <ul>
                 <li>@ViewData["t61Cer"]</li>
                 <li>@ViewData["t62Cer"]</li>
@@ -903,14 +943,24 @@
                 <li>@ViewData["t66Cer"]</li>
                 <li>@ViewData["t67Cer"]</li>
             </ul>
-            <h4>@ViewData["t68Cer"]</h4>
+            <br />
+            <p>
+                <strong>@ViewData["t68Cer"]</strong>
+            </p>
             <ul>
                 <li>@ViewData["t69Cer"]</li>
                 <li>@ViewData["t70Cer"]</li>
                 <li>@ViewData["t71Cer"]</li>
             </ul>
-            <h4>@ViewData["t72Cer"]</h4>
+            <br />
+            <p>
+                <strong>@ViewData["t72Cer"]</strong>
+            </p>
             <p>@ViewData["t73Cer"]</p>
+            <p>
+                @ViewData["te40"]
+
+            </p>
             <p>@ViewData["t74Cer"]</p>
         </div>
         </div>
@@ -919,6 +969,7 @@
     <div class="row" id="actp" style="display:none;">
         <div class="col-lg-12 banner-acc">
             <h1>@ViewData["t7Cer"]<br />@ViewData["t7Cere"]<br />@ViewData["t7jCer"]</h1>
+            <h2 class="visible-md visible-lg pcc" style="float:right;color:black;font-size:23px">@ViewData["t10Cer"]<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ACC</h2>
         </div>
         <div class="margen-empresarial">
         <p align="justify">
@@ -1299,6 +1350,7 @@
     <div class="row" id="vida" style="display:none;">
         <div class="col-lg-12 banner-bienestar">
             <h1>@ViewData["t11Cer"]<br />@ViewData["t11Cerw"]<br /> @ViewData["t11Cer11"]</h1>
+            <h2 class="visible-md visible-lg pcc" style="float:right;color:black;font-size:23px">@ViewData["t10Cer"]<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ACC</h2>
         </div>
         <div class="margen-empresarial">
         <p align="justify">
@@ -1307,7 +1359,6 @@
         <p align="justify">
             <br />
             <strong>@ViewData["tb2"]</strong>
-            <strong>:</strong>
         </p>
         <p align="justify">
             <br />
@@ -1357,7 +1408,7 @@
             @ViewData["tb17"]
         </p>
         <p align="justify">
-            <strong>@ViewData["tb18"]S</strong>
+            <strong>@ViewData["tb18"]</strong>
         </p>
         <p>
             @ViewData["tb19"]
@@ -1454,7 +1505,6 @@
             <strong>@ViewData["tb37"]</strong>
         </p>
         <p>
-            <br />
             @ViewData["tb38"]
 
         </p>
@@ -1471,6 +1521,7 @@
     <div class="row" id="cespiritual" style="display:none;">
         <div class="col-lg-12 banner-espirirtual">
             <h1>@ViewData["t12Cer"]<br />@ViewData["t12Cerv"]<br />@ViewData["t12kCer"]</h1>
+            <h2 class="visible-md visible-lg pcc" style="float:right;color:black;font-size:23px">@ViewData["t10Cer"]<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ACC</h2>
         </div>
        <div class="margen-empresarial">
         <p align="justify">
@@ -1482,7 +1533,6 @@
         <p align="justify">
             <br />
             <strong>@ViewData["te3"]</strong>
-            <strong>:</strong>
         </p>
         <p align="justify">
             <br />
@@ -1632,7 +1682,6 @@
             @ViewData["te39"]
         </p>
         <p>
-            <br />
             @ViewData["te40"]
 
         </p>
@@ -1655,7 +1704,7 @@
             <p align="center">@ViewData["to6"] 
                 @ViewData["to7"]
             </p>
-            <p>@ViewData["to8"].</p>
+            <p>@ViewData["to8"]</p>
             <p>@ViewData["to9"]</p>
             <ul>
                 <li>@ViewData["to10"]</li>
@@ -1664,6 +1713,7 @@
                 <li>@ViewData["to13"]</li>
                 <li>@ViewData["to14"]</li>
             </ul>
+            <br />
             <p>@ViewData["to15"] </p>
             <p>@ViewData["to16"]</p>
             <p>@ViewData["to17"]</p>
@@ -1675,6 +1725,7 @@
                 <li>@ViewData["to22"]</li>
                 <li>@ViewData["to23"]</li>
             </ul>
+            <br />
             <p>@ViewData["to24"] </p>
             <a href="@ViewData["to25"]">@ViewData["to25"]</a>
         </div>

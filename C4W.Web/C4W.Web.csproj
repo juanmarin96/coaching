@@ -746,12 +746,12 @@
     <Content Include="Views\ContactoLandings\Details.cshtml" />
     <Content Include="Views\ContactoLandings\Edit.cshtml" />
     <Content Include="Views\ContactoLandings\Index.cshtml" />
-    <Content Include="Views\Home\Personas.cshtml" />
+    <Content Include="Views\Home\Certifications.cshtml" />
     <Content Include="Views\Home\Empresas.cshtml" />
     <Content Include="Views\Landing\ic.cshtml" />
     <Content Include="Views\Landing\coachingempresarialvida.cshtml" />
     <Content Include="Views\Landing\_contacto.cshtml" />
-    <Content Include="Views\Home\Servicios.cshtml" />
+    <Content Include="Views\Home\Services.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

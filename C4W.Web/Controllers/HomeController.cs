@@ -446,7 +446,7 @@ namespace C4W.Web.Controllers
             return View();
         }
 
-        public ActionResult Personas()
+        public ActionResult Certifications()
         {
             var lang = Session["lang"];
 
@@ -496,13 +496,13 @@ namespace C4W.Web.Controllers
                 ViewData["t20Cer"] = "METHODOLOGY";
                 ViewData["t21Cer"] = "The Program follows a Blended methodology (in person and online), which includes four (4) in-person modules of 30 hours each (full three-day weekends) with intervals of 2 or 3 months between each meeting. Total work hours for the entire training program are 226. The total approved hours by ICF is 136, which refers to the training requirement for PCC credentialing.";
                 ViewData["t22Cer"] = "The topics discussed throughout the certification are:";
-                ViewData["t23Cer"] = "MODULE 1:";
+                ViewData["t23Cer"] = "MODULE 1";
                 ViewData["t24Cer"] = "Life Coaching (30 hours)";
-                ViewData["t25Cer"] = "MODULE 2:";
+                ViewData["t25Cer"] = "MODULE 2";
                 ViewData["t26Cer"] = "Business Coaching (emphasizing Organizational Culture and Executive Coaching; 30 hours)";
-                ViewData["t27Cer"] = "MODULE 3:";
+                ViewData["t27Cer"] = "MODULE 3";
                 ViewData["t28Cer"] = "Relationship Coaching and Emotional Intelligence (30 hours)";
-                ViewData["t29Cer"] = "MODULE 4:";
+                ViewData["t29Cer"] = "MODULE 4";
                 ViewData["t30Cer"] = "Marketing for Coaching (30 hours)";
                 ViewData["t31Cer"] = "VIRTUAL ACTIVITIES";
                 ViewData["t32Cer"] = "Eight (8) tele-classes / practice labs (2 hours each; 16 hours total)";
@@ -551,6 +551,7 @@ namespace C4W.Web.Controllers
                 //oasis
                 ViewData["to1"] = "OASIS BREATHING ";
                 ViewData["to2"] = "TECHNIQUE";
+                ViewData["tother"] = "OTHER CERTIFICATIONS";
                 ViewData["to3"] = "Is STRESS wreaking havoc in your personal/professional life?";
                 ViewData["to4"] = "Looking for calm in the chaos?";
                 ViewData["to5"] = "Find it in OASIS.";
@@ -587,11 +588,11 @@ namespace C4W.Web.Controllers
                 ViewData["te10"] = "The Program follows a Blended methodology (in person and online), which includes three (3) in-person modules of 20 hours each (full two-day weekends) with intervals of 2 or 3 months between each meeting. The total hours of work during the training process are 128.";
                 ViewData["te11"] = "This program is also offered 100% online with live weekly teleclasses/webinars.";
                 ViewData["te12"] = "The topics discussed throughout the certification are:";
-                ViewData["te13"] = "MODULE 1:";
+                ViewData["te13"] = "MODULE 1";
                 ViewData["te14"] = "Life Coaching (20 hours)";
-                ViewData["te15"] = "MODULE 2:";
+                ViewData["te15"] = "MODULE 2";
                 ViewData["te16"] = "Spiritual Coaching ( 20 hours)";
-                ViewData["te17"] = "MODULE 3:";
+                ViewData["te17"] = "MODULE 3";
                 ViewData["te18"] = "Marketing for Spiritual Coaching (20 hours)";
                 ViewData["te19"] = "VIRTUAL ACTIVITIES";
                 ViewData["te20"] = "Work is completed in 68 hours, as follows:";
@@ -629,11 +630,11 @@ namespace C4W.Web.Controllers
                 ViewData["tb9"] = "The Program follows a Blended methodology (in person and online), which includes three (3) in-person modules of 20 hours each (full two-day weekends) with intervals of 2 or 3 months between each meeting. The total hours of work during the training process are 128.";
                 ViewData["tb10"] = "This program is also offered 100% online with live weekly teleclasses/webinars.";
                 ViewData["tb11"] = "The topics discussed throughout the certification are:";
-                ViewData["tb12"] = "MODULE 1:";
+                ViewData["tb12"] = "MODULE 1";
                 ViewData["tb13"] = "Life Coaching (20 hours)";
-                ViewData["tb14"] = "MODULE 2:";
+                ViewData["tb14"] = "MODULE 2";
                 ViewData["tb15"] = "Wellness Coaching ( 20 hours)";
-                ViewData["tb16"] = "MODULE 3:";
+                ViewData["tb16"] = "MODULE 3";
                 ViewData["tb17"] = "Relationship Coaching and Marketing (20 hours)";
                 ViewData["tb18"] = "VIRTUAL ACTIVITIES";
                 ViewData["tb19"] = "Work is completed in 68 hours, as follows:";
@@ -671,11 +672,11 @@ namespace C4W.Web.Controllers
                 ViewData["ta9"] = "The Program follows a Blended methodology (in person and online), which includes three (3) in-person modules of 20 hours each (full two-day weekends) with intervals of 2 or 3 months between each meeting. The total hours of work during the training process are 128.";
                 ViewData["ta10"] = "This program is also offered 100% online with live weekly teleclasses/webinars.";
                 ViewData["ta11"] = "The topics discussed throughout the certification are:";
-                ViewData["ta12"] = "MODULE 1:";
+                ViewData["ta12"] = "MODULE 1";
                 ViewData["ta13"] = "Life Coaching (20 hours)";
-                ViewData["ta14"] = "MODULE 2:";
+                ViewData["ta14"] = "MODULE 2";
                 ViewData["ta15"] = "Business Coaching (emphasizing Organizational Culture and Executive Coaching; 20 hours)";
-                ViewData["ta16"] = "MODULE 3:";
+                ViewData["ta16"] = "MODULE 3";
                 ViewData["ta17"] = "Marketing for Coaching (20 hours)";
                 ViewData["ta18"] = "VIRTUAL ACTIVITIES";
                 ViewData["ta19"] = "Work is completed in 68 hours, as follows:";
@@ -696,8 +697,8 @@ namespace C4W.Web.Controllers
                 ViewData["ta34"] = "Write to contactus@coachingforwellness.com for details of programs in your area.";
                 ViewData["ta35"] = "LANGUAGES IN WHICH THE PROGRAM IS OFFERED";
                 ViewData["ta36"] = "The Program is offered in Spanish and English in several countries in Latin America and the United States.";
-                ViewData["ta37"] = "WHO IS THIS PROGRAM DIRECTED TO ? ";
-                ViewData["ta38"] = "The Program is aimed at people aged 21 and older, who align with the view of coaching as a vehicle for individual and organizational transformation.This program is recommended for people who want a career as a life or business coach; business and community leaders; human resources professionals, managers, and entrepreneurs.";
+                ViewData["ta37"] = "WHO IS THIS PROGRAM DIRECTED TO? ";
+                ViewData["ta38"] = "The Program is aimed at people aged 21 and older, who align with the view of coaching as a vehicle for individual and organizational transformation. This program is recommended for people who want a career as a life or business coach; business and community leaders; human resources professionals, managers, and entrepreneurs.";
                 ViewData["ta39"] = "DURATION OF THE PROGRAM";
                 ViewData["ta40"] = "The estimated duration of the training component is 6 months.";
                 ViewData["ta41"] = "This certification is aligned with the ICF Code of Ethics and Core Competencies. It complies with the training requirements of the Associate Certified Coach (ACC) credential. Coaches can request an ACC credential after successful completion of the coaching experience hours established by the ICF. ";
@@ -721,7 +722,7 @@ namespace C4W.Web.Controllers
                 ViewData["t2Cer"] = "COACHING";
                 ViewData["t3Cer"] = "Toda preparación profesional en el desarrollo de las competencias de coaching, su integración y su aplicación, comienza por el área de vida. Este programa enseña todas las destrezas de coaching desde un punto de vista del coaching de vida, aspecto de gran pertinencia en la formación de un coach ejecutivo y corporativo.";
                 ViewData["t4Cer"] = "NUESTROS PROGRAMAS CERTIFICADOS";
-                ViewData["t5Cer"] = "Ofrecen dos niveles de certificación que cumplen a cabalidad con los requerimientos de la ICF para cada nivel de credencial.";
+                ViewData["t5Cer"] = "NUESTROS PROGRAMAS Ofrecen dos niveles de certificación que cumplen a cabalidad con los requerimientos de la ICF para las credenciales a nivel asociado y profesional.";
                 ViewData["t6Cer"] = "COACHING";
                 ViewData["t6Cerco"] = "NIVEL";
                 ViewData["t6Cer6"] = "PROFESIONAL";
@@ -741,22 +742,22 @@ namespace C4W.Web.Controllers
                 ViewData["t12kCer"] = "Y ESPIRITUAL";
                 ViewData["t13Cer"] = "TÉCNICA DE RESPIRACIÓN OASIS";
                 //helper de personas
-                ViewData["t14Cer"] = "Esta certificación hace un recorrido por los temas de mayor importancia en la profesión del Coaching, enfocada en elementos equilibrados entre la vida y la empresa, lo que permite ampliar las posibilidades de ejercer con éxito en diversos nichos de mercado. Se encuentra acreditada como ACTP (Accredited Coach Training Program) por la International Coach Federation (ICF), lo que permite solicitar la credencial PCC (Professional Certified Coach).";
+                ViewData["t14Cer"] = "Esta certificación hace un recorrido por los temas de mayor importancia en la profesión del Coaching, enfocada en elementos equilibrados entre la vida y la empresa, (con énfasis en cultura organizacional y coaching ejecutivo), lo que permite al participante contar con herramientas de vanguardia con las que se podrá desempeñar como coach  en diversos nichos de mercado. Se encuentra acreditada como ACTP (Accredited Coach Training Program) por la International Coach Federation (ICF), lo que permite solicitar la credencial PCC (Professional Certified Coach).";
                 ViewData["t15Cer"] = "VISIÓN GENERAL Y METAS DEL PROGRAMA";
-                ViewData["t16Cer"] = "Nuestros programas se concentran en traer un estado de equilibrio y bienestar a la profesión de coaching, tanto para el coach como para el coachee, basados en la creencia fundamental de que la transformación global depende de nuestra comprensión del balance, del liderazgo de todo el cerebro, de la inteligencia emocional, y de la unificación de los valores mediante la acción.";
+                ViewData["t16Cer"] = "Nuestros programas se concentran en traer un estado de equilibrio y bienestar a la profesión de coaching, tanto para el coach como para el coachee, basados en la creencia fundamental de que la transformación global depende de nuestra comprensión del balance, del liderazgo de 'todo el cerebro', de la inteligencia emocional, y de la unificación de los valores mediante la acción.";
                 ViewData["t17Cer"] = "FILOSOFÍA O ACERCAMIENTO DE COACHING";
-                ViewData["t18Cer"] = "Nuestros programas han sido diseñados bajo un enfoque holístico que busca elevar la consciencia de coaches y coachees sobre la conexión entre el cuerpo, la mente, las emociones y el espíritu, y su efecto en nuestras vidas. Nuestra metodología se fundamenta en una filosofía ontológica, dirigida a la reflexión e introspección para generar nuevos modelos de pensamiento y nuevos comportamientos que estén alineados al logro de las metas trabajadas en coaching. Nuestra metodología de coaching además integra una vertiente biológica y utiliza el conocimiento sobre el funcionamiento del cerebro y su relevancia para el proceso de coaching.";
+                ViewData["t18Cer"] = "Nuestros programas han sido diseñados bajo un enfoque holístico que busca elevar la conciencia de coaches y coachees sobre la conexión entre el cuerpo, la mente, las emociones y el espíritu, y su efecto en nuestras vidas. Nuestra metodología se fundamenta en una filosofía ontológica, dirigida a la reflexión e introspección para generar nuevos modelos de pensamiento y nuevos comportamientos que estén alineados al logro de las metas trabajadas en coaching. Nuestra metodología de coaching además integra una vertiente biológica y utiliza el conocimiento sobre el funcionamiento del cerebro y su relevancia para el proceso de coaching.";
                 ViewData["t19Cer"] = "En resumen, utilizamos un enfoque integral y ontológico para resaltar la importancia de ir más allá del trabajo externo de establecer metas e implementar planes de acción, y profundizar en los procesos internos que permitan al coachee conocerse mejor y utilizar esta información para moverse hacia el logro de su meta.";
                 ViewData["t20Cer"] = "METODOLOGÍA";
                 ViewData["t21Cer"] = "Se presenta en metodología Blended (Mixto presencial - en línea), la cual incluye cuatro (4) inmersiones presenciales de 30 horas cada una (en fines de semana completos de tres días) con intervalos de 2 a 3 meses entre cada encuentro. El total de horas de trabajo durante el programa es de 226. El total de horas aprobadas por la ICF para solicitar la credencial de PCC son 136, correspondiente a la formación/enseñanza en coaching.";
                 ViewData["t22Cer"] = "Los temas de exploración en el proceso son los siguientes:";
-                ViewData["t23Cer"] = "INMERSIÓN 1:";
+                ViewData["t23Cer"] = "INMERSIÓN 1";
                 ViewData["t24Cer"] = "Coaching de vida (30 horas)";
-                ViewData["t25Cer"] = "INMERSIÓN 2:";
+                ViewData["t25Cer"] = "INMERSIÓN 2";
                 ViewData["t26Cer"] = "Coaching empresarial (ejecutivo; 30 horas)";
-                ViewData["t27Cer"] = "INMERSIÓN 3:";
+                ViewData["t27Cer"] = "INMERSIÓN 3";
                 ViewData["t28Cer"] = "Coaching de relaciones e inteligencia emocional (30 horas)";
-                ViewData["t29Cer"] = "INMERSIÓN 4:";
+                ViewData["t29Cer"] = "INMERSIÓN 4";
                 ViewData["t30Cer"] = "Mercadeo para coaching (30 horas)";
                 ViewData["t31Cer"] = "ACTIVIDADES VIRTUALES";
                 ViewData["t32Cer"] = "Ocho (8) tele-clases/laboratorios de práctica de 2 horas cada uno para un total de 16 hrs";
@@ -792,7 +793,7 @@ namespace C4W.Web.Controllers
                 ViewData["t62Cer"] = "El participante puede escoger entre varias opciones de pago, a saber: 1) pago de contado, 2) sistema de pronto pago con descuento, ó 3) pago diferido a cuatro plazos, a ser cancelados antes de la fecha de cada inmersión.";
                 ViewData["t63Cer"] = "Sesiones de mentoría: El Programa include 10 horas de mentoría individuales y grupales en el transcurso de la certificación. Sesiones de mentoría solicitadas fuera de los parámetros de tiempo establecidos tendrán una penalidad de $100 USD por hora.";
                 ViewData["t64Cer"] = "Examen escrito: La evaluación del participante incluye la aprobación de un examen escrito al final del proceso de formación (luego de la Inmersión 4). Para solicitudes de administración extemporánea del examen escrito aplicará una penalidad de $125 USD.";
-                ViewData["t65Cer"] = "Reposición de examen oral: La evaluación del participante incluye la aprobación de un examen oral como requisito final para obtener su certificado. Si el participante no aprueba el examen oral en su primer intento, tiene la oportunidad de agendar un segundo examen sin costo adicional. De no aprobar el examen en el segundo intento, el participante necesita recibir mentoría adicional(a un costo de $100 USD por hora).";
+                ViewData["t65Cer"] = "Reposición de examen oral: La evaluación del participante incluye la aprobación de un examen oral como requisito final para obtener su certificado. Si el participante no aprueba el examen oral en su primer intento, tiene la oportunidad de agendar un segundo examen sin costo adicional. De no aprobar el examen en el segundo intento, el participante necesita recibir mentoría adicional (a un costo de $100 USD por hora).";
                 ViewData["t66Cer"] = "Reposición de tiempo en inmersiones presenciales";
                 ViewData["t67Cer"] = "El participante es responsable de la adquisición de tres libros sobre coaching, que son asignados en el Programa.";
                 ViewData["t68Cer"] = "POLÍTICAS SOBRE SEPARACIÓN DEL PROGRAMA Y REEMBOLSOS";
@@ -804,6 +805,7 @@ namespace C4W.Web.Controllers
                 ViewData["t74Cer"] = "Escríbenos a info@coachingforwellness.com para conocer más detalles sobre este programa.";
                 //oasis
                 ViewData["to1"] = "TÉCNICA DE RESPIRACIÓN ";
+                ViewData["tother"] = "OTRAS CERTIFICACIONES";
                 ViewData["to2"] = "OASIS";
                 ViewData["to3"] = "¿El estrés está causando estragos en su vida personal / profesional?";
                 ViewData["to4"] = "¿Busca calma en el caos?";
@@ -835,20 +837,20 @@ namespace C4W.Web.Controllers
                 ViewData["te4"] = "Nuestros programas se concentran en traer un estado de equilibrio y bienestar a la profesión de coaching, tanto para el coach como para el coachee, basados en la creencia fundamental de que la transformación global depende de nuestra comprensión del balance, del liderazgo de 'todo el cerebro', de la inteligencia emocional, y de la unificación de los valores mediante la acción.";
                 ViewData["te5"] = "Nuestro objetivo es inspirar y capacitar profesionalmente a coaches auténticos, empoderados, compasivos y eficaces, que no sólo cumplen con las normas de ética y conducta definidas por la ICF, sino que viven estas normas en su esencia.";
                 ViewData["te6"] = "FILOSOFÍA O ACERCAMIENTO DE COACHING";
-                ViewData["te7"] = "Nuestros programas han sido diseñados bajo un enfoque holístico que busca elevar la consciencia de coaches y coachees sobre la conexión entre el cuerpo, la mente, las emociones y el espíritu, y su efecto en la vida. Nuestra metodología se fundamenta en una filosofía ontológica, dirigida a la reflexión e introspección para generar nuevos modelos de pensamiento y nuevos comportamientos que estén alineados al logro de las metas trabajadas en coaching. Nuestra metodología de coaching además integra una vertiente biológica y utiliza el conocimiento sobre el funcionamiento del cerebro y su relevancia para el proceso de coaching.";
+                ViewData["te7"] = "Nuestros programas han sido diseñados bajo un enfoque holístico que busca elevar la conciencia de coaches y coachees sobre la conexión entre el cuerpo, la mente, las emociones y el espíritu, y su efecto en la vida. Nuestra metodología se fundamenta en una filosofía ontológica, dirigida a la reflexión e introspección para generar nuevos modelos de pensamiento y nuevos comportamientos que estén alineados al logro de las metas trabajadas en coaching. Nuestra metodología de coaching además integra una vertiente biológica y utiliza el conocimiento sobre el funcionamiento del cerebro y su relevancia para el proceso de coaching.";
                 ViewData["te8"] = "En resumen, utilizamos un enfoque integral y ontológico para resaltar la importancia de ir más allá del trabajo externo de establecer metas e implementar planes de acción, y profundizar en los procesos internos que permitan a los coachees conocerse mejor y utilizar esta información para moverse hacia el logro de sus metas.";
                 ViewData["te9"] = "METODOLOGÍA";
                 ViewData["te10"] = "Se presenta en metodología Blended (Mixto: presencial - en línea), la cual incluye tres (3) inmersiones presenciales de 20 horas cada una (en fines de semana completos de dos días) con intervalos de 2 a 3 meses entre cada encuentro. El total de horas de trabajo durante el proceso de formación son 128.";
                 ViewData["te11"] = "Este programa también se desarrolla 100% en línea con tele-clases en vivo semanales.";
                 ViewData["te12"] = "Los temas de exploración en el proceso son los siguientes:";
-                ViewData["te13"] = "INMERSIÓN 1:";
+                ViewData["te13"] = "INMERSIÓN 1";
                 ViewData["te14"] = "Coaching de vida (20 horas)";
-                ViewData["te15"] = "INMERSIÓN 2:";
+                ViewData["te15"] = "INMERSIÓN 2";
                 ViewData["te16"] = "Coaching espiritual (20 horas)";
-                ViewData["te17"] = "INMERSIÓN 3:";
+                ViewData["te17"] = "INMERSIÓN 3";
                 ViewData["te18"] = "Mercadeo desde una perspectiva espiritual (20 horas)";
                 ViewData["te19"] = "ACTIVIDADES VIRTUALES";
-                ViewData["te20"] = "Se trabajan 68 horas distribuidas así:";
+                ViewData["te20"] = "Se trabajan 68 horas distribuidas así";
                 ViewData["te21"] = "Cinco (5) tele-clases/laboratorios de práctica de 2 horas cada una para un total de 10 horas";
                 ViewData["te22"] = "Dos (2) Mentorías grupales de 2 horas cada una para un total de 4 horas";
                 ViewData["te23"] = "Seis (6) Mentorías individuales de 1 hora cada una (aprox.) para un total de 6 horas";
@@ -876,17 +878,17 @@ namespace C4W.Web.Controllers
                 ViewData["tb3"] = "Nuestros programas se concentran en traer un estado de equilibrio y bienestar a la profesión de coaching, tanto para el coach como para el coachee, basados en la creencia fundamental de que la transformación global depende de nuestra comprensión del balance, del liderazgo de 'todo el cerebro', de la inteligencia emocional, y de la unificación de los valores mediante la acción.";
                 ViewData["tb4"] = "Nuestro objetivo es inspirar y capacitar profesionalmente a coaches auténticos, empoderados, compasivos y eficaces, que no sólo cumplen con las normas de ética y conducta definidas por la ICF, sino que viven estas normas en su esencia.";
                 ViewData["tb5"] = "FILOSOFÍA O ACERCAMIENTO DE COACHING";
-                ViewData["tb6"] = "Nuestros programas han sido diseñados bajo un enfoque holístico que busca elevar la consciencia de coaches y coachees sobre la conexión entre el cuerpo, la mente, las emociones y el espíritu, y su efecto en la vida. Nuestra metodología se fundamenta en una filosofía ontológica, dirigida a la reflexión e introspección para generar nuevos modelos de pensamiento y nuevos comportamientos que estén alineados al logro de las metas trabajadas en coaching. Nuestra metodología de coaching además integra una vertiente biológica y utiliza el conocimiento sobre el funcionamiento del cerebro y su relevancia para el proceso de coaching.";
+                ViewData["tb6"] = "Nuestros programas han sido diseñados bajo un enfoque holístico que busca elevar la conciencia de coaches y coachees sobre la conexión entre el cuerpo, la mente, las emociones y el espíritu, y su efecto en la vida. Nuestra metodología se fundamenta en una filosofía ontológica, dirigida a la reflexión e introspección para generar nuevos modelos de pensamiento y nuevos comportamientos que estén alineados al logro de las metas trabajadas en coaching. Nuestra metodología de coaching además integra una vertiente biológica y utiliza el conocimiento sobre el funcionamiento del cerebro y su relevancia para el proceso de coaching.";
                 ViewData["tb7"] = "En resumen, utilizamos un enfoque integral y ontológico para resaltar la importancia de ir más allá del trabajo externo de establecer metas e implementar planes de acción, y profundizar en los procesos internos que permitan a los coachees conocerse mejor y utilizar esta información para moverse hacia el logro de sus metas.";
                 ViewData["tb8"] = "METODOLOGÍA";
                 ViewData["tb9"] = "Se presenta en metodología Blended (Mixto: presencial - en línea), la cual incluye tres (3) inmersiones presenciales de 20 horas cada una (en fines de semana completos de dos días) con intervalos de 2 a 3 meses entre cada encuentro. El total de horas de trabajo durante el proceso de formación son 128.";
                 ViewData["tb10"] = "Este programa también se desarrolla 100% en línea con tele-clases en vivo semanales.";
                 ViewData["tb11"] = "Los temas de exploración en el proceso son los siguientes:";
-                ViewData["tb12"] = "INMERSIÓN 1:";
+                ViewData["tb12"] = "INMERSIÓN 1";
                 ViewData["tb13"] = "Coaching de vida (20 horas)";
-                ViewData["tb14"] = "INMERSIÓN 2:";
+                ViewData["tb14"] = "INMERSIÓN 2";
                 ViewData["tb15"] = "Coaching de bienestar (20 horas)";
-                ViewData["tb16"] = "INMERSIÓN 3:";
+                ViewData["tb16"] = "INMERSIÓN 3";
                 ViewData["tb17"] = "Coaching de relaciones y mercadeo (20 horas)";
                 ViewData["tb18"] = "ACTIVIDADES VIRTUALES";
                 ViewData["tb20"] = "Cinco (5) tele-clases/laboratorios de práctica de 2 horas cada una para un total de 10 horas";
@@ -917,17 +919,17 @@ namespace C4W.Web.Controllers
                 ViewData["ta3"] = "Nuestros programas se concentran en traer un estado de equilibrio y bienestar a la profesión de coaching, tanto para el coach como para el coachee, basados en la creencia fundamental de que la transformación global depende de nuestra comprensión del balance, del liderazgo de 'todo el cerebro', de la inteligencia emocional, y de la unificación de los valores mediante la acción.";
                 ViewData["ta4"] = "Nuestro objetivo es inspirar y capacitar profesionalmente a coaches auténticos, empoderados, compasivos y eficaces, que no sólo cumplen con las normas de ética y conducta definidas por la ICF, sino que viven estas normas en su esencia.";
                 ViewData["ta5"] = "FILOSOFÍA O ACERCAMIENTO DE COACHING";
-                ViewData["ta6"] = "Nuestros programas han sido diseñados bajo un enfoque holístico que busca elevar la consciencia de coaches y coachees sobre la conexión entre el cuerpo, la mente, las emociones y el espíritu, y su efecto en la vida. Nuestra metodología se fundamenta en una filosofía ontológica, dirigida a la reflexión e introspección para generar nuevos modelos de pensamiento y nuevos comportamientos que estén alineados al logro de las metas trabajadas en coaching. Nuestra metodología de coaching además integra una vertiente biológica y utiliza el conocimiento sobre el funcionamiento del cerebro y su relevancia para el proceso de coaching.";
+                ViewData["ta6"] = "Nuestros programas han sido diseñados bajo un enfoque holístico que busca elevar la conciencia de coaches y coachees sobre la conexión entre el cuerpo, la mente, las emociones y el espíritu, y su efecto en la vida. Nuestra metodología se fundamenta en una filosofía ontológica, dirigida a la reflexión e introspección para generar nuevos modelos de pensamiento y nuevos comportamientos que estén alineados al logro de las metas trabajadas en coaching. Nuestra metodología de coaching además integra una vertiente biológica y utiliza el conocimiento sobre el funcionamiento del cerebro y su relevancia para el proceso de coaching.";
                 ViewData["ta7"] = "En resumen, utilizamos un enfoque integral y ontológico para resaltar la importancia de ir más allá del trabajo externo de establecer metas e implementar planes de acción, y profundizar en los procesos internos que permitan a los coachees conocerse mejor y utilizar esta información para moverse hacia el logro de sus metas.";
                 ViewData["ta8"] = "METODOLOGÍA";
                 ViewData["ta9"] = "Se presenta en metodología Blended (Mixto: presencial – en línea), la cual incluye tres (3) inmersiones presenciales de 20 horas cada una (en fines de semana completos de dos días) con intervalos de 2 a 3 meses entre cada encuentro. El total de horas de trabajo durante el proceso de formación son 128.";
                 ViewData["ta10"] = "Este programa también se desarrolla 100% en línea con tele-clases en vivo semanales.";
                 ViewData["ta11"] = "Los temas de exploración en el proceso son los siguientes:";
-                ViewData["ta12"] = "INMERSIÓN 1:";
+                ViewData["ta12"] = "INMERSIÓN 1";
                 ViewData["ta13"] = "Coaching de vida (20 horas)";
-                ViewData["ta14"] = "INMERSIÓN 2:";
+                ViewData["ta14"] = "INMERSIÓN 2";
                 ViewData["ta15"] = "Coaching empresarial (con énfasis en cultura organizacional y coaching ejecutivo; 20 horas)";
-                ViewData["ta16"] = "INMERSIÓN 3:";
+                ViewData["ta16"] = "INMERSIÓN 3";
                 ViewData["ta17"] = "Mercadeo para coaching (20 horas)";
                 ViewData["ta18"] = "ACTIVIDADES VIRTUALES";
                 ViewData["ta19"] = "Se trabajan 68 horas distribuidas así:";
@@ -958,7 +960,7 @@ namespace C4W.Web.Controllers
             return View();
         }
 
-        public ActionResult Servicios()
+        public ActionResult Services()
         {
             var lang = Session["lang"];
 
@@ -979,7 +981,7 @@ namespace C4W.Web.Controllers
                 ViewData["t2Serc"] = "COACHING";
                 ViewData["t3Ser"] = "We offer individual services in";
                 ViewData["t4Ser"] = "Life Coaching";
-                ViewData["t5Ser"] = "Executive and Business Coaching(e.g., teams, sales)";
+                ViewData["t5Ser"] = "Executive and Business Coaching (e.g., teams, sales)";
                 ViewData["t6Ser"] = "Relationship Coaching";
                 ViewData["t7Ser"] = "Wellness Coaching";
                 ViewData["t8Ser"] = "Spiritual Coaching";
