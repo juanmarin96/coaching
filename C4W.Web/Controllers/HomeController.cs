@@ -132,7 +132,7 @@ namespace C4W.Web.Controllers
             if (lang != null && lang.ToString() == "en")
             {
                 ViewData["p1_sobre"] = "An organization that promotes wellness in all aspects of life. Coaching for Wellness (CFW) was co-created in 2004 by Susan Seidman and Annie Torres, both certified as Master Coaches (MCC) and pioneers in the coaching profession in the United States, Puerto Rico, and Latin America. We are passionate about what we do. We strive to make continuous improvement something real, which allows us to be highly differentiated in the market.";
-                ViewData["p2_sobre"] = "We aim - for excellence, facilitating experiences for our clients that inspire- their Being to maximize - results. We are responsible with our environment and with every person we come into contact with, firmly believing that love is the force that transforms all situations. Our clients are located in the United States, Puerto Rico, Colombia, Peru, Argentina and Panama. ";
+                ViewData["p2_sobre"] = "We aim for excellence, facilitating experiences for our clients that inspire- their Being to maximize - results. We are responsible with our environment and with every person we come into contact with, firmly believing that love is the force that transforms all situations. Our clients are located in the United States, Puerto Rico, Colombia, Peru, Argentina and Panama. ";
                 ViewData["T1_sobre1"] = "WHO";
                 ViewData["T1_sobre2"] = "WE ARE";
                 ViewData["mision_titulo_sobre1"] = "OUR";
@@ -721,7 +721,7 @@ namespace C4W.Web.Controllers
                 ViewData["t1Cer1"] = "DE CERTIFICACIÓN";
                 ViewData["t2Cer"] = "COACHING";
                 ViewData["t3Cer"] = "Toda preparación profesional en el desarrollo de las competencias de coaching, su integración y su aplicación, comienza por el área de vida. Este programa enseña todas las destrezas de coaching desde un punto de vista del coaching de vida, aspecto de gran pertinencia en la formación de un coach ejecutivo y corporativo.";
-                ViewData["t4Cer"] = "NUESTROS PROGRAMAS CERTIFICADOS";
+                ViewData["t4Cer"] = "NUESTROS PROGRAMAS";
                 ViewData["t5Cer"] = "NUESTROS PROGRAMAS Ofrecen dos niveles de certificación que cumplen a cabalidad con los requerimientos de la ICF para las credenciales a nivel asociado y profesional.";
                 ViewData["t6Cer"] = "COACHING";
                 ViewData["t6Cerco"] = "NIVEL";
@@ -870,7 +870,7 @@ namespace C4W.Web.Controllers
                 ViewData["te37"] = "El Programa está dirigido a personas de 21 años en adelante, que se identifiquen con la visión del coaching como un vehículo para la transformación de individuos desde el enfoque espiritual. Se recomienda este Programa para quienes deseen una carrera como coach de vida y espiritual; y para aquellas personas que deseen un cambio profundo en sus propias vidas y en sus relaciones a partir de los principios de la paz interior.";
                 ViewData["te38"] = "DURACIÓN DEL PROGRAMA";
                 ViewData["te39"] = "La duración del proceso de formación está estimada en 6 meses.";
-                ViewData["te40"] = "La certificación está alineada al código de ética y las competencias centrales de la International Coach Federation (ICF). Además, brinda los requisitos necesarios para solicitar la acreditación ACC (Associate Certified Coach) en la ICF, luego de culminado el proceso con CFW y luego de haber completado el total de horas de experiencia requeridas por la ICF. ";
+                ViewData["te40"] = "La certificación está alineada al código de ética y las competencias centrales de la International Coach Federation (ICF). Además, brinda los requisitos necesarios para solicitar la acreditación PCC (Professional Certified Coach) en la ICF, luego de culminado el proceso con CFW y luego de haber completado el total de horas de experiencia requeridas por la ICF. ";
                 ViewData["te41"] = "Escríbenos a info@coachingforwellness.com para conocer más detalles sobre este programa. ";
                 //bienestar
                 ViewData["tb1"] = "Esta certificación se concentra en el SER, y sus posibilidades infinitas de prosperidad y bienestar a todos los niveles. Hace un recorrido por todos los temas del coaching de vida, desde una perspectiva holística, lo que permite al participante contar con herramientas de vanguardia con las que se podrá desempeñar como coach de vida en su entorno en diversos nichos de mercado.";
