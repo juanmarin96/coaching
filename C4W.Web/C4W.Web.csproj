@@ -26,6 +26,7 @@
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
     <TargetFrameworkProfile />
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -232,6 +233,7 @@
     <Content Include="Content\Images\Carousel\33.jpg" />
     <Content Include="Content\Images\Carousel\4 FRONT.jpg" />
     <Content Include="Content\Images\Carousel\44.jpg" />
+    <Content Include="Content\Images\Carousel\Captura.PNG" />
     <Content Include="Content\Images\Carousel\CONTACTO 1.jpg" />
     <Content Include="Content\Images\Carousel\CONTACTO 2.jpg" />
     <Content Include="Content\Images\Carousel\CONTACTO 3.jpg" />

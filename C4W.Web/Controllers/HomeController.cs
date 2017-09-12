@@ -132,7 +132,7 @@ namespace C4W.Web.Controllers
             if (lang != null && lang.ToString() == "en")
             {
                 ViewData["p1_sobre"] = "An organization that promotes wellness in all aspects of life. Coaching for Wellness (CFW) was co-created in 2004 by Susan Seidman and Annie Torres, both certified as Master Coaches (MCC) and pioneers in the coaching profession in the United States, Puerto Rico, and Latin America. We are passionate about what we do. We strive to make continuous improvement something real, which allows us to be highly differentiated in the market.";
-                ViewData["p2_sobre"] = "We aim for excellence, facilitating experiences for our clients that inspire- their Being to maximize - results. We are responsible with our environment and with every person we come into contact with, firmly believing that love is the force that transforms all situations. Our clients are located in the United States, Puerto Rico, Colombia, Peru, Argentina and Panama. ";
+                ViewData["p2_sobre"] = "We aim for excellence, facilitating experiences for our clients that inspire their Being to maximize results. We are responsible with our environment and with every person we come into contact with, firmly believing that love is the force that transforms all situations. Our clients are located in the United States, Puerto Rico, Colombia, Peru, Argentina and Panama. ";
                 ViewData["T1_sobre1"] = "WHO";
                 ViewData["T1_sobre2"] = "WE ARE";
                 ViewData["mision_titulo_sobre1"] = "OUR";
@@ -569,7 +569,7 @@ namespace C4W.Web.Controllers
                 ViewData["to17"] = "Become the CEO of your own life.";
                 ViewData["to18"] = "The essence of OASIS is not to eliminate stress. Rather, it is to help us interact consciously – and with clarity – with what is on our plate.";
                 ViewData["to19"] = "We all have stress. The good news: we do not need to be helpless victims to it. How we respond to stress makes all the difference.";
-                ViewData["to20"]= "WHY WAIT? Give yourself an OASIS now!";
+                ViewData["to20"]= "WHY WAIT? Give yourself an OASIS now! ";
                 ViewData["to21"] = "This course also offers the following CCEUs for coaches:";
                 ViewData["to22"] = "Core Competencies - 7.38 hours";
                 ViewData["to23"] = "Resource Development - 4.62 hours ";
@@ -615,7 +615,7 @@ namespace C4W.Web.Controllers
                 ViewData["te37"] = "The Program is aimed at people aged 21 and older, who align with the view of coaching as a vehicle for the transformation of individuals from a spiritual approach. This program is recommended for people who want a career as a life and spiritual coach; and those interested in experiencing a profound change in their own lives and their relationships from the principles of inner peace.";
                 ViewData["te38"] = "DURATION OF THE PROGRAM";
                 ViewData["te39"] = "The estimated duration of the training component is 6 months.";
-                ViewData["te40"] = "This certification is aligned with the ICF Code of Ethics and Core Competencies. It complies with the training requirements of the Associate Certified Coach (ACC) credential. Coaches can request an ACC credential after successful completion of the coaching experience hours established by the ICF.  ";
+                ViewData["te40"] = "This certification is aligned with the ICF Code of Ethics and Core Competencies. It complies with the training requirements of the Professional Certified Coach (PCC) credential. Coaches can request an PCC credential after successful completion of the coaching experience hours established by the ICF.  ";
                 ViewData["te41"] = "Contact us at info@coachingforwellness.com for more information about this program. ";
 
                 //bienestar
@@ -657,7 +657,7 @@ namespace C4W.Web.Controllers
                 ViewData["tb36"] = "The Program is aimed at people aged 21 and older, who align with the view of coaching as a vehicle for individual transformation. This program is recommended for people who want a career as a life and wellness coach; community leaders; and those interested in experiencing a profound change in their own lives and their relationships from the principles of abundance and well-being.";
                 ViewData["tb37"] = "DURATION OF THE PROGRAM";
                 ViewData["tb38"] = "The estimated duration of the training component is 6 months.";
-                ViewData["tb39"] = "This certification is aligned with the ICF Code of Ethics and Core Competencies. It complies with the training requirements of the Associate Certified Coach (ACC) credential. Coaches can request an ACC credential after successful completion of the coaching experience hours established by the ICF.  ";
+                ViewData["tb39"] = "This certification is aligned with the ICF Code of Ethics and Core Competencies. It complies with the training requirements of the Professional Certified Coach (PCC) credential. Coaches can request an PCC credential after successful completion of the coaching experience hours established by the ICF.  ";
                 ViewData["tb40"] = "Contact us at info@coachingforwellness.com for more information about this program. ";
 
                 //nivel asociado
@@ -701,7 +701,7 @@ namespace C4W.Web.Controllers
                 ViewData["ta38"] = "The Program is aimed at people aged 21 and older, who align with the view of coaching as a vehicle for individual and organizational transformation. This program is recommended for people who want a career as a life or business coach; business and community leaders; human resources professionals, managers, and entrepreneurs.";
                 ViewData["ta39"] = "DURATION OF THE PROGRAM";
                 ViewData["ta40"] = "The estimated duration of the training component is 6 months.";
-                ViewData["ta41"] = "This certification is aligned with the ICF Code of Ethics and Core Competencies. It complies with the training requirements of the Associate Certified Coach (ACC) credential. Coaches can request an ACC credential after successful completion of the coaching experience hours established by the ICF. ";
+                ViewData["ta41"] = "This certification is aligned with the ICF Code of Ethics and Core Competencies. It complies with the training requirements of the Professional  Certified Coach (PCC) credential. Coaches can request an PCC credential after successful completion of the coaching experience hours established by the ICF. ";
                 ViewData["ta42"] = "Contact us at info@coachingforwellness.com for more information about this program. ";
             }
             //texto en el idioma español
@@ -722,7 +722,7 @@ namespace C4W.Web.Controllers
                 ViewData["t2Cer"] = "COACHING";
                 ViewData["t3Cer"] = "Toda preparación profesional en el desarrollo de las competencias de coaching, su integración y su aplicación, comienza por el área de vida. Este programa enseña todas las destrezas de coaching desde un punto de vista del coaching de vida, aspecto de gran pertinencia en la formación de un coach ejecutivo y corporativo.";
                 ViewData["t4Cer"] = "NUESTROS PROGRAMAS";
-                ViewData["t5Cer"] = "NUESTROS PROGRAMAS Ofrecen dos niveles de certificación que cumplen a cabalidad con los requerimientos de la ICF para las credenciales a nivel asociado y profesional.";
+                ViewData["t5Cer"] = "Ofrecen dos niveles de certificación que cumplen a cabalidad con los requerimientos de la ICF para las credenciales a nivel asociado y profesional.";
                 ViewData["t6Cer"] = "COACHING";
                 ViewData["t6Cerco"] = "NIVEL";
                 ViewData["t6Cer6"] = "PROFESIONAL";
@@ -824,7 +824,7 @@ namespace C4W.Web.Controllers
                 ViewData["to17"] = "Conviértase en el CEO de su propia vida.";
                 ViewData["to18"] = "La esencia de OASIS no es eliminar el estrés. Más bien, es ayudarnos a interactuar conscientemente - y con claridad - con lo que está en nuestro plato.";
                 ViewData["to19"] = "Todos tenemos estrés. La buena noticia: no necesitamos ser víctimas indefensas. La manera como respondemos al estrés hace toda la diferencia.";
-                ViewData["to20"] = "¿POR QUÉ ESPERAR? ¡Dése un OASIS ahora!";
+                ViewData["to20"] = "¿POR QUÉ ESPERAR? ¡Dése un OASIS ahora! ";
                 ViewData["to21"] = "Este curso también ofrece a los coaches las siguientes horas de educación continua:";
                 ViewData["to22"] = "Competencias básicas - 7.38 horas";
                 ViewData["to23"] = "Desarrollo de Recursos - 4.62 horas";
@@ -910,7 +910,7 @@ namespace C4W.Web.Controllers
                 ViewData["tb36"] = "El Programa está dirigido a personas de 21 años en adelante, que se identifiquen con la visión del coaching como un vehículo para la transformación de individuos. Se recomienda este Programa para quienes deseen una carrera como coach de vida y bienestar; líderes sociales; y para aquellas personas que deseen un cambio profundo en sus propias vidas y en sus relaciones a partir de los principios de la abundancia y el bienestar.";
                 ViewData["tb37"] = "DURACIÓN DEL PROGRAMA";
                 ViewData["tb38"] = "La duración del proceso de formación está estimada en 6 meses.";
-                ViewData["tb39"] = "La certificación está alineada al código de ética y las competencias centrales de la International Coach Federation (ICF). Además, brinda los requisitos necesarios para solicitar la acreditación ACC (Associate Certified Coach) en la ICF, luego de culminado el proceso con CFW y luego de haber completado el total de horas de experiencia requeridas por la ICF. ";
+                ViewData["tb39"] = "La certificación está alineada al código de ética y las competencias centrales de la International Coach Federation (ICF). Además, brinda los requisitos necesarios para solicitar la acreditación PCC (Professional  Certified Coach) en la ICF, luego de culminado el proceso con CFW y luego de haber completado el total de horas de experiencia requeridas por la ICF. ";
                 ViewData["tb40"] = "Escríbenos a info@coachingforwellness.com para conocer más detalles sobre este programa. ";
 
                 //nivel asociado
@@ -954,7 +954,7 @@ namespace C4W.Web.Controllers
                 ViewData["ta38"] = "El Programa está dirigido a personas de 21 años en adelante, que se identifiquen con la visión del coaching como un vehículo para la transformación de individuos y organizaciones. Se recomienda este Programa para quienes deseen una carrera como coach de vida y empresarial; líderes de organizaciones empresariales y sociales; directores de recursos humanos, gerentes, empresarios y emprendedores.";
                 ViewData["ta39"] = "DURACIÓN DEL PROGRAMA";
                 ViewData["ta40"] = "La duración del proceso de formación está estimada en 6 meses.";
-                ViewData["ta41"] = "La certificación está alineada al código de ética y las competencias centrales de la International Coach Federation (ICF). Además, brinda los requisitos necesarios para solicitar la acreditación ACC (Associate Certified Coach) en la ICF, luego de culminado el proceso con CFW y luego de haber completado el total de horas de experiencia requeridas por la ICF. ";
+                ViewData["ta41"] = "La certificación está alineada al código de ética y las competencias centrales de la International Coach Federation (ICF). Además, brinda los requisitos necesarios para solicitar la acreditación PCC (Professional Certified Coach) en la ICF, luego de culminado el proceso con CFW y luego de haber completado el total de horas de experiencia requeridas por la ICF. ";
                 ViewData["ta42"] = "Escríbenos a info@coachingforwellness.com para conocer más detalles sobre este programa. ";
             }
             return View();
@@ -979,7 +979,7 @@ namespace C4W.Web.Controllers
                 ViewData["t1Ser"] = "SERVICES";
                 ViewData["t2Ser"] = "ONE-ON-ONE";
                 ViewData["t2Serc"] = "COACHING";
-                ViewData["t3Ser"] = "We offer individual services in";
+                ViewData["t3Ser"] = "We offer individual services in: ";
                 ViewData["t4Ser"] = "Life Coaching";
                 ViewData["t5Ser"] = "Executive and Business Coaching (e.g., teams, sales)";
                 ViewData["t6Ser"] = "Relationship Coaching";
@@ -996,7 +996,7 @@ namespace C4W.Web.Controllers
                 ViewData["t16Ser"] = "Contact us for additional information regarding our webinars.";
                 ViewData["t17Ser"] = "MENTORING FOR";
                 ViewData["t17Serco"] = "COACHES";
-                ViewData["t18Ser"] = "Geared toward coaches seeking to improve their coaching skills, or coaches interested in complying with the mentoring requirements for ICF credentials.";
+                ViewData["t18Ser"] = "We offer individual and group mentoring services geared toward coaches in-training and certified coaches seeking to improve their coaching skills, or coaches interested in complying with the mentoring requirements for ICF credentials.";
                 ViewData["t18Seru"] = "Contact us for additional information regarding our program.";
             }
             //texto en el idioma español
@@ -1028,7 +1028,7 @@ namespace C4W.Web.Controllers
                 ViewData["t13Ser"] = "Interesados en formarse como coaches";
                 ViewData["t14Ser"] = "Coaches certificados";
                 ViewData["t15Ser"] = "Público en general";
-                ViewData["t16Ser"] = "ContáctAnos para información adicional sobre nuestras charlas y otros eventos.";
+                ViewData["t16Ser"] = "Contáctanos para información adicional sobre nuestras charlas y otros eventos.";
                 ViewData["t17Ser"] = "MENTORÍAS PARA";
                 ViewData["t17Serco"] = "COACHES";
                 ViewData["t18Ser"] = "Ofrecemos servicios individualizados y grupales de mentoría en coaching dirigidos a coaches en formación y/o certificados que deseen mejorar sus destrezas de coaching, o para coaches interesados en cumplir con el requisito de mentorías  que les permita solicitar credenciales ante la ICF.";
